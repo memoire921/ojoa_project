@@ -160,15 +160,7 @@ ul li {
     text-align: center;
     margin: 0 auto;
   }
-  .multi {
-    text-align: center;
-    width: 1240px;
-    font-size: 35px;
-    font-style: oblique;
-    font-weight: bold;
-    column-count: 3;
-    margin: 0 auto;
-  }
+
   .nd_show {
     margin: 0 auto;
   }
@@ -179,47 +171,62 @@ ul li {
   }
   /* ================== 바디 컬럼 3 시작 ================== */
 
-  .inside {
-    display: inline-block;
-    height: 164;
-    margin: 0;
-    padding: 0;  
-}
+  .main_col {
+    width: 1240px;
+    column-count: 3; 
+    margin: auto;
+    }
 
-.secimg {     
-    width:260px;
-    height: 164px;
-    margin: 0;
-} 
+    .roomname {
+      display: inline-block;
+      font-size: 35px;
+      font-weight: bold;
+      font-style: italic;
+      margin-bottom: 5px;
+    }
+    
 
-.price {
-    font-size: 20px;
-    font-style: italic;
-    text-decoration: none;
+    .colimg{
+      width: 400px;
+      height: 600px;
+      text-align: center;
+    }
+
+    .mcol1, .mcol2, .mcol3{
+      width: 400px;
+      text-align: center;
+      
+    }
+
+   /*------------세부섹션파트----------*/  
+   .colsection {
+    width: 400px;
+    height: 180px;
+    margin-bottom: 30px;
+    border: #cccccc solid 1px
+  }
+   
+  .colsec_img{
+    width: 200px;
+    height: 180px;
+    float: left;
+  }
+
+  .colsec_name {
+    font-size: 25px;
     font-weight: bold;
-    color: #ff006c;
-}
-
-.sec1 {
-    /* margin-bottom: 20px; */
-    margin: 50px 20px;
-    border: #bdbdbd solid 2px;
     text-align: center;
-}
+  }
 
-.text {
-    margin: 10px;
+  .colsec_price{
+    font-size: 20px;
+    color: red;
     text-align: center;
-}
-
-.column1 , .column2, .column3 {
-    display: inline-block;
-}
-
-a {
-    text-decoration: none;
-}
-
+  }
+  
+  table.colsection tr td {
+    width: 200px;
+  }
   
   /* ================== 바디 플로팅 시작 ================== */
 
