@@ -8,97 +8,143 @@ body {
   padding: 0;
 }
 
+strong {
+  font-weight: bold;
+}
+
+div {
+  display: block;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 ul li {
   list-style: none;
 }
-  
-  a {
-    text-decoration: none;
-    color:#333;
-  }
-  
-  main, footer {
-    background: #f2f4f7;
-    min-height: 450px;
-    width: 1240px;
-    margin: 0 auto;
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+[class^='btnNormal'], a[class^='btnNormal'] {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 2px 8px;
+  border: 1px solid #d1d1d1;
+  border-radius: 2px;
+  font-family: "굴림",Gulim;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  vertical-align: middle;
+  word-spacing: -0.5px;
+  letter-spacing: 0;
+  text-align: center;
+  white-space: nowrap;
+  color: #222;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color:#333;
+}
+
+main, footer {
+  /* background: #f2f4f7; */
+  min-height: 450px;
+  width: 1240px;
+  margin: 0 auto;
+}
+
+footer {
+  /* background: #f2f4f7; */
+  min-height: 450px;
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.navBar {
+  width: 1240px;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.logo {
+  float: left;
+  margin: 0;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+.navBar ul {
+  float: right;
+}
+
+.navBar li {
+list-style-type: none;
+float: left;
+margin-left: 30px;
+}
+
+.navBar a {
+text-decoration: none;
+color:#333;
+font-size: 15px;
+font-weight: bold;
+}
+
+/*================== 카테고리 네비 버튼 > 스타일 및 동작 ==================*/
+
+#category_nav {
+  font:bold 16px "malgun gothic";
+  width: 1240px;
+  height: 40px;
+  background: #ccc;
+  color: black;
+  line-height: 40px;
+  margin: 0 auto;
+  opacity: .8;
+  z-index: 1;
   }
 
-  footer {
-    background: #f2f4f7;
-    min-height: 450px;
-    width: 1240px;
-    margin: 0 auto;
+#category_nav > ul {
+  text-align: center;
   }
 
-  .navBar {
-    width: 1240px;
-    height: 80px;
-    margin: 0 auto;
-    margin-top: 30px;
-  }
-  
-  .logo {
-    float: left;
-    margin: 0;
-  }
+#category_nav > ul > li {
+  width: 130px;
+  position: relative;
+  display: inline-block;
+}
 
-  .logo img {
-    vertical-align: middle;
-  }
-  
-  .navBar ul {
-    float: right;
-  }
-  
-  .navBar li {
-    list-style-type: none;
-    float: left;
-    margin-left: 30px;
-  }
-  
-  .navBar a {
-    text-decoration: none;
-    color:#333;
-    font-size: 15px;
-    font-weight: bold;
-  }
+#category_nav > ul > li > ul {
+  width: 130px;
+  display: none;
+  position: absolute;
+  font-size: 15px;
+  background: #ccc;
+}
 
-  /*================== 카테고리 네비 버튼 > 스타일 및 동작 ==================*/
-  
-  #category_nav {
-    font:bold 16px "malgun gothic";
-    width: 1240px;
-    height: 40px;
-    background: #ccc;
-    color: black;
-    line-height: 40px;
-    margin: 0 auto;
-    opacity: .8;
-    z-index: 1;
-  }
-
-  #category_nav > ul {
-    text-align: center;
-    }
-  
-  #category_nav > ul > li {
-    width: 130px;
-    position: relative;
-    display: inline-block;
-  }
-
-  #category_nav > ul > li > ul {
-    width: 130px;
-    display: none;
-    position: absolute;
-    font-size: 15px;
-    background: #ccc;
-  }
-  
-  #category_nav > ul > li:hover > ul {
-    display: block;
-  }
+#category_nav > ul > li:hover > ul {
+  display: block;
+}
 
   #category_nav > ul > li > ul > li:hover {
     background: white;
@@ -109,125 +155,6 @@ ul li {
     position: sticky;
     top: 0;
   }
-
-  /* ================== 헤더 쇼룸 슬라이드 > 스타일 및 동작 ================== */
-
-  * {margin:0;padding:0;}
-	.section input[id*="slide"] {display:none;}
-	.section .slidewrap {max-width:1240px;margin:0 auto;}
-	.section .slidelist {white-space:nowrap;font-size:0;overflow:hidden;position:relative;}
-	.section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}
-	.section .slidelist > li > a {display:block;position:relative;}
-	.section .slidelist > li > a img {width:100%;}
-	.section .slidelist label {position:absolute;z-index:10;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
-	.section .slidelist .textbox {position:absolute;z-index:1;top:50%;left:50%;transform:translate(-50%,-50%);line-height:1.6;text-align:center;}
-	.section .slidelist .textbox h3 {font-size:36px;color:#fff;;transform:translateY(30px);transition:all .5s;}
-	.section .slidelist .textbox p {font-size:16px;color:#fff;opacity:0;transform:translateY(30px);transition:all .5s;}
-	
-	/* input에 체크되면 슬라이드 효과 */
-	.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
-	.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
-	.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
-
-	/* input에 체크되면 텍스트 효과 */
-	.section input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox h3 {opacity:1;transform:translateY(0);transition-delay:.2s;}
-	.section input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox p {opacity:1;transform:translateY(0);transition-delay:.4s;}
-	.section input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox h3 {opacity:1;transform:translateY(0);transition-delay:.2s;}
-	.section input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox p {opacity:1;transform:translateY(0);transition-delay:.4s;}
-	.section input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .textbox h3 {opacity:1;transform:translateY(0);transition-delay:.2s;}
-	.section input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .textbox p {opacity:1;transform:translateY(0);transition-delay:.4s;}
-
-	/* 좌,우 슬라이드 버튼 */
-	.slide-control > div {display:none;}
-	.section .left {left:30px;background:url('./images/left.png') center center / 100% no-repeat;}
-	.section .right {right:30px;background:url('./images/right.png') center center / 100% no-repeat;}
-	.section input[id="slide01"]:checked ~ .slidewrap .slide-control > div:nth-child(1) {display:block;}
-	.section input[id="slide02"]:checked ~ .slidewrap .slide-control > div:nth-child(2) {display:block;}
-	.section input[id="slide03"]:checked ~ .slidewrap .slide-control > div:nth-child(3) {display:block;}
-
-	/* 페이징 */
-	.slide-pagelist {text-align:center;padding:20px;}
-	.slide-pagelist > li {display:inline-block;vertical-align:middle;}
-	.slide-pagelist > li > label {display:block;padding:8px 8px;border-radius:30px;background:#ccc;margin:0px 10px;cursor:pointer;}
-	.section input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#999;}
-	.section input[id="slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#999;}
-	.section input[id="slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#999;}
-
-  /* ================== 바디 구분 3 > 스타일 및 동작 ================== */
-
-  .mainSe {
-    width: 1240px;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .nd_show {
-    margin: 0 auto;
-  }
-
-  .roomImg {
-    width: 380px;
-    margin: 0 auto;
-  }
-  /* ================== 바디 컬럼 3 시작 ================== */
-
-  .main_col {
-    width: 1240px;
-    column-count: 3; 
-    margin: auto;
-    }
-
-    .roomname {
-      display: inline-block;
-      font-size: 35px;
-      font-weight: bold;
-      font-style: italic;
-      margin-bottom: 5px;
-    }
-    
-
-    .colimg{
-      width: 400px;
-      height: 600px;
-      text-align: center;
-    }
-
-    .mcol1, .mcol2, .mcol3{
-      width: 400px;
-      text-align: center;
-      
-    }
-
-   /*------------세부섹션파트----------*/  
-   .colsection {
-    width: 400px;
-    height: 180px;
-    margin-bottom: 30px;
-    border: #cccccc solid 1px
-  }
-   
-  .colsec_img{
-    width: 200px;
-    height: 180px;
-    float: left;
-  }
-
-  .colsec_name {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  .colsec_price{
-    font-size: 20px;
-    color: red;
-    text-align: center;
-  }
-  
-  table.colsection tr td {
-    width: 200px;
-  }
-  
   /* ================== 바디 플로팅 시작 ================== */
 
   .floating {
@@ -290,7 +217,6 @@ ul li {
 li {
   list-style: none;
   display: list-item;
-  
 }
 
 .path li {
@@ -374,15 +300,6 @@ hr.layout {
   padding-top: 10px;
 }
 
-.ec-base-box.typeMember .information .description {
-  display: table-cell;
-  padding: 0 10px;
-  width: auto;
-  line-height: 1.5em;
-  border-left: 1px solid #e8e8e8;
-  vertical-align: middle;
-}
-
 .xans-myshop-asyncbenefit {
   margin: 0 0 20px;
   color: #353535;
@@ -398,9 +315,19 @@ hr.layout {
   letter-spacing: -3px;
 }
 
+.xans-myshop-asyncbankbook div h2 span {
+  color: #888;
+}
+
 .xans-myshop-asyncbankbook div p {
   color: #888;
   padding-left: 2px;
+}
+
+.xans-myshop-asyncbankbook div {
+  float: left;
+  width: 370px;
+  padding: 10px 0 0 30px;
 }
 
 .xans-myshop-asyncbankbook ul {
@@ -435,7 +362,7 @@ hr.layout {
   box-sizing: border-box;
 }
 
-.xans-myshop-asyncbanbook {
+.xans-myshop-asyncbankbook {
   overflow: hidden;
   padding: 15px 0px 15px 0px;
   margin: 20px auto 0 auto;
@@ -444,11 +371,50 @@ hr.layout {
   background: #fff;
 }
 
+[class^='btnNormal']:not(.disabled):hover {
+  background-color: #f3f3f3;
+}
+
 .xans-myshop-orderstate {
   margin: 20px auto 0;
   border: 1px solid #dedede;
   border-top: 1px solid #353535;
   width: 100%;
+}
+
+.xans-myshop-orderstate .title {
+  padding: 11px 21px;
+  margin: 0;
+  border-bottom: 1px solid #e9e9e9;
+  background: #f6f6f6;
+}
+
+.xans-myshop-orderstate .title h3 {
+  padding: 0;
+  font-size: 14px;
+  color: #000;
+}
+
+.xans-myshop-orderstate .desc {
+  padding: 0 0 0 4px;
+  font-weight: normal;
+  font-size: 11px;
+  color: #8f8f8f;
+}
+
+.xans-myshop-orderstate .desc em {
+  color: #008bcc;
+  font-style: normal;
+}
+
+.xans-myshop-orderstate .state {
+  overflow: hidden;
+  padding: 19px 0;
+}
+
+.xans-myshop-orderstate .order {
+  float: left;
+  width: 80%;
 }
 
 .xans-myshop-orderstate .order li {
@@ -460,32 +426,6 @@ hr.layout {
   text-align: center;
 }
 
-
-
-.xans-myshop-orderstate .order .count {
-  font-weight: bold;
-  font-size: 24px;
-  color: #008bcc;
-}
-
-.xans-myshop-orderstate .title h3 {
-  padding: 0;
-  font-size: 14px;
-  color: #000;
-}
-
-.xans-myshop-orderstate .title {
-  padding: 11px 21px;
-  margin: 0;
-  border-bottom: 1px solid #e9e9e9;
-  background: #f6f6f6;
-}
-
-.xans-myshop-orderstate .state {
-  overflow: hidden;
-  padding: 19px 0;
-}
-
 .xans-myshop-orderstate .order li strong {
   display: block;
   margin: 2px 0 7px;
@@ -493,21 +433,27 @@ hr.layout {
   color: #353535;
 }
 
+.xans-myshop-orderstate .order .count {
+  font-weight: bold;
+  font-size: 24px;
+  color: #008bcc;
+}
+
 .xans-myshop-orderstate .cs {
   float: left;
   width: 20%;
-}
-
-.xans-myshop-orderstate .cs strong {
-  font-weight: normal;
-  font-size: 12px;
-  color: #353535;
 }
 
 .xans-myshop-orderstate .cs li {
   margin: 0 0 5px 57px;
   letter-spacing: 0.04em;
   word-spacing: 4px;
+}
+
+.xans-myshop-orderstate .cs strong {
+  font-weight: normal;
+  font-size: 12px;
+  color: #353535;
 }
 
 .xans-myshop-orderstate .cs .count {
@@ -525,12 +471,6 @@ hr.layout {
   vertical-align: top;
 }
 
-.ec-base-box.typeMember.gMessage {
-  border-width: 1px;
-  border-color: #d7d5d5;
-  padding: 10px;
-}
-
 .ec-base-box {
   padding: 20px;
   margin-left: auto;
@@ -545,6 +485,42 @@ hr.layout {
   padding: 10px 0;
   width: 100%;
   box-sizing: border-box;
+}
+
+.ec-base-box.typeMember .information > .title,.ec-base-box.typeMember .information > .thumbnail {
+  display: table-cell;
+  padding: 0 15px;
+  width: 70px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.ec-base-box.typeProduct .thumbnail,.ec-base-box.typeProduct .information {
+  display: table-cell;
+  padding: 0 20px;
+  vertical-align: middle;
+}
+
+.ec-base-box.typeMember .information > .title {
+  vertical-align: middle;
+}
+
+.ec-base-box.typeMember .information > .thumbnail img {
+  max-width: 70px;
+}
+
+.ec-base-box.typeMember .information .description {
+  display: table-cell;
+  padding: 0 10px;
+  width: auto;
+  line-height: 1.5em;
+  border-left: 1px solid #e8e8e8;
+  vertical-align: middle;
+}
+
+.ec-base-box.typeMember.gMessage {
+  border-width: 1px;
+  border-color: #d7d5d5;
 }
 
 .thumbnail {
@@ -574,6 +550,11 @@ hr.layout {
   padding-inline-start: 40px;
 } */
 
+
+#myshopMain ul {
+  margin: 0 -1% 0;
+}
+
 #myshopMain .shopMain h3:before {
   display: block;
   content: "";
@@ -581,7 +562,6 @@ hr.layout {
   height: 50px;
   margin: 0 auto;
   padding: 0 0 10px;
-  /* background: ur/l(//img.echosting.cafe24.com/skin/base/myshop/sfix_icon_shopMain.png) no-repeat 0 0; */
 }
 
 #myshopMain .shopMain h3 {
@@ -630,6 +610,10 @@ hr.layout {
 
 #myshopMain {
   margin: 30px 0 0;
+}
+
+#myshopMain .shopMain:hover {
+  border: 1px solid #999;
 }
 
 /* ================== footer / 회사정보 ================== */
@@ -741,81 +725,3 @@ hr.layout {
     margin-left: 10px;
     margin-right: 10px;
   }
-
-  /* ==================  product_list 시작 ================== */
-
-#content_box {
-    padding-top: 50px;
-    width: 1240px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#content_box h3 {
-    float: left;
-    margin-left: 620px;
-    
-}
-
-#content_box p {
-    float: right;
-    margin: 0 auto;
-}
-
-.clear {
-    clear: both;
-}
-
-.items {
-    width: 20%; 
-    float: left;
-    margin: 30px 20px 0 20px;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-/* .items:nth-child(4n) {
-    margin-right: 0px;
-} */
-
-/* .product_box items:nth-child(4n) {
-    margin-left: 70px;
-    background-color: aqua;
-} */
-
-.items img {
-    width: 100%;
-}
-
-.items img:hover {
-    opacity: 0.4;
-}
-
-items>
-
-.items .a_1 {
-    font-weight: bold;
-    color: #333;
-    margin-top: 20px;
-}
-
-.items .b_1 {
-    font-weight: bold;
-    color: #333;
-    margin-top: 8px;
-}
-
-.items .b_1 span,.items .d_1 span {
-    color: #a26f59;
-}
-
-.items .c_1 {
-    font-size: 12px;
-    margin-top: 20px;
-    line-height: 150%;
-}
-
-.items .d_1 {
-    font-size: 12px;
-    margin-top: 25px;
-}
