@@ -375,68 +375,140 @@ ul li {
   }
 
   /* ==================  product_list 시작 ================== */
-
-#pl_content_box {
+  
+  #pl_content_box {
     padding-top: 50px;
     max-width: 1240px;
     margin: 0 auto;
     text-align: center;
     width: 100%;
-}
-
-#pl_content_box h3 {
+    background-color: #fff;
+  }
+  
+  #pl_content_box h3 {
     float: left;
     margin-left: 620px;
     
 }
 
 #pl_content_box p {
-    float: right;
+  float: right;
     margin: 0 auto;
-}
-
-.pl_items {
+  }
+  
+  .pl_items {
     width: 20%; 
     float: left;
     margin: 30px 20px 0 20px;
     padding: 20px;
     box-sizing: border-box;
-}
-
-
-.pl_items img {
+  }
+  
+  
+  .pl_items img {
     width: 100%;
-}
-
-.pl_items img:hover {
+  }
+  
+  .pl_items img:hover {
     opacity: 0.4;
-}
-
-items>
-
-.pl_items .pl_a {
+  }
+  
+  .pl_items .pl_a {
     font-weight: bold;
     color: #333;
     margin-top: 20px;
-}
-
-.pl_items .pl_b {
+  }
+  
+  .pl_items .pl_b {
     font-weight: bold;
     color: #333;
     margin-top: 8px;
-}
-
-.pl_items .pl_b span,.pl_items .pl_d span {
+  }
+  
+  .pl_items .pl_b span,.pl_items .pl_d span {
     color: #a26f59;
-}
+  }
 
-.pl_items .pl_c {
+  .pl_items .pl_c {
     font-size: 12px;
     margin-top: 20px;
     line-height: 150%;
-}
-
-.pl_items .pl_d {
+  }
+  
+  .pl_items .pl_d {
     font-size: 12px;
     margin-top: 25px;
+  }
+  
+  
+  /* ==================  product_list 페이지네이션 ================== */
+
+.pl_page {
+  text-align: center;
+  width: 50%;
+  margin: 50px auto;
+  /* margin-bottom: 0; */
+  margin-bottom: 80px;
 }
+
+.pl_pagination {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  /* margin-top: 20px; */
+}
+
+.pl_pagination li {
+  background-color: #e6e6e6;
+  display: inline;
+  text-align: center;
+}
+
+.pl_pagination a {
+  float: left;
+  display: inline-block;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 5px 12px;
+  color: #96a0ad;
+  line-height: 1.5;
+}
+
+.pl_first {
+  margin-right: 15px;
+}
+
+.pl_last {
+  margin-left:15px
+}
+
+.pl_first:hover, .pl_last:hover,pl_left:hover,.pl_right:hover {
+  color: #2e9cdf;
+}
+
+.pl_pagination a:active {
+  outline: none;
+}
+
+.pl_num {
+  margin-left: 3px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.pl_modal .pl_num:hover {
+  background-color: #2e9cdf;
+  cursor: pointer;
+}
+
+/* .pl_left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid blue;
+} */
+
+
