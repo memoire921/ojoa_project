@@ -1,0 +1,327 @@
+#od_backbody {
+    max-width: 1240px;
+    background-color: #fff;
+    font-size: 13pt;
+    padding: 50px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#od_frame {
+    /* width: 80%; */
+    margin: 0 auto;
+    padding: 50px 50px;
+    background-color: #fff;
+}
+
+.od_home {
+    float: right;
+    clear: both;
+}
+
+od_backbody ol {
+    list-style: square;
+}
+
+table#od_productInfo {
+    border: solid 1px #e0e0eb;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 10pt;
+}
+
+table#od_productInfo th, td {
+    border: solid 1px #e0e0eb;
+    text-align: center;
+    padding: 20px 0;
+}
+
+    /* ========================================== */
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  body {
+    min-width: 1240px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+    
+    a {
+      text-decoration: none;
+      color:#333;
+    }
+    
+    main, footer {
+      background: #f2f4f7;
+      min-height: 450px;
+      width: 1240px;
+      margin: 0 auto;
+    }
+  
+    footer {
+      background: #f2f4f7;
+      min-height: 450px;
+      width: 1240px;
+      margin: 0 auto;
+    }
+  
+    .navBar {
+      width: 1240px;
+      height: 80px;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+    
+    .logo {
+      float: left;
+      margin: 0;
+    }
+  
+    .logo img {
+      vertical-align: middle;
+    }
+    
+    .navBar ul {
+      float: right;
+    }
+    
+    .navBar li {
+      list-style-type: none;
+      float: left;
+      margin-left: 30px;
+    }
+    
+    .navBar a {
+      text-decoration: none;
+      color:#333;
+      font-size: 15px;
+      font-weight: bold;
+    }
+  
+    /*================== 카테고리 네비 버튼 > 스타일 및 동작 ==================*/
+    
+    #category_nav {
+      font:bold 16px "malgun gothic";
+      width: 1240px;
+      height: 40px;
+      background: #ccc;
+      color: black;
+      line-height: 40px;
+      margin: 0 auto;
+      opacity: .8;
+      z-index: 1;
+    }
+  
+    #category_nav > ul {
+      text-align: center;
+      }
+    
+    #category_nav > ul > li {
+      width: 130px;
+      position: relative;
+      display: inline-block;
+    }
+  
+    #category_nav > ul > li > ul {
+      width: 130px;
+      display: none;
+      position: absolute;
+      font-size: 15px;
+      background: #ccc;
+    }
+    
+    #category_nav > ul > li:hover > ul {
+      display: block;
+    }
+  
+    #category_nav > ul > li > ul > li:hover {
+      background: white;
+      transition: ease 1s;
+    }
+  
+    .sticky {
+      position: sticky;
+      top: 0;
+    }
+  
+    /* ================== 헤더 쇼룸 슬라이드 > 스타일 및 동작 ================== */
+  
+    * {margin:0;padding:0;}
+      .section input[id*="slide"] {display:none;}
+      .section .slidewrap {max-width:1240px;margin:0 auto;}
+      .section .slidelist {white-space:nowrap;font-size:0;overflow:hidden;position:relative;}
+      .section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}
+      .section .slidelist > li > a {display:block;position:relative;}
+      .section .slidelist > li > a img {width:100%;}
+      .section .slidelist label {position:absolute;z-index:10;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
+      .section .slidelist .textbox {position:absolute;z-index:1;top:50%;left:50%;transform:translate(-50%,-50%);line-height:1.6;text-align:center;}
+      .section .slidelist .textbox h3 {font-size:36px;color:#fff;;transform:translateY(30px);transition:all .5s;}
+      .section .slidelist .textbox p {font-size:16px;color:#fff;opacity:0;transform:translateY(30px);transition:all .5s;}
+      
+      /* input에 체크되면 슬라이드 효과 */
+      .section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+      .section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+      .section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+  
+      /* input에 체크되면 텍스트 효과 */
+      .section input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox h3 {opacity:1;transform:translateY(0);transition-delay:.2s;}
+      .section input[id="slide01"]:checked ~ .slidewrap li:nth-child(1) .textbox p {opacity:1;transform:translateY(0);transition-delay:.4s;}
+      .section input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox h3 {opacity:1;transform:translateY(0);transition-delay:.2s;}
+      .section input[id="slide02"]:checked ~ .slidewrap li:nth-child(2) .textbox p {opacity:1;transform:translateY(0);transition-delay:.4s;}
+      .section input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .textbox h3 {opacity:1;transform:translateY(0);transition-delay:.2s;}
+      .section input[id="slide03"]:checked ~ .slidewrap li:nth-child(3) .textbox p {opacity:1;transform:translateY(0);transition-delay:.4s;}
+  
+    
+    /* ================== 바디 플로팅 시작 ================== */
+  
+    .floating {
+      position: fixed; 
+      right: 50%; 
+      top: 180px; 
+      margin-right: -720px;
+      text-align:center;
+      width: 120px;
+    }
+    .floating {
+      background-color:#f9f9f9;
+      border:2px solid gray;
+      position: fixed; 
+      right: 50%; 
+      top: 180px;
+      margin-right: -713px;
+      text-align:center;
+      width:90px;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      }
+      .floating div:nth-child(1){
+      border:2px solid gray;
+      border-radius: 8px;
+      }
+      .floating div:nth-child(2){
+      border:2px solid gray;
+      border-radius: 8px;
+      }
+      .floating  div:nth-child(3){
+      border:2px solid gray;
+      border-radius: 8px;
+      }
+    /* ================== footer / 회사정보 ================== */
+  
+    #mfooter {
+      width: 1240px;
+      text-align: center;
+      overflow: hidden;
+      border: 0px solid blue;
+      margin: 0 auto;
+    }
+  
+    .footer_left {
+      background: #fff;
+      width: 640px;
+      height: 450px;
+      float: left;
+      border: 0px solid #cccccc;
+      text-align: center;
+    }
+  
+    .numb {
+      text-align: left;
+      font-style: bold;
+      font-size: 32px;
+      margin-top: 45px;
+    }
+  
+    .cs {
+      text-align: left;
+      font-size: 12px;
+      margin-top: 25px;
+    }
+    
+    .ojoa2 {
+      text-align: left;
+      font-size: 11px;
+      margin-top: 30px;
+    }
+    
+    .ojoa3 {
+      text-align: left;
+      font-size: 11px;
+      margin-top: 30px;
+    }
+    
+    .ft_menu {
+      text-align: left;
+      font-size: 12px;
+      margin-top: 40px;
+    }
+  
+    .ft_menu ul {
+      text-align: left;
+      font-size: 12px;
+      margin-top: 40px;
+    }
+    
+    .ft_menu li {
+      display: inline-block;
+      font-size: 12px;
+      margin-top: 40px;
+      margin: 0 14px 0 0px;
+    }
+  
+    .ft_comm {
+      margin-top: 45px;
+    }
+  
+    .ft_comm > ul > li {
+      width: 140px;
+      position: relative;
+    }
+  
+  
+    
+    .footer_right {
+      width: 600px;
+      height: 450px;
+      float: right;
+      text-align: left;
+    }
+  
+    .footer_right ul {
+      display: inline-block;
+    }
+  
+    /* .footer_right ul li:first-child {
+      font-style: bold;
+      font-size: 12px;
+      margin-bottom: 18px;
+    } */
+    
+    .footer_right ul > li~li {
+      font-size: 11px;
+      margin-bottom: 13px;
+    }
+  
+    .ft_sns {
+      float: right;
+      
+    }
+    .footer img {
+      margin-top: 40px;
+      height: 20px;
+      margin-bottom: 80px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
