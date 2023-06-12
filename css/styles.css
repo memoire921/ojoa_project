@@ -373,3 +373,70 @@ ul li {
     margin-left: 10px;
     margin-right: 10px;
   }
+
+  /* ==================  product_list 시작 ================== */
+
+#pl_content_box {
+    padding-top: 50px;
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+#pl_content_box h3 {
+    float: left;
+    margin-left: 620px;
+    
+}
+
+#pl_content_box p {
+    float: right;
+    margin: 0 auto;
+}
+
+.pl_items {
+    width: 20%; 
+    float: left;
+    margin: 30px 20px 0 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.pl_items img {
+    width: 100%;
+}
+
+.pl_items img:hover {
+    opacity: 0.4;
+}
+
+items>
+
+.pl_items .pl_a {
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+.pl_items .pl_b {
+    font-weight: bold;
+    color: #333;
+    margin-top: 8px;
+}
+
+.pl_items .pl_b span,.pl_items .pl_d span {
+    color: #a26f59;
+}
+
+.pl_items .pl_c {
+    font-size: 12px;
+    margin-top: 20px;
+    line-height: 150%;
+}
+
+.pl_items .pl_d {
+    font-size: 12px;
+    margin-top: 25px;
+}

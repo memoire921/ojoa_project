@@ -45,7 +45,8 @@ footer {
   margin: 0 auto;
 }
 
-/*================== 헤더 마이페이지 네비 > 스타일 및 동작 ==================*/
+/*======================================================*/
+/* header_navi_bar */
 
 .navBar {
   width: 1240px;
@@ -81,7 +82,8 @@ font-size: 15px;
 font-weight: bold;
 }
 
-/*================== 카테고리 드롭다운 네비 > 스타일 및 동작 ==================*/
+/*======================================================*/
+/* category_navi_drop_bar */
 
 #category_nav {
   font:bold 16px "malgun gothic";
@@ -130,7 +132,9 @@ font-weight: bold;
     position: sticky;
     top: 0;
   }
-  /* ================== 바디 플로팅 시작(오른쪽 사이드 따라다니는 배너)================== */
+
+/* ====================================================== */
+/* bodyFloating */
 
   .floating {
     position: fixed; 
@@ -145,7 +149,7 @@ font-weight: bold;
     border:2px solid gray;
     position: fixed; 
     right: 50%; 
-    top: 280px; /*--- 위치 좌표---*/
+    top: 180px; /*--- 위치 좌표---*/
     margin-right: -713px;
     text-align:center;
     width:90px;
@@ -164,7 +168,9 @@ font-weight: bold;
     border:2px solid gray;
     border-radius: 8px;
     }
-/* ================== 현재 위치 네비 ================== */
+
+/* ====================================================== */
+/* navi_bar */
 
 .path {
   font-size: 12px;
@@ -206,14 +212,14 @@ ol, h2, h3, p, td {
   padding: 0;
 }
 
-/* ================== 마이 페이지 ================== */
+/* ====================================================== */
+/* myPage_main */
 
 .cs {
   text-align: left;
   font-size: 12px;
   margin-top: 0 auto;
 }
-
 
 #container {
   width: 1240px;
@@ -395,7 +401,7 @@ ol, h2, h3, p, td {
 }
 
 .ec-base-box {
-  padding: 20px;
+  padding: 20px 20px 20px 0px;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid #dedede;
@@ -433,15 +439,6 @@ ol, h2, h3, p, td {
   margin: 0 -1% 0 -4%;
 }
 
-#myshopMain .shopMain h3:before {
-  display: block;
-  content: "";
-  width: 65px;
-  height: 50px;
-  margin: 0 auto;
-  padding: 0 0 10px;
-}
-
 #myshopMain .shopMain h3 {
   position: relative;
   font-size: 12px;
@@ -452,11 +449,6 @@ ol, h2, h3, p, td {
 #myshopMain .shopMain h3 strong {
   font-size: 18px;
   font-weight: bold;
-}
-
-#myshopMain .shopMain h3 a {
-  display: block;
-  padding: 0 0 25px;
 }
 
 #myshopMain .shopMain h3 span {
@@ -486,112 +478,100 @@ ol, h2, h3, p, td {
   border: 1px solid #999;
 }
 
-/* ================== footer / 회사정보 ================== */
+/* ====================================================== */
+/* footer */
 
-  #mfooter {
-    width: 1240px;
-    text-align: center;
-    overflow: hidden;
-    border: 0px solid blue;
-    margin: 0 auto;
-  }
+#mfooter {
+  width: 1240px;
+  text-align: center;
+  overflow: hidden;
+  border: 0px solid blue;
+  margin: 0 auto;
+  color: #8f8f8f;
+}
 
-  .footer_left {
-    background: #fff;
-    width: 640px;
-    height: 450px;
-    float: left;
-    border: 0px solid #cccccc;
-    text-align: center;
-  }
+.footer_left {
+  background: #fff;
+  width: 640px;
+  height: 450px;
+  float: left;
+  border: 0px solid #cccccc;
+  text-align: center;
+}
 
-  .numb {
-    text-align: left;
-    font-style: bold;
-    font-size: 32px;
-    margin-top: 45px;
-  }
+.numb {
+  text-align: left;
+  font-size: 32px;
+  margin-top: 45px;
+  color: #353535;
+}
 
-  .csqa {
-    text-align: left;
-    font-size: 12px;
-    margin-top: 25px;
-  }
-  
-  .ojoa2 {
-    text-align: left;
-    font-size: 11px;
-    margin-top: 30px;
-  }
-  
-  .ojoa3 {
-    text-align: left;
-    font-size: 11px;
-    margin-top: 30px;
-  }
-  
-  .ft_menu {
-    text-align: left;
-    font-size: 12px;
-    margin-top: 40px;
-  }
+.csqa {
+  text-align: left;
+  font-size: 12px;
+  margin-top: 25px;
+  line-height: 19px;
+}
 
-  .ft_menu ul {
-    text-align: left;
-    font-size: 12px;
-    margin-top: 40px;
-  }
-  
-  .ft_menu li {
-    display: inline-block;
-    font-size: 12px;
-    margin-top: 40px;
-    margin: 0 14px 0 0px;
-  }
+.ojoa2,
+.ojoa3 {
+  text-align: left;
+  font-size: 11px;
+  margin-top: 30px;
+  line-height: 19px;
+}
 
-  .ft_comm {
-    margin-top: 45px;
-  }
+.ft_menu {
+  text-align: left;
+  font-size: 12px;
+  margin-top: 25px;
+}
 
-  .ft_comm > ul > li {
-    width: 140px;
-    position: relative;
-  }
+.ft_menu ul {
+  padding: 0;
+}
 
-  /* .ft_quick {
-    
-  } */
-  
-  .footer_right {
-    width: 600px;
-    height: 450px;
-    float: right;
-    text-align: left;
-  }
+.ft_menu li {
+  display: inline-block;
+  margin: 0 14px 0 0px;
+}
 
-  .footer_right ul {
-    display: inline-block;
-  }
+.ft_comm > ul > li,
+.ft_quick > ul > li {
+  width: 140px;
+  position: relative;
+}
 
-  /* .footer_right ul li:first-child {
-    font-style: bold;
-    font-size: 12px;
-    margin-bottom: 18px;
-  } */
-  
-  .footer_right ul > li~li {
-    font-size: 11px;
-    margin-bottom: 13px;
-  }
+.ft_comm ul li:nth-child(n+2) a,
+.ft_quick ul li:nth-child(n+2) a {
+  color: #8f8f8f;
+}
 
-  .ft_sns {
-    float: right;
-    
-  }
-  .footer img {
-    margin-top: 40px;
-    height: 20px;
-    margin-bottom: 80px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+.footer_right {
+  background: #fff;
+  width: 440px;
+  height: 450px;
+  float: right;
+  text-align: left;
+  padding: 45px 10px 0px 0px;
+}
+
+.footer_right div {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.footer_right ul li:first-child {
+  font-style: bold;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.footer_right ul > li~li {
+  font-size: 11px;
+  margin-bottom: 13px;
+}
+
+.ft_sns {
+  float: right;
+}
