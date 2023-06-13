@@ -40,6 +40,7 @@
       height: 80px;
       margin: 0 auto;
       margin-top: 30px;
+      margin-bottom: 20px;
     }
     
     .logo {
@@ -78,7 +79,7 @@
       color: black;
       line-height: 40px;
       margin: 0 auto;
-      opacity: .8;
+      /* opacity: .8; */
       z-index: 1;
     }
   
@@ -369,21 +370,22 @@
   }
   
   .pl_pagination li {
-    background-color: #e6e6e6;
-    display: inline;
+    /* background-color: #e6e6e6; */
+    display: inline-block;
     text-align: center;
   }
   
   .pl_pagination a {
-    float: left;
+    /* float: left; */
     display: inline-block;
     font-size: 14px;
     text-decoration: none;
     padding: 5px 12px;
-    color: #96a0ad;
+    color: #686b6e;
+    font-weight: bold;
     line-height: 1.5;
   }
-  
+
   .pl_first {
     margin-right: 15px;
   }
@@ -397,10 +399,16 @@
   }
   
   .pl_pagination a:active {
+    cursor: default;
+    color: #ffffff;
+    outline: none;
+  }
+
+  .pl_pagination a:active {
     outline: none;
   }
   
-  .pl_num {
+  .pl_modal .pl_num {
     margin-left: 3px;
     padding: 0;
     width: 30px;
@@ -412,6 +420,7 @@
     background-color: #2e9cdf;
     cursor: pointer;
   }
+
   
   /* .pl_left {
     width: 0;
