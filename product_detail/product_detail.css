@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-width: 1240px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color:#333;
+  }
+  
+  main, footer {
+    min-height: 450px;
+    width: 1240px;
+    margin: 0 auto;
+  }
+  
+  footer {
+    min-height: 450px;
+    width: 1240px;
+    margin: 0 auto;
+  }
+  
+  /*======================================================*/
+  /* header_navi_bar */
+  
+  .navBar {
+    width: 1240px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    float: left;
+    margin: 0;
+  }
+  
+  .logo img {
+    vertical-align: middle;
+  }
+  
+  .navBar ul {
+    float: right;
+    margin-top: 0;
+  }
+  
+  .navBar li {
+    list-style-type: none;
+    float: left;
+    margin-left: 30px;
+  }
+  
+  .navBar a {
+    text-decoration: none;
+    color:#333;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  /*======================================================*/
+  /* category_navi_drop_bar */
+  
+  #category_nav {
+    font:bold 16px "malgun gothic";
+    width: 1240px;
+    height: 40px;
+    background: #ccc;
+    color: black;
+    line-height: 40px;
+    margin: 0 auto;
+    opacity: .8;
+    z-index: 1;
+  }
+  
+  #category_nav > ul {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  #category_nav > ul > li {
+    width: 130px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  #category_nav > ul > li > ul {
+    width: 130px;
+    display: none;
+    position: absolute;
+    font-size: 15px;
+    background: #ccc;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  #category_nav > ul > li:hover > ul {
+    display: block;
+  }
+  
+  #category_nav > ul > li > ul > li:hover {
+    background: white;
+    transition: ease 1s;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+  }
+ 
+  
+  /* ====================================================== */
+  /* bodyFloating */
+  
+    .floating {
+      position: fixed; 
+      right: 50%; 
+      top: 180px; 
+      margin-right: -720px;
+      text-align:center;
+      width: 120px;
+    }
+    .floating {
+      background-color:#f9f9f9;
+      border:2px solid gray;
+      position: fixed; 
+      right: 50%; 
+      top: 180px; /*--- 위치 좌표---*/
+      margin-right: -713px;
+      text-align:center;
+      width:90px;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      }
+      .floating div:nth-child(1){
+      border:2px solid gray;
+      border-radius: 8px;
+      }
+      .floating div:nth-child(2){
+      border:2px solid gray;
+      border-radius: 8px;
+      }
+      .floating  div:nth-child(3){
+      border:2px solid gray;
+      border-radius: 8px;
+      }
+  
+  /* ====================================================== */
+  /* footer */
+  
+  #mfooter {
+    width: 1240px;
+    text-align: center;
+    overflow: hidden;
+    border: 0px solid blue;
+    margin: 0 auto;
+    color: #8f8f8f;
+  }
+  
+  .footer_left {
+    background: #fff;
+    width: 640px;
+    height: 450px;
+    float: left;
+    border: 0px solid #cccccc;
+    text-align: center;
+  }
+  
+  .numb {
+    text-align: left;
+    font-size: 32px;
+    margin-top: 45px;
+    color: #353535;
+  }
+  
+  .csqa {
+    text-align: left;
+    font-size: 12px;
+    margin-top: 25px;
+    line-height: 19px;
+  }
+  
+  .ojoa2,
+  .ojoa3 {
+    text-align: left;
+    font-size: 11px;
+    margin-top: 30px;
+    line-height: 19px;
+  }
+  
+  .ft_menu {
+    text-align: left;
+    font-size: 12px;
+    margin-top: 25px;
+  }
+  
+  .ft_menu ul {
+    padding: 0;
+  }
+  
+  .ft_menu li {
+    display: inline-block;
+    margin: 0 14px 0 0px;
+  }
+  
+  .ft_comm > ul > li,
+  .ft_quick > ul > li {
+    width: 140px;
+    position: relative;
+  }
+  
+  .ft_comm ul li:nth-child(n+2) a,
+  .ft_quick ul li:nth-child(n+2) a {
+    color: #8f8f8f;
+  }
+  
+  .footer_right {
+    background: #fff;
+    width: 440px;
+    height: 450px;
+    float: right;
+    text-align: left;
+    padding: 45px 10px 0px 0px;
+  }
+  
+  .footer_right div {
+    vertical-align: top;
+    display: inline-block;
+  }
+  
+  .footer_right ul li:first-child {
+    font-style: bold;
+    font-size: 12px;
+    margin-bottom: 18px;
+  }
+  
+  .footer_right ul > li~li {
+    font-size: 11px;
+    margin-bottom: 13px;
+  }
+  
+  .ft_sns {
+    float: right;
+  }
