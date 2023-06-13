@@ -1,0 +1,653 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 1240px;
+  margin: 0;
+  padding: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+div {
+  display: block;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+[class^='btnNormal'],
+a[class^='btnNormal'] {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 2px 8px;
+  border: 1px solid #d1d1d1;
+  border-radius: 2px;
+  font-family: "굴림", Gulim;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  vertical-align: middle;
+  word-spacing: -0.5px;
+  letter-spacing: 0;
+  text-align: center;
+  white-space: nowrap;
+  color: #222;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+main,
+footer {
+  /* background: #f2f4f7; */
+  min-height: 450px;
+  width: 1240px;
+  margin: 0 auto;
+}
+
+footer {
+  /* background: #f2f4f7; */
+  min-height: 450px;
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.navBar {
+  width: 1240px;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.logo {
+  float: left;
+  margin: 0;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+.navBar ul {
+  float: right;
+}
+
+.navBar li {
+  list-style-type: none;
+  float: left;
+  margin-left: 30px;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/*================== 카테고리 네비 버튼 > 스타일 및 동작 ==================*/
+
+#category_nav {
+  font: bold 16px "malgun gothic";
+  width: 1240px;
+  height: 40px;
+  background: #ccc;
+  color: black;
+  line-height: 40px;
+  margin: 0 auto;
+  opacity: .8;
+  z-index: 1;
+}
+
+#category_nav>ul {
+  text-align: center;
+}
+
+#category_nav>ul>li {
+  width: 130px;
+  position: relative;
+  display: inline-block;
+}
+
+#category_nav>ul>li>ul {
+  width: 130px;
+  display: none;
+  position: absolute;
+  font-size: 15px;
+  background: #ccc;
+}
+
+#category_nav>ul>li:hover>ul {
+  display: block;
+}
+
+#category_nav>ul>li>ul>li:hover {
+  background: white;
+  transition: ease 1s;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+/* ================== 바디 플로팅 시작 ================== */
+
+.floating {
+  position: fixed;
+  right: 50%;
+  top: 180px;
+  margin-right: -720px;
+  text-align: center;
+  width: 120px;
+}
+
+.floating {
+  background-color: #f9f9f9;
+  border: 2px solid gray;
+  position: fixed;
+  right: 50%;
+  top: 280px;
+  /*--- 위치 좌표---*/
+  margin-right: -713px;
+  text-align: center;
+  width: 90px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+
+.floating div:nth-child(1) {
+  border: 2px solid gray;
+  border-radius: 8px;
+}
+
+.floating div:nth-child(2) {
+  border: 2px solid gray;
+  border-radius: 8px;
+}
+
+.floating div:nth-child(3) {
+  border: 2px solid gray;
+  border-radius: 8px;
+}
+
+/* ================== 현재 위치 네비 ================== */
+
+.path {
+  font-size: 12px;
+  clear: both;
+  margin: 20px auto;
+  width: 1240px;
+  overflow: hidden;
+  height: 30px;
+  line-height: 30px;
+}
+
+.path span {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  white-space: nowrap;
+  text-indent: 100%;
+}
+
+.path li:first-child {
+  background: none;
+}
+
+li {
+  list-style: none;
+  display: list-item;
+}
+
+.path li {
+  float: left;
+  padding: 0 0 0 12px;
+  margin: 0 0 0 8px;
+  color: #757575;
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.path ol {
+  float: right;
+}
+
+.path li a {
+  font-size: 12px;
+  color: #999;
+}
+
+/* ================== 마이 페이지 ================== */
+
+hr.layout {
+  display: none;
+}
+
+#wrap {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 550px;
+}
+
+#container {
+  width: 1240px;
+  zoom: 1;
+  position: relative;
+  margin: 0 auto;
+}
+
+#contents {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+/* ================== 로그인페이지 ==================== */
+.xans-member-login {
+  width: 800px;
+  overflow: hidden;
+  margin: 40px auto 0px;
+  padding: 30px 0 0 0;
+  border: 1px solid #dedede;                                                                                                                                                                                                                                                                                         
+  border-top: 1px solid #222;
+  color: #666;
+  font-size: 12px;
+}
+
+.xans-member-login .login {
+  width: 675px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.xans-member-login .login h3 {
+  font-size: 45px;
+  margin-left: -2px;
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.xans-member-login .login .sub_txt {
+  text-align: left;
+  line-height: 16px;
+}
+
+.xans-member-login .login fieldset {
+  position: relative;
+  width: 675px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+legend {
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+  width: 0;
+  height: 0;
+  line-height: 0;
+}
+
+.xans-member-login .login fieldset .id,
+.xans-member-login .login fieldset .password {
+  overflow: hidden;
+  display: block;
+  width: 576px;
+  margin: 0 0 5px;
+  border: 1px solid #d9d9d9;
+}
+
+.xans-member-login .login fieldset .id span,
+.xans-member-login .login fieldset .password span {
+  float: left;
+  width: 55px;
+  height: 38px;
+  line-height: 38px;
+  padding: 0 0 0 8px;
+  text-align: left;
+}
+
+.xans-member-login .login fieldset input {
+  float: left;
+  width: 500px;
+  height: 38px;
+  padding: 0px 0px 0px 0px;
+  border: 0 none;
+  color: #8F8F91;
+}
+
+.xans-member-login .login fieldset .id,
+.xans-member-login .login fieldset .password {
+  overflow: hidden;
+  display: block;
+  width: 576px;
+  margin: 0 0 5px;
+  border: 1px solid #d9d9d9;
+}
+
+.xans-member-login .login fieldset .btn_login {
+  display: block;
+  width: 90px;
+  height: 83px;
+  text-align: center;
+  border: 1px solid #222;
+  background-color: #fff;
+  color: #222;
+  font-size: 15px;
+  line-height: 83px;
+  font-weight: 400;
+  right: 0px !important;
+}
+.xans-member-login .login fieldset > a {
+  position: absolute;
+  top: 0;
+  right: 7px;
+} 
+.xans-member-login .login fieldset .security {
+  padding: 0 0 0 0px;
+  margin: 0px 0px;
+  float: left;
+  padding-top: 17px;
+}
+
+.xans-member-login .login fieldset .security img {
+  padding-top: 3px;
+  padding-right: 3px;
+}
+
+.xans-member-login .login fieldset .find_area {
+  float: right;
+  padding-top: 18px;
+  font-size: 13px;
+}
+
+.xans-member-login .login fieldset ul {
+  overflow: hidden;
+  margin: 0;
+  border: 0;
+}
+
+.xans-member-login .login fieldset li {
+  float: left;
+  margin: 0px 0;
+  padding: 0 0 0 5px;
+}
+
+.xans-member-login .login fieldset li a {
+  color: #666;
+}
+
+.xans-member-login .login fieldset li {
+  float: left;
+  margin: 0px 0;
+  padding: 0 0 0 5px;
+}
+
+.cboth {
+  clear: both;
+  *zoom: 1;
+  /* zoom에 취소선되어있었음 */
+}
+
+.xans-member-login .login fieldset .sns {
+  margin: 10px 0 0 0;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.xans-member-login .login {
+  width: 675px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.join_area {
+  overflow: hidden;
+  border-top: 1px solid #dedede;
+  width: 675px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.join_area .join {
+  float: left;
+  line-height: 16px;
+  margin-top: 15px;
+}
+
+.join_area .join .join_title {
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.join_area .join_btn {
+  float: right;
+}
+
+.nonmember_area {
+  overflow: hidden;
+  border-top: 1px solid #dedede;
+  width: 675px;
+  height: 83px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.nonmember_area .join {
+  float: left;
+  line-height: 16px;
+  margin-top: 5px;
+}
+
+.nonmember_area .join_title {
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.nonmember_area .join_btn {
+  float: right;
+}
+
+.nonmember_area .join_btn a {
+  display: block;
+  width: 90px;
+  height: 83px;
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+  font-size: 15px;
+  line-height: 83px;
+  font-weight: 400;
+}
+
+
+
+/* ================== footer / 회사정보 ================== */
+
+#mfooter {
+  width: 1240px;
+  text-align: center;
+  overflow: hidden;
+  border: 0px solid blue;
+  margin: 0 auto;
+}
+
+.footer_left {
+  background: #fff;
+  width: 640px;
+  height: 450px;
+  float: left;
+  border: 0px solid #cccccc;
+  text-align: center;
+}
+
+.numb {
+  text-align: left;
+  font-style: bold;
+  font-size: 32px;
+  margin-top: 45px;
+}
+
+.cs {
+  text-align: left;
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+.ojoa2 {
+  text-align: left;
+  font-size: 11px;
+  margin-top: 30px;
+}
+
+.ojoa3 {
+  text-align: left;
+  font-size: 11px;
+  margin-top: 30px;
+}
+
+.ft_menu {
+  text-align: left;
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+.ft_menu ul {
+  text-align: left;
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+.ft_menu li {
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 40px;
+  margin: 0 14px 0 0px;
+}
+
+.ft_comm {
+  margin-top: 45px;
+}
+
+.ft_comm>ul>li {
+  width: 140px;
+  position: relative;
+}
+
+/* .ft_quick {
+      
+    } */
+
+.footer_right {
+  width: 600px;
+  height: 450px;
+  float: right;
+  text-align: left;
+}
+
+.footer_right ul {
+  display: inline-block;
+}
+
+/* .footer_right ul li:first-child {
+      font-style: bold;
+      font-size: 12px;
+      margin-bottom: 18px;
+    } */
+
+.footer_right ul>li~li {
+  font-size: 11px;
+  margin-bottom: 13px;
+}
+
+.ft_sns {
+  float: right;
+
+}
+
+.footer img {
+  margin-top: 40px;
+  height: 20px;
+  margin-bottom: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
