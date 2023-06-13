@@ -53,6 +53,7 @@ footer {
   height: 80px;
   margin: 0 auto;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .logo {
@@ -95,13 +96,13 @@ font-weight: bold;
   margin: 0 auto;
   opacity: .8;
   z-index: 1;
-  }
+}
 
 #category_nav > ul {
   text-align: center;
   margin: 0 auto;
   padding: 0;
-  }
+}
 
 #category_nav > ul > li {
   width: 130px;

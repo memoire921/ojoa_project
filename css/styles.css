@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-.clear {
-  clear: both;
-}
-
 body {
   min-width: 1240px;
   margin: 0;
@@ -15,106 +11,114 @@ body {
 ul li {
   list-style: none;
 }
-  
-  a {
-    text-decoration: none;
-    color:#333;
-  }
-  
-  main, footer {
-    background: #f2f4f7;
-    min-height: 450px;
-    width: 1240px;
-    margin: 0 auto;
-  }
 
-  footer {
-    background: #f2f4f7;
-    min-height: 450px;
-    width: 1240px;
-    margin: 0 auto;
-  }
+a {
+  text-decoration: none;
+  color:#333;
+}
 
-  .navBar {
-    width: 1240px;
-    height: 80px;
-    margin: 0 auto;
-    margin-top: 30px;
-  }
-  
-  .logo {
-    float: left;
-    margin: 0;
-  }
+main, footer {
+  min-height: 450px;
+  width: 1240px;
+  margin: 0 auto;
+}
 
-  .logo img {
-    vertical-align: middle;
-  }
-  
-  .navBar ul {
-    float: right;
-  }
-  
-  .navBar li {
-    list-style-type: none;
-    float: left;
-    margin-left: 30px;
-  }
-  
-  .navBar a {
-    text-decoration: none;
-    color:#333;
-    font-size: 15px;
-    font-weight: bold;
-  }
+footer {
+  min-height: 450px;
+  width: 1240px;
+  margin: 0 auto;
+}
 
-  /*================== 카테고리 네비 버튼 > 스타일 및 동작 ==================*/
-  
-  #category_nav {
-    font:bold 16px "malgun gothic";
-    width: 1240px;
-    height: 40px;
-    background: #ccc;
-    color: black;
-    line-height: 40px;
-    margin: 0 auto;
-    opacity: .8;
-    z-index: 1;
-  }
+/*======================================================*/
+/* header_navi_bar */
 
-  #category_nav > ul {
-    text-align: center;
-    }
-  
-  #category_nav > ul > li {
-    width: 130px;
-    position: relative;
-    display: inline-block;
-  }
+.navBar {
+  width: 1240px;
+  height: 80px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
 
-  #category_nav > ul > li > ul {
-    width: 130px;
-    display: none;
-    position: absolute;
-    font-size: 15px;
-    background: #ccc;
-  }
-  
-  #category_nav > ul > li:hover > ul {
-    display: block;
-  }
+.logo {
+  float: left;
+  margin: 0;
+}
 
-  #category_nav > ul > li > ul > li:hover {
-    background: white;
-    transition: ease 1s;
-  }
+.logo img {
+  vertical-align: middle;
+}
 
-  .sticky {
-    position: sticky;
-    top: 0;
-  }
+.navBar ul {
+  float: right;
+  margin-top: 0;
+}
 
-  /* ================== 헤더 쇼룸 슬라이드 > 스타일 및 동작 ================== */
+.navBar li {
+  list-style-type: none;
+  float: left;
+  margin-left: 30px;
+}
+
+.navBar a {
+  text-decoration: none;
+  color:#333;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/*======================================================*/
+/* category_navi_drop_bar */
+
+#category_nav {
+  font:bold 16px "malgun gothic";
+  width: 1240px;
+  height: 40px;
+  background: #ccc;
+  color: black;
+  line-height: 40px;
+  margin: 0 auto;
+  opacity: .8;
+  z-index: 1;
+}
+
+#category_nav > ul {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#category_nav > ul > li {
+  width: 130px;
+  position: relative;
+  display: inline-block;
+}
+
+#category_nav > ul > li > ul {
+  width: 130px;
+  display: none;
+  position: absolute;
+  font-size: 15px;
+  background: #ccc;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#category_nav > ul > li:hover > ul {
+  display: block;
+}
+
+#category_nav > ul > li > ul > li:hover {
+  background: white;
+  transition: ease 1s;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+/* ================== 헤더 쇼룸 슬라이드 > 스타일 및 동작 ================== */
 
   * {margin:0;padding:0;}
 	.section input[id*="slide"] {display:none;}
@@ -202,14 +206,14 @@ ul li {
       
     }
 
-   /*------------세부섹션파트----------*/  
-   .colsection {
+  /*------------세부섹션파트----------*/  
+  .colsection {
     width: 400px;
     height: 180px;
     margin-bottom: 30px;
     border: #cccccc solid 1px
   }
-   
+
   .colsec_img{
     width: 200px;
     height: 180px;
@@ -231,8 +235,9 @@ ul li {
   table.colsection tr td {
     width: 200px;
   }
-  
-  /* ================== 바디 플로팅 시작 ================== */
+
+/* ====================================================== */
+/* bodyFloating */
 
   .floating {
     position: fixed; 
@@ -247,7 +252,7 @@ ul li {
     border:2px solid gray;
     position: fixed; 
     right: 50%; 
-    top: 180px;
+    top: 180px; /*--- 위치 좌표---*/
     margin-right: -713px;
     text-align:center;
     width:90px;
@@ -266,177 +271,101 @@ ul li {
     border:2px solid gray;
     border-radius: 8px;
     }
-  /* ================== footer / 회사정보 ================== */
 
-  #mfooter {
-    width: 1240px;
-    text-align: center;
-    overflow: hidden;
-    border: 0px solid blue;
-    margin: 0 auto;
-  }
+/* ====================================================== */
+/* footer */
 
-  .footer_left {
-    background: #fff;
-    width: 640px;
-    height: 450px;
-    float: left;
-    border: 0px solid #cccccc;
-    text-align: center;
-  }
-
-  .numb {
-    text-align: left;
-    font-style: bold;
-    font-size: 32px;
-    margin-top: 45px;
-  }
-
-  .cs {
-    text-align: left;
-    font-size: 12px;
-    margin-top: 25px;
-  }
-  
-  .ojoa2 {
-    text-align: left;
-    font-size: 11px;
-    margin-top: 30px;
-  }
-  
-  .ojoa3 {
-    text-align: left;
-    font-size: 11px;
-    margin-top: 30px;
-  }
-  
-  .ft_menu {
-    text-align: left;
-    font-size: 12px;
-    margin-top: 40px;
-  }
-
-  .ft_menu ul {
-    text-align: left;
-    font-size: 12px;
-    margin-top: 40px;
-  }
-  
-  .ft_menu li {
-    display: inline-block;
-    font-size: 12px;
-    margin-top: 40px;
-    margin: 0 14px 0 0px;
-  }
-
-  .ft_comm {
-    margin-top: 45px;
-  }
-
-  .ft_comm > ul > li {
-    width: 140px;
-    position: relative;
-  }
-
-
-  
-  .footer_right {
-    width: 600px;
-    height: 450px;
-    float: right;
-    text-align: left;
-  }
-
-  .footer_right ul {
-    display: inline-block;
-  }
-
-  /* .footer_right ul li:first-child {
-    font-style: bold;
-    font-size: 12px;
-    margin-bottom: 18px;
-  } */
-  
-  .footer_right ul > li~li {
-    font-size: 11px;
-    margin-bottom: 13px;
-  }
-
-  .ft_sns {
-    float: right;
-    
-  }
-  .footer img {
-    margin-top: 40px;
-    height: 20px;
-    margin-bottom: 80px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-
-  /* ==================  product_list 시작 ================== */
-
-#pl_content_box {
-    padding-top: 50px;
-    max-width: 1240px;
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
+#mfooter {
+  width: 1240px;
+  text-align: center;
+  overflow: hidden;
+  border: 0px solid blue;
+  margin: 0 auto;
+  color: #8f8f8f;
 }
 
-#pl_content_box h3 {
-    float: left;
-    margin-left: 620px;
-    
+.footer_left {
+  background: #fff;
+  width: 640px;
+  height: 450px;
+  float: left;
+  border: 0px solid #cccccc;
+  text-align: center;
 }
 
-#pl_content_box p {
-    float: right;
-    margin: 0 auto;
+.numb {
+  text-align: left;
+  font-size: 32px;
+  margin-top: 45px;
+  color: #353535;
 }
 
-.pl_items {
-    width: 20%; 
-    float: left;
-    margin: 30px 20px 0 20px;
-    padding: 20px;
-    box-sizing: border-box;
+.csqa {
+  text-align: left;
+  font-size: 12px;
+  margin-top: 25px;
+  line-height: 19px;
 }
 
-
-.pl_items img {
-    width: 100%;
+.ojoa2,
+.ojoa3 {
+  text-align: left;
+  font-size: 11px;
+  margin-top: 30px;
+  line-height: 19px;
 }
 
-.pl_items img:hover {
-    opacity: 0.4;
+.ft_menu {
+  text-align: left;
+  font-size: 12px;
+  margin-top: 25px;
 }
 
-items>
-
-.pl_items .pl_a {
-    font-weight: bold;
-    color: #333;
-    margin-top: 20px;
+.ft_menu ul {
+  padding: 0;
 }
 
-.pl_items .pl_b {
-    font-weight: bold;
-    color: #333;
-    margin-top: 8px;
+.ft_menu li {
+  display: inline-block;
+  margin: 0 14px 0 0px;
 }
 
-.pl_items .pl_b span,.pl_items .pl_d span {
-    color: #a26f59;
+.ft_comm > ul > li,
+.ft_quick > ul > li {
+  width: 140px;
+  position: relative;
 }
 
-.pl_items .pl_c {
-    font-size: 12px;
-    margin-top: 20px;
-    line-height: 150%;
+.ft_comm ul li:nth-child(n+2) a,
+.ft_quick ul li:nth-child(n+2) a {
+  color: #8f8f8f;
 }
 
-.pl_items .pl_d {
-    font-size: 12px;
-    margin-top: 25px;
+.footer_right {
+  background: #fff;
+  width: 440px;
+  height: 450px;
+  float: right;
+  text-align: left;
+  padding: 45px 10px 0px 0px;
+}
+
+.footer_right div {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.footer_right ul li:first-child {
+  font-style: bold;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.footer_right ul > li~li {
+  font-size: 11px;
+  margin-bottom: 13px;
+}
+
+.ft_sns {
+  float: right;
 }
