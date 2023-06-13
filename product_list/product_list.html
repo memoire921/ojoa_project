@@ -1,395 +1,216 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ojoa 상품리스트</title>
-  <link href="./product_list.css" rel="stylesheet" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>product list</title>
+<link href="./product_list.css" rel="stylesheet" />
 </head>
 
-  <body>
-
-<!------------------------------------------------------------->
-<!-- header_navi_bar -->
-
+<body>
+    <!------------------- 마이페이지 네비 ------------------->
     <header>
 
-      <div class="navBar">
-        <a class="logo" href="#">
-          <img src="./images/logo.png" height="80px">
+    <div class="navBar">
+        <a class="logo" href="../index.html">
+        <img src="../images/logo.png" height="80px">
         </a>
         <ul>
-          <li><a href="#">LOGIN</a></li>
-          <li><a href="./my_page/my_page.html">MYPAGE</a></li>
-          <li><a href="./order/order.html">ORDER</a></li>
-          <li><a href="#">CART</a></li>
-          <li><a href="#">STORE</a></li>
+        <li><a href="#">LOGIN</a></li>
+        <li><a href="#">MYPAGE</a></li>
+        <li><a href="#">ORDER</a></li>
+        <li><a href="#">CART</a></li>
+        <li><a href="#">STORE</a></li>
         </ul>
-      </div>
-      
+    </div>
+    
     </header>
     
-<!------------------------------------------------------------->
-<!-- category_navi_drop_bar -->
+<!------------------- 카테고리 드롭다운 네비 ------------------->
 
     <div class="sticky" id="category_nav">
-      <ul>
+    <ul>
         <li><a href="#">침대</a>
-          <ul>
-            <li><a href="./product_list/product_list.html">싱글</a></li>
+        <ul>
+            <li><a href="../product_list/product_list.html">싱글</a></li>
             <li><a href="#">더블</a></li>
-          </ul>
+        </ul>
         </li>
         <li><a href="#">소파</a>
-          <ul>
+        <ul>
             <li><a href="#">2인</a></li>
             <li><a href="#">3인</a></li>
-          </ul>
+        </ul>
         </li>
         <li><a href="#">책장</a>
-          <ul>
+        <ul>
             <li><a href="#">2단</a></li>
             <li><a href="#">3단</a></li>
-          </ul>
+        </ul>
         </li>
         <li><a href="#">옷장</a>
-          <ul>
+        <ul>
             <li><a href="#">2칸</a></li>
             <li><a href="#">3칸</a></li>
-          </ul>
+        </ul>
         </li>
         <li><a href="#">조명</a>
-          <ul>
+        <ul>
             <li><a href="#">스탠드형</a></li>
             <li><a href="#">탈부착형</a></li>
-          </ul>
+        </ul>
         </li>
         <li><a href="#">소품</a>
-          <ul>
+        <ul>
             <li><a href="#">리빙룸</a></li>
             <li><a href="#">키친</a></li>
-          </ul>
+        </ul>
         </li>
-      </ul>
+    </ul>
     </div>
 
-<!------------------- 슬라이드 이미지 ------------------->
+    <!------------------- 프로덕트 리스트 ------------------->
 
-        <main>
-      <div>
-        <br><br>
-      </div>
+    <main> 
+        <!-- pl : product list의 요약 -->
+    <section id="pl_content_box">
+        <div class="pl_product_box">
+        <h3>전체상품</h3>
+        <p>판매자추천순 &#124; 인기도순 &#124; 평점높은순 &#124; 최신등록순</p>
+        <div class="clear"></div>
 
-    <div class="section">
-      <input type="radio" name="slide" id="slide01" checked>
-      <input type="radio" name="slide" id="slide02">
-      <input type="radio" name="slide" id="slide03">
-      <div class="slidewrap">
-
-        <ul class="slidelist">
-          <!-- 슬라이드 영역 -->
-          <li class="slideitem">
-            <a>
-              <div class="textbox">
-                <h3>첫번째 쇼룸</h3>
-                <p>첫번째 쇼룸 입니다.</p>
-              </div>
-              <img src="./images/header_slide_1.jpg">
-            </a>
-          </li>
-          <li class="slideitem">
-            <a>
-
-              <div class="textbox">
-                <h3>두번째 쇼룸</h3>
-                <p>두번째 쇼룸 입니다.</p>
-              </div>
-              <img src="./images/header_slide_2.jpg">
-            </a>
-          </li>
-          <li class="slideitem">
-            <a>
-
-              <div class="textbox">
-                <h3>두번째 쇼룸</h3>
-                <p>두번째 쇼룸 입니다.</p>
-              </div>
-              <img src="./images/header_slide_3.jpg">
-            </a>
-          </li class="slideitem">
-        
-          <!-- 좌,우 슬라이드 버튼 -->
-          <div class="slide-control">
-            <div>
-              <label for="slide03" class="left"></label>
-              <label for="slide02" class="right"></label>
-            </div>
-            <div>
-              <label for="slide01" class="left"></label>
-              <label for="slide03" class="right"></label>
-            </div>
-            <div>
-              <label for="slide02" class="left"></label>
-              <label for="slide01" class="right"></label>
-            </div>
-          </div>
-
+        <ul class="pl_items">
+            <!-- <div class="icon_img1"><img src="./image/heart.png"></div>
+            <div class="icon_img2"><img src="./image/plus.png"></div> -->
+            <li class="pl_thumb_img"><img src="../images/productthumnail_1.JPG"></li>
+            <li class="pl_a">어떤 멋진 소파</li>
+            <li class="pl_b">9,800,000원 <span>24%</span></li>
+            <li class="pl_c">이번 여름 이소파 하나로 나세요</li>
+            <li class="pl_d">리뷰 <span>2</span> 평점 * <span>4.5/5</span></li>
         </ul>
-        <!-- 페이징 -->
-        <ul class="slide-pagelist">
-          <li><label for="slide01"></label></li>
-          <li><label for="slide02"></label></li>
-          <li><label for="slide03"></label></li>
-        </ul>
-      </div>
-    </div>
-    <br>
-
-      <!------------------- 메인 바디 3종 시작 ------------------->
-
-      <div class="main_col">
-
-        <div class="mcol1">
-            <div class="roomname">Living Room</div>
-            <img class="colimg" src ="images/livingroom.jpg">
+        <div class="clear"></div>
+    
+        <div class="pl_page">
+            <ul class="pl_pagination pl_modal">
+                <li><a href="#" class="pl_first">처음 페이지</a></li>
+                <li><a href="#" class="pl_arrow pl_left">&lt;&lt;</a></li>
+                <li><a href="#" class="pl_active pl_num">1</a></li>
+                <li><a href="#" class="pl_num">2</a></li>
+                <li><a href="#" class="pl_num">3</a></li>
+                <li><a href="#" class="pl_num">4</a></li>
+                <li><a href="#" class="pl_num">5</a></li>
+                <li><a href="#" class="pl_num">6</a></li>
+                <li><a href="#" class="pl_num">7</a></li>
+                <li><a href="#" class="pl_num">8</a></li>
+                <li><a href="#" class="pl_num">9</a></li>
+                <li><a href="#" class="pl_arrow pl_right">&gt;&gt;</a></li>
+                <li><a href="#" class="pl_last">끝 페이지</a></li>
+            </ul>
         </div>
-    
-        <div class="mcol2">
-            <div class="roomname">Bed Room</div>
-            <img class="colimg"  src ="images/bedroom.jpg">
+     
         </div>
-    
-        <div class="mcol3">
-          <div class="roomname">Kitchen</div>
-          <img class="colimg" src ="images/kitchen.jpg">
-        </div>
-        
-      </div>        
-      
 
-      <!------ 바디 밑에 세부상품목록 - 첫번째항목  ---------->
+        <div class="clear"></div>
+    </section>
 
-      <div class="main_col">
-      <div class="mcol1">
-        <table class="colsection"> 
-          <tr> 
-            <td><a href="소가죽소파페이지로바로가기">
-              <img class="colsec_img" src="./images/sofa.jpg" alt="소가죽소파">
-            </a>
-            </td>
-            
-            <td><a href="소가죽소파페이지로바로가기">
-              <div class="colsec_name">소가죽 소파</div>
-              <div class="colsec_price">1700,000</div>
-            </a>
-            </td>        
-          </tr>
-      </table>
-      
-      <!--------------  두번째 항목  --------------->
-      
-      <table class="colsection">
-        <tr> 
-          <td><a href="거실의자페이지로바로가기">
-            <img class="colsec_img" src="./images/livingchair.jpg" alt="거실의자">
-          </a>
-          </td>
-          
-          <td><a href="거실의자페이지로바로가기">
-            <div class="colsec_name">브라운 의자</div>
-            <div class="colsec_price">90,000</div>
-          </a>
-          </td>        
-        </tr>
-      
-    </table>
-    </div>      
-    
-    
-    <!------------------  세번째  ----------------------------->
-    <div class="mcol2">
-    <table class="colsection">
-        <tr> 
-          <td><a href="원목침대페이지로바로가기">
-            <img class="colsec_img" src="./images/bed.jpg" alt="원목침대">
-          </a>
-          </td>
-          
-          <td><a href="원목침대페이지로바로가기">
-            <div class="colsec_name">원목침대</div>
-            <div class="colsec_price">2,700,000</div>
-          </a>
-          </td>        
-        </tr>
-      
-    </table>
-    
-    <!--------------  네번째 항목  --------------->
-    
-    <table class="colsection"> 
-      <tr> 
-        <td> <a href="침실조명페이지로바로가기">
-          <img class="colsec_img" src="./images/light.jpg" alt="침실조명">
-        </a>
-        </td>
-        
-        <td> <a href="침실조명페이지로바로가기">
-          <div class="colsec_name">침실조명</div>
-          <div class="colsec_price">150,000</div>
-        </a>
-        </td>        
-      </tr>
-    
-    </table>
-    </div>
-    
-    <!----------------다섯번째--------------------->
-    
-    <div class="mcol3">
-      <table class="colsection">
-          <tr> 
-            <td><a href="아일랜드식탁페이지로바로가기">
-              <img class="colsec_img" src="./images/ktable.jpg" alt="아일랜드식탁">
-            </a>
-            </td>
-            
-            <td><a href="아일랜드식탁페이지로바로가기">
-              <div class="colsec_name">아일랜드식탁</div>
-              <div class="colsec_price">7,400,000</div>
-            </a>
-            </td>        
-          </tr>
-        
-      </table>
-      
-      <!--------------  여섯번째 항목  --------------->
-      
-      <table class="colsection">
-        <tr> 
-          <td><a href="모던의자페이지로바로가기"> 
-            <img class="colsec_img" src="./images/kchair.jpg" alt="모던의자">
-          </a>
-          </td>
-          
-          <td><a href="모던의자페이지로바로가기"> 
-            <div class="colsec_name">모던의자</div>
-            <div class="colsec_price">750,000</div>
-          </a>
-          </td>        
-        </tr>
-      
-      </table>
-      </div>
-    </div>
-      
-  
-<!------------------------------------------------------------->
-<!-- bodyFloating -->
-
+    <!-------------------  바디 플로팅 메뉴 시작 ------------------->
     <div class="floating">
-      <div>방금 본 상품 코드 삽입?</div>
-      <div>방금 본 상품 코드 삽입?</div>
-      <div>1:1 상담 코드 삽입?</div>
+        <div>방금 본 상품 코드 삽입?</div>
+        <div>방금 본 상품 코드 삽입?</div>
+        <div>1:1 상담 코드 삽입?</div>
     </div>
 
-  </main>
-  
-<!------------------------------------------------------------->
-<!-- footer -->
+</main>
 
-<footer>
-  <div>
-  <div id="mfooter">
-    <div class="footer_left">
-      <div class="ft_info01">
-        <!-- 고객센터 전화번호 -->
-        <div class="numb">
-              <strong>
-          031 3456 7890
-              </strong>
+    <!------------------- 푸터 시작 ------------------->
+    <footer>
+        <div><!-- //wrap -->
+        <hr class="layout"/><div style="width:100%; background:#f6f6f6;">
+        <div id="mfooter" class="cboth">
+            <div class="footer_left">
+                <div class="ft_info01">
+                    <!-- 고객센터 전화번호 -->
+                    <div class="numb">
+                        031 3456 7890
+                    </div>
+                    <!-- 고객센터 운영시간  -->
+                    <div class="cs">
+                        통화량이 많을 때는 Q&amp;A 게시판을 이용해주세요.<br/>
+                        MON-FRI 9:00~18:00, LUNCH 12:00~14:00 / SAT-SUN·HOLIDAY OFF<br/>
+                        예금주:(주)오조아생활연구소 신한은행 1002-000-000000
+                    </div>
+                </div>
+        
+            <!-- footer / 회사정보 -->
+        <div class="ojoa2"><b>주식회사오조아생활연구소</b>
+        <br/>
+        
+                경기도 성남시 수정구 성남대로00길 00
+        <span>I</span>
+        사업자번호 : 000-00-00000 <a href="#none" onclick="window.open('http://www.ftc.go.kr/bizCommPop.do?wrkr_no=0008800000', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a> 
+        <span>I</span>
+        통신판매업신고 : 2023-경기성남-1355<br/>
+        
+                CEO : 오좋아
+        <span>I</span>
+        CPO : 오조아<span>I</span>
+        MAIL : ojoa@gmail.com<br/>
+        
+                CALL CENTER : 02-3456-7890 
+        <span>I</span>
+        FAX : 02-345-6789<br/><br/><b>오조아 온라인 고객센터</b>
+        <br/>
+        
+        03000 경기도 성남시 수정구 성남대로 000 (복정동) 2층 오조아 
+        <span>I</span>
+        CALL CENTER : 012-3456-7890<br/><b>입점문의 : ojoa@gmail.com </b>
         </div>
-        <!-- 고객센터 운영시간  -->
-        <div class="csqa">
-          통화량이 많을 때는 Q&amp;A 게시판을 이용해주세요.<br/>
-                  MON-FRI 9:00~18:00, LUNCH 12:00~14:00 / SAT-SUN·HOLIDAY OFF<br/>
-                  예금주:(주)오조아생활연구소 신한은행 1002-000-000000
+        
+            <!-- footer / 카피라이트 -->
+            <div class="ojoa3">
+                ⓒ 오조아 온라인 ALL RIGHTS RESERVED. HOSTING BY JK.
+            </div>
+        
+            <!-- footer / 회사소개 -->
+            <div class="ft_menu">
+                <ul><!-- footer / 회사소개 : 링크수정 --><li><a href="#">회사소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#" class="privacy">개인정보처리방침</a></li>
+                <li><a href="#l">이용안내</a></li>
+                </ul></div>
+            </div>
+        
+            <div class="footer_right">
+            <div class="ft_comm">
+                <ul><!-- footer / 커뮤니티 : 타이틀 --><li><a href="#none"><b>Community</b></a></li>
+                <!-- footer / 커뮤니티 : 링크수정 -->
+                        <li><a href="#">NOTICE</a></li>
+                <li><a href="#">REVIEW</a></li>
+                <li><a href="#">QNA</a></li>
+                <li><a href="#">OFFLINE STORE</a></li>
+                <li><a href="#">MEMBERSHIP</a></li>
+                </ul></div>
+        
+            <div class="ft_quick">
+                <ul><!-- footer / 퀵메뉴 : 타이틀 --><li><a href="#none"><b>Shopping Quick</b></a></li>
+                <!-- footer / 퀵메뉴 : 링크수정 -->
+                <li><a href="#">MY PAGE</a></li>
+                <li><a href="#">ORDER</a></li>
+                <li><a href="#">WISH LIST</a></li>      
+                </ul></div>
+        
+                <div class="ft_sns">
+                <ul><!-- footer / SNS 링크수정 --><li><a href="https://www.instagram.com" target="_blank"><img src="/images/ft_sns01.gif"/></a></li>
+                    <!--<li><a href="https://www.facebook.com" target="_blank"><img src="/images/ft_sns02.gif"></a></li>-->
+                </ul></div>
+            </div>
         </div>
-      </div>
-  
-      <!-- 회사정보 -->
-  <div class="ojoa2"><b>주식회사오조아생활연구소</b>
-  <br/>
-  
-  경기도 성남시 수정구 성남대로00길 00
-  <span>I</span>
-  사업자번호 : 000-00-00000 <a href="#" onclick="window.open('#', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a> 
-  <span>I</span>
-  통신판매업신고 : 2023-경기성남-1355<br/>
-  CEO : 오좋아
-  <span> I</span>
-  CPO : 오조아
-  <span> I</span>
-  MAIL : ojoa@gmail.com<br/>
-  CALL CENTER : 02-3456-7890 
-  <span>I</span>
-  FAX : 02-345-6789<br/><br/><b>오조아 온라인 고객센터</b>
-  <br/>
-  03000 경기도 성남시 수정구 성남대로 000 (복정동) 2층 오조아 
-  <span>I</span>
-  CALL CENTER : 012-3456-7890<br/><b>입점문의 : ojoa@gmail.com</b>
-  </div>
-  
-      <!-- 카피라이트 -->
-      <div class="ojoa3">
-          ⓒ 오조아 온라인 ALL RIGHTS RESERVED. HOSTING BY JK.
-      </div>
-  
-      <!-- 회사소개 -->
-      <div class="ft_menu">
-          <ul><!-- 회사소개 : 링크수정 --><li><a href="#">회사소개</a></li>
-          <li><a href="#">이용약관</a></li>
-          <li><a href="#">개인정보처리방침</a></li>
-          <li><a href="#">이용안내</a></li>
-          </ul></div>
-      </div>
-  
-  <div class="footer_right">
-      <div class="ft_comm">
-          <ul><!-- 커뮤니티 : 타이틀 -->
-              <li><a href="#"><b>Community</b></a></li>
-          <!-- 커뮤니티 : 링크수정 -->
-          <li><a href="#">NOTICE</a></li>
-          <li><a href="#">REVIEW</a></li>
-          <li><a href="#">QNA</a></li>
-          <li><a href="#">OFFLINE STORE</a></li>
-          <li><a href="#">MEMBERSHIP</a></li>
-          </ul>
-      </div>
-  
-      <div class="ft_quick">
-          <ul><!-- 퀵메뉴 : 타이틀 -->
-              <li><a href="#"><b>Shopping Quick</b></a></li>
-          <!-- 퀵메뉴 : 링크수정 -->
-          <li><a href="#">MY PAGE</a></li>
-          <li><a href="#">ORDER</a></li>
-          <li><a href="#">WISH LIST</a></li>		
-          </ul>
-      </div>
-  
-      <div class="ft_sns">
-          <ul><!-- SNS 링크수정 -->
-              <li><a href="https://www.instagram.com" target="_blank"><img src="/images/ft_sns01.gif"/></a></li>
-              <!--<li><a href="https://www.facebook.com" target="_blank"><img src="/images/ft_sns02.gif"></a></li>-->
-          </ul>
-      </div>
-  </div>
-  </div>
-  </div>
-  </footer>
-  
-  <!-- //mfooter -->
-  
-  </body>
-  
-  </html>
+        </div>
+        </div>
+        </footer>
+        <!-- //mfooter -->
+        
+        </body>
+        
+        </html>
