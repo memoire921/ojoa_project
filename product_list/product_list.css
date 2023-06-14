@@ -357,7 +357,7 @@
   .pl_page {
     text-align: center;
     width: 50%;
-    margin: 50px auto;
+    margin: auto;
     /* margin-bottom: 0; */
     margin-bottom: 80px;
   }
@@ -366,18 +366,17 @@
     list-style: none;
     display: inline-block;
     padding: 0;
-    /* margin-top: 20px; */
+    margin-top: 20px;
   }
   
   .pl_pagination li {
-    /* background-color: #e6e6e6; */
-    display: inline-block;
+    display: inline;
     text-align: center;
   }
   
   .pl_pagination a {
-    /* float: left; */
-    display: inline-block;
+    float: left;
+    display: block;
     font-size: 14px;
     text-decoration: none;
     padding: 5px 12px;
@@ -391,10 +390,10 @@
   }
   
   .pl_last {
-    margin-left:15px
+    margin-left:15px;
   }
   
-  .pl_first:hover, .pl_last:hover,pl_left:hover,.pl_right:hover {
+  .pl_first:hover,.pl_arrow:hover, .pl_last:hover,pl_left:hover,.pl_right:hover {
     color: #2e9cdf;
   }
   
@@ -422,13 +421,6 @@
   }
 
   
-  /* .pl_left {
-    width: 0;
-    height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 10px solid blue;
-  } */
-  
+
   
   
