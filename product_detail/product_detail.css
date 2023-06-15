@@ -172,14 +172,21 @@
     /*======================================================*/
   /* main product detail page */
 
+  /* @charset "utf-8" */
+
+body {
+  /* padding: 50px; */
+}
+
 .product_view {
-  margin: auto;
-  /* padding: 0 0 0 200px; */
+  margin: 100px auto;
+  padding: 0 0 0 395px;
   width: 962px;
   min-width: 962px;
   box-sizing: border-box;
   position: relative;
 }
+
 
 .product_view h2,
 .product_view table {
@@ -190,7 +197,7 @@
 
 .product_view .pd_img {
   position: absolute;
-  width: 380px;
+  /* width: 380px; */
   left: 0;
   top: 0;
 }
@@ -201,10 +208,138 @@
   border: 1px solid #e8e8e8;
 }
 
+.product_view .pd_img li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.product_view .pd_img li {
+  float: left;
+  padding: 10px 10px 0 0;
+}
+
+.product_view .pd_img li .on img {
+  border: solid 1px #0a56a9;
+}
+
 .product_view .pd_img li img {
   width: 68px;
   height: 68px;
   border: 1px solid #e8e8e8;
 }
+
+.product_view h2 {
+  padding: 0 0 20px;
+  border-bottom: 2px solid #333;
+  font-size: 24px;
+  color: #232323;
+  line-height: 26px;
+  margin: 0 0 15px;
+} 
+
+.product_view .hide {
+  display: none;
+}
+
+/* =================================================== */
+/* .product_view table */
+
+
+.product_view table th,
+.product_view table td {
+  padding: 14px 0;
+  font-size: 15px;
+  color: #444;
+  text-align: left;
+}
+
+.product_view table td .price {
+  font-size: 22px;
+}
+
+.product_view table td .total {
+  font-size: 22px;
+  color: #0a56a9;
+}
+
+.product_view table td .total b{
+  font-size: 22px;
+}
+
+.product_view table.pd_length {
+  position: relative;
+  width: 71px;
+  height: 32px;
+  border: 1px solid #c6c6c6;
+}
+
+.product_view table .pd_length>input {
+  width: 44px;
+  height: 32px;
+  border: none;
+  text-align: center;
+}
+
+.product_view table .pd_length a {
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 26px;
+  height: 16px;
+  color: transparent;
+}
+
+.product_view table .pd_length>a:nth-of-type(1) {
+  top: 0;
+  background: url(../images/up.png) no-repeat center;
+}
+
+.product_view table .pd_length>a:nth-of-type(1) {
+  bottom: 0;
+  background: url(../images/down.png) no-repeat center;
+  border-top: 1px solid #c6c6c6;
+}
+
+.product_view table select {
+  width: 100%;
+  border: 1px solid #c6c6c6;
+  box-sizing: border-box;
+  appearance: none;
+  /* background: url(../images/download_icon.png) no-repeat right 1% center;
+  -webkit-appearance: none;
+  처음 보는 코드
+  -moz-appearance: none; */
+
+}
+
+.product_view table select::-ms-expand {
+  display: none;
+}
+
+.product_view .pd_btns {
+  padding: 45px 0 0;
+  text-align: center;
+}
+
+.product_view>.pd_btns>a {
+  display: inline-block;
+  width: 136px;
+  height: 42px;
+  font-size: 16px;
+  color: #000000;
+  border-radius: 2px;
+  line-height: 42px;
+}
+
+.product_view>.pd_btns>a.btn1 {
+  background-color: #666;
+}
+
+product_view>.pd_btns>a.btn2 {
+  background-color: #0a56a9;
+}
+
 
 
