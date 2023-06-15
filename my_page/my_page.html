@@ -10,7 +10,8 @@
 
 <body>
 
-<!------------------- 마이페이지 네비 ------------------->
+<!------------------------------------------------------------->
+<!-- header_navi_bar -->
 
     <header>
 
@@ -21,7 +22,7 @@
         <ul>
             <li><a href="#">LOGIN</a></li>
             <li><a href="#">MYPAGE</a></li>
-            <li><a href="#">ORDER</a></li>
+            <li><a href="../order/order.html">ORDER</a></li>
             <li><a href="#">CART</a></li>
             <li><a href="../index.html">STORE</a></li>
         </ul>
@@ -29,7 +30,8 @@
     
     </header>
     
-<!------------------- 카테고리 드롭다운 네비 ------------------->
+<!------------------------------------------------------------->
+<!-- category_navi_drop_bar -->
 
 <div class="sticky" id="category_nav">
     <ul>
@@ -72,12 +74,13 @@
     </ul>
     </div>
 
-<!------------------- 현재 위치 네비 ------------------->
+<!------------------------------------------------------------->
+<!-- navi_bar -->
 
-<hr class="layout"/><div id="wrap">
+<div>
 
 <div id="container">
-<div id="contents">
+<div>
 
 <div class="path">
     <span>현재 위치</span>
@@ -86,25 +89,26 @@
     </ol>
 </div>
 
-<!------------------- 마이 페이지 상세  ------------------->
+<!------------------------------------------------------------->
+<!-- myPage_main -->
 
-<div class="main_pro_title width1240 cboth">
+<div class="main_pro_title">
 	<div class="txt_01">MY PAGE</div>
 	<div class="txt_02">포인트적립 및 배송확인 등</div>
 </div>
 
-<div class="xans-element- xans-layout xans-layout-logincheck "></div>
-    <div class="ec-base-box typeMember gMessage ">
+    <div class="ec-base-box typeMember">
         <div class="information">
-            <p class="thumbnail"><img src="" alt="" onerror="this.src='../images/img_member_default.gif';" class="myshop_benefit_group_image_tag"/></p>
+            <p class="thumbnail"><img src="../images/img_member_default.gif" alt="사람 실루엣 이미지"/></p>
             <div class="description">
-                <span>저희 쇼핑몰을 이용해 주셔서 감사합니다. <strong class="txtEm"><span class="authssl_member_name">*****</span></strong> 님은 <strong>[<span class="displaynone"><img src="" alt="" class="myshop_benefit_group_icon_tag"/></span><span class="xans-member-var-group_name"></span><span class="myshop_benefit_ship_free_message"></span>]</strong> 회원이십니다.</span>
+                <span>저희 쇼핑몰을 이용해 주셔서 감사합니다. <span><strong>켄드릭 라마</strong></span> 님은 <strong>[<span>킹쿤타 회원</span>]</strong> 회원이십니다.</span>
             </div>
         </div>
     </div>
 </div>
 
-<div class="xans-element- xans-myshop xans-myshop-asyncbankbook"><div>
+<div class="myshop-asyncbankbook">
+<div>
     <h2>MY <span>PAGE</span></h2>
     <p>마이페이지</p>
 	<p></p>
@@ -112,30 +116,30 @@
     <ul>
     <li class=" ">
         <strong class="title">가용적립금</strong>
-        <strong class="data use"> <span id="xans_myshop_bankbook_avail_mileage">10,000원</span></strong>
+        <strong class="data">10,000원</strong>
         <a href="#" class="btnNormal">조회</a>
     </li>
     <li class="">
         <strong class="title">총적립금</strong>
-        <strong class="data"><span id="xans_myshop_bankbook_total_mileage"></span>35,640원</strong>
+        <strong class="data">35,640원</strong>
     </li>
     <li class="">
         <strong class="title">사용적립금</strong>
-        <strong class="data"><span id="xans_myshop_bankbook_used_mileage"></span>25,640원</strong>
+        <strong class="data">25,640원</strong>
     </li>
     <li class="">
         <strong class="title">예치금</strong>
-        <strong class="data use"> <span id="xans_myshop_bankbook_deposit"></span>300,000원</strong>
+        <strong class="data">300,000원</strong>
         <a href="#" class="btnNormal">조회</a>
     </li>
     <li>
         <strong class="title">총주문</strong>
-        <strong class="data"><span id="xans_myshop_bankbook_order_price">3,564,000원</span>(<span id="xans_myshop_bankbook_order_count"></span>8회)</strong>
+        <strong class="data">3,564,000원(8회)</strong>
     </li>
     </ul>
 </div>
 
-<div class="xans-element- xans-myshop xans-myshop-orderstate ">
+<div class="myshop-orderstate">
     <div class="title">
         <h3>나의 주문처리 현황 <span class="desc">(최근 <em>3개월</em> 기준)</span></h3>
     </div>
@@ -143,90 +147,78 @@
     <ul class="order">
         <li>
             <strong>입금전</strong>
-            <a href="#" class="count"><span id="xans_myshop_orderstate_shppied_before_count">0</span></a>
+            <a href="#" class="count">0</a>
         </li>
         <li>
             <strong>배송준비중</strong>
-            <a href="#" class="count"><span id="xans_myshop_orderstate_shppied_standby_count">0</span></a>
+            <a href="#" class="count">0</a>
         </li>
         <li>
             <strong>배송중</strong>
-            <a href="#" class="count"><span id="xans_myshop_orderstate_shppied_begin_count">0</span></a>
+            <a href="#" class="count">0</a>
         </li>
         <li>
             <strong>배송완료</strong>
-            <a href="#" class="count"><span id="xans_myshop_orderstate_shppied_complate_count">0</span></a>
+            <a href="#" class="count">0</a>
         </li>
         </ul>
     <ul class="cs">
         <li>
             <span class="icoDot"></span>
             <strong>취소 : </strong>
-            <a href="#" class="count"><span id="xans_myshop_orderstate_order_cancel_count">0</span></a>
+            <a href="#" class="count">0</a>
         </li>
         <li>
             <span class="icoDot"></span>
             <strong>교환 : </strong>
-            <a href="#" class="count"><span id="xans_myshop_orderstate_order_exchange_count">0</span></a>
+            <a href="#" class="count">0</a>
         </li>
         <li>
             <span class="icoDot"></span>
             <strong>반품 : </strong>
-            <a href="#" class="count"><span id="xans_myshop_orderstate_order_return_count">0</span></a>
+            <a href="#" class="count">0</a>
         </li>
     </ul>
 </div>
 </div>
 
-<div id="myshopMain" class="xans-element- xans-myshop xans-myshop-main">
+<div id="myshopMain">
     <ul>
-        <li class="shopMain order">
-            <h3><a href="#"><strong>Order</strong><span>주문내역 조회</span></a></h3>
-            <p><a href="#">고객님께서 주문하신 상품의<br/> 주문내역을 확인하실 수 있습니다.</a></p>
+        <li class="shopMain">
+            <h3><a href="#"><img src="../images/img_oder.gif"></a><br><strong>Order</strong><span>주문내역 조회</span></img></h3>
+            <br><p><a href="#">고객님께서 주문하신 상품의<br/> 주문내역을 확인하실 수 있습니다.</a></p>
         </li>
-        <li class="shopMain profile">
-            <h3><a href="#"><strong>Profile</strong><span>회원 정보</span></a></h3>
-            <p><a href="#">회원이신 고객님의 개인정보를<br/> 관리하는 공간입니다.</a></p>
+        <li class="shopMain">
+            <h3><a href="#"><img src="../images/img_profile.gif" href="#"></a><br><strong>Profile</strong><span>회원 정보</span></a></h3>
+            <br><p><a href="#">회원이신 고객님의 개인정보를<br/> 관리하는 공간입니다.</a></p>
         </li>
-        <li class="shopMain wishlist">
-            <h3><a href="#"><strong>Wishlist</strong><span>관심 상품</span></a></h3>
-            <p><a href="#">관심상품으로 등록하신<br/> 상품의 목록을 보여드립니다.</a></p>
+        <li class="shopMain">
+            <h3><a href="#"><img src="../images/img_wishlist.gif" href="#"></a><br><strong>Wishlist</strong><span>관심 상품</span></a></h3>
+            <br><p><a href="#">관심상품으로 등록하신<br/> 상품의 목록을 보여드립니다.</a></p>
         </li>
-        <li class="shopMain likeIt displaynone ">
-            <h3><a href="#"><strong>Like it</strong><span>좋아요</span></a></h3>
-            <p><a href="#">'좋아요'를 선택한 상품과<br/> 상품분류 목록을 보여드립니다.</a></p>
+        <li class="shopMain">
+            <h3><a href="#"><img src="../images/img_mileage.gif" href="#"></a><br><strong>Mileage</strong><span>적립금</span></a></h3>
+            <br><p><a href="#">적립금은 상품 구매 시<br/> 사용하실 수 있습니다.</a></p>
         </li>
-        <li class="shopMain mileage ">
-            <h3 class="txtTitle16B"><a href="#"><strong>Mileage</strong><span>적립금</span></a></h3>
-            <p class="txtSub11"><a href="#">적립금은 상품 구매 시<br/> 사용하실 수 있습니다.</a></p>
+        <li class="shopMain">
+            <h3><a href="#"><img src="../images/img_deposits.gif" href="#"></a><br><strong>Deposits</strong><span>예치금</span></a></h3>
+            <br><p><a href="#">예치금은 현금과 동일하게<br/> 상품 구매시 사용하실 수 있습니다.</a></p>
         </li>
-        <li class="shopMain deposits  ">
-            <h3 class="txtTitle16B"><a href="#"><strong>Deposits</strong><span>예치금</span></a></h3>
-            <p class="txtSub11"><a href="#">예치금은 현금과 동일하게<br/> 상품 구매시 사용하실 수 있습니다.</a></p>
+        <li class="shopMain">
+            <h3><a href="#"><img src="../images/img_board.gif" href="#"></a><br><strong>Board</strong><span>게시물 관리</span></a></h3>
+            <br><p><a href="#">고객님께서 작성하신 게시물을<br/> 관리하는 공간입니다.</a></p>
         </li>
-        <li class="shopMain consult displaynone">
-            <h3><a href="#"><strong>Consult</strong><span>1:1 맞춤상담</span></a></h3>
-            <p><a href="#">고객님의 궁금하신 문의사항에 대하여<br/> 1:1맞춤상담 내용을<br/> 확인하실 수 있습니다.</a></p>
-        </li>
-        <li class="shopMain coupon displaynone">
-            <h3><a href="#"><strong>Coupon</strong><span>쿠폰</span></a></h3>
-            <p><a href="#">고객님이 보유하고 계신<br/> 쿠폰내역을 보여드립니다.</a></p>
-        </li>
-        <li class="shopMain board">
-            <h3><a href="#"><strong>Board</strong><span>게시물 관리</span></a></h3>
-            <p><a href="#">고객님께서 작성하신 게시물을<br/> 관리하는 공간입니다.</a></p>
-        </li>
-        <li class="shopMain address">
-            <h3><a href="#"><strong>Address</strong><span>배송 주소록 관리</span></a></h3>
-            <p><a href="#">자주 사용하는 배송지를 등록하고<br/> 관리하실 수 있습니다.</a></p>
+        <li class="shopMain">
+            <h3><a href="#"><img src="../images/img_address.gif" href="#"></a><br><strong>Address</strong><span>배송 주소록 관리</span></a></h3>
+            <br><p><a href="#">자주 사용하는 배송지를 등록하고<br/> 관리하실 수 있습니다.</a></p>
         </li>
     </ul>
 </div>
 </div>
 </div>
-</div><!-- //wrap -->
 
-<!------------------- 바디 플로팅 메뉴 시작 ------------------->
+<!------------------------------------------------------------->
+<!-- bodyFloating -->
 
 <div class="floating">
     <div>방금 본 상품 코드 삽입?</div>
@@ -236,89 +228,93 @@
 
 </main>
 
-<!------------------- 푸터 시작 ------------------->
+<!------------------------------------------------------------->
+<!-- footer -->
 
 <footer>
-<div><!-- //wrap -->
-<hr class="layout"/><div style="width:100%;">
-<div id="mfooter" class="cboth">
+<div>
+<div id="mfooter">
 	<div class="footer_left">
 		<div class="ft_info01">
 			<!-- 고객센터 전화번호 -->
 			<div class="numb">
+            <strong>
 				031 3456 7890
+            </strong>
 			</div>
 			<!-- 고객센터 운영시간  -->
-			<div class="cs">
+			<div class="csqa">
 				통화량이 많을 때는 Q&amp;A 게시판을 이용해주세요.<br/>
                 MON-FRI 9:00~18:00, LUNCH 12:00~14:00 / SAT-SUN·HOLIDAY OFF<br/>
                 예금주:(주)오조아생활연구소 신한은행 1002-000-000000
 			</div>
 		</div>
 
-    <!-- footer / 회사정보 -->
+    <!-- 회사정보 -->
 <div class="ojoa2"><b>주식회사오조아생활연구소</b>
 <br/>
 
-        경기도 성남시 수정구 성남대로00길 00
+경기도 성남시 수정구 성남대로00길 00
 <span>I</span>
 사업자번호 : 000-00-00000 <a href="#" onclick="window.open('#', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a> 
 <span>I</span>
 통신판매업신고 : 2023-경기성남-1355<br/>
-
-        CEO : 오좋아
-<span>I</span>
-CPO : 오조아<span>I</span>
+CEO : 오좋아
+<span> I</span>
+CPO : 오조아
+<span> I</span>
 MAIL : ojoa@gmail.com<br/>
-
-        CALL CENTER : 02-3456-7890 
+CALL CENTER : 02-3456-7890 
 <span>I</span>
 FAX : 02-345-6789<br/><br/><b>오조아 온라인 고객센터</b>
 <br/>
-
 03000 경기도 성남시 수정구 성남대로 000 (복정동) 2층 오조아 
 <span>I</span>
-CALL CENTER : 012-3456-7890<br/><b>입점문의 : ojoa@gmail.com </b>
+CALL CENTER : 012-3456-7890<br/><b>입점문의 : ojoa@gmail.com</b>
 </div>
 
-    <!-- footer / 카피라이트 -->
+    <!-- 카피라이트 -->
     <div class="ojoa3">
         ⓒ 오조아 온라인 ALL RIGHTS RESERVED. HOSTING BY JK.
     </div>
 
-    <!-- footer / 회사소개 -->
+    <!-- 회사소개 -->
     <div class="ft_menu">
-        <ul><!-- footer / 회사소개 : 링크수정 --><li><a href="#">회사소개</a></li>
+        <ul><!-- 회사소개 : 링크수정 --><li><a href="#">회사소개</a></li>
         <li><a href="#">이용약관</a></li>
-        <li><a href="#" class="privacy">개인정보처리방침</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
         <li><a href="#">이용안내</a></li>
         </ul></div>
     </div>
 
-    <div class="footer_right">
+<div class="footer_right">
     <div class="ft_comm">
-        <ul><!-- footer / 커뮤니티 : 타이틀 --><li><a href="#"><b>Community</b></a></li>
-        <!-- footer / 커뮤니티 : 링크수정 -->
-                <li><a href="#">NOTICE</a></li>
+        <ul><!-- 커뮤니티 : 타이틀 -->
+            <li><a href="#"><b>Community</b></a></li>
+        <!-- 커뮤니티 : 링크수정 -->
+        <li><a href="#">NOTICE</a></li>
         <li><a href="#">REVIEW</a></li>
         <li><a href="#">QNA</a></li>
         <li><a href="#">OFFLINE STORE</a></li>
         <li><a href="#">MEMBERSHIP</a></li>
-        </ul></div>
+        </ul>
+    </div>
 
     <div class="ft_quick">
-        <ul><!-- footer / 퀵메뉴 : 타이틀 --><li><a href="#"><b>Shopping Quick</b></a></li>
-        <!-- footer / 퀵메뉴 : 링크수정 -->
+        <ul><!-- 퀵메뉴 : 타이틀 -->
+            <li><a href="#"><b>Shopping Quick</b></a></li>
+        <!-- 퀵메뉴 : 링크수정 -->
         <li><a href="#">MY PAGE</a></li>
         <li><a href="#">ORDER</a></li>
         <li><a href="#">WISH LIST</a></li>		
-        </ul></div>
-
-        <div class="ft_sns">
-        <ul><!-- footer / SNS 링크수정 --><li><a href="https://www.instagram.com" target="_blank"><img src="/images/ft_sns01.gif"/></a></li>
-            <!--<li><a href="https://www.facebook.com" target="_blank"><img src="/images/ft_sns02.gif"></a></li>-->
         </ul>
     </div>
+
+    <div class="ft_sns">
+        <ul><!-- SNS 링크수정 -->
+            <li><a href="https://www.instagram.com" target="_blank"><img src="/images/ft_sns01.gif"/></a></li>
+            <!--<li><a href="https://www.facebook.com" target="_blank"><img src="/images/ft_sns02.gif"></a></li>-->
+        </ul>
     </div>
 </div>
 </div>

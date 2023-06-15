@@ -8,36 +8,6 @@ body {
   padding: 0;
 }
 
-strong {
-  font-weight: bold;
-}
-
-div {
-  display: block;
-}
-
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
-ul li {
-  list-style: none;
-}
-
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-
 [class^='btnNormal'], a[class^='btnNormal'] {
   display: inline-block;
   box-sizing: border-box;
@@ -64,24 +34,26 @@ a {
 }
 
 main, footer {
-  /* background: #f2f4f7; */
   min-height: 450px;
   width: 1240px;
   margin: 0 auto;
 }
 
 footer {
-  /* background: #f2f4f7; */
   min-height: 450px;
   width: 1240px;
   margin: 0 auto;
 }
+
+/*======================================================*/
+/* header_navi_bar */
 
 .navBar {
   width: 1240px;
   height: 80px;
   margin: 0 auto;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .logo {
@@ -95,6 +67,7 @@ footer {
 
 .navBar ul {
   float: right;
+  margin-top: 0;
 }
 
 .navBar li {
@@ -110,7 +83,8 @@ font-size: 15px;
 font-weight: bold;
 }
 
-/*================== 카테고리 네비 버튼 > 스타일 및 동작 ==================*/
+/*======================================================*/
+/* category_navi_drop_bar */
 
 #category_nav {
   font:bold 16px "malgun gothic";
@@ -122,11 +96,13 @@ font-weight: bold;
   margin: 0 auto;
   opacity: .8;
   z-index: 1;
-  }
+}
 
 #category_nav > ul {
   text-align: center;
-  }
+  margin: 0 auto;
+  padding: 0;
+}
 
 #category_nav > ul > li {
   width: 130px;
@@ -140,6 +116,8 @@ font-weight: bold;
   position: absolute;
   font-size: 15px;
   background: #ccc;
+  margin: 0 auto;
+  padding: 0;
 }
 
 #category_nav > ul > li:hover > ul {
@@ -155,7 +133,9 @@ font-weight: bold;
     position: sticky;
     top: 0;
   }
-  /* ================== 바디 플로팅 시작 ================== */
+
+/* ====================================================== */
+/* bodyFloating */
 
   .floating {
     position: fixed; 
@@ -170,7 +150,7 @@ font-weight: bold;
     border:2px solid gray;
     position: fixed; 
     right: 50%; 
-    top: 280px; /*--- 위치 좌표---*/
+    top: 180px; /*--- 위치 좌표---*/
     margin-right: -713px;
     text-align:center;
     width:90px;
@@ -189,7 +169,9 @@ font-weight: bold;
     border:2px solid gray;
     border-radius: 8px;
     }
-/* ================== 현재 위치 네비 ================== */
+
+/* ====================================================== */
+/* navi_bar */
 
 .path {
   font-size: 12px;
@@ -210,10 +192,6 @@ font-weight: bold;
   text-indent: 100%;
 }
 
-.path li:first-child {
-  background: none;
-}
-
 li {
   list-style: none;
   display: list-item;
@@ -226,52 +204,28 @@ li {
   color: #757575;
 }
 
-ol {
-  display: block;
-  list-style-type: decimal;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-
-html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, img {
-  margin: 0;
-  padding: 0;
-}
-
 .path ol {
   float: right;
 }
 
-.path li a {
-    font-size: 12px;
-    color: #999;
+ol, h2, h3, p, td {
+  margin: 0;
+  padding: 0;
 }
 
-/* ================== 마이 페이지 ================== */
+/* ====================================================== */
+/* myPage_main */
 
-hr.layout {
-  display: none;
-}
-
-#wrap {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  min-height: 550px;
+.cs {
+  text-align: left;
+  font-size: 12px;
+  margin-top: 0 auto;
 }
 
 #container {
   width: 1240px;
   zoom: 1;
   position: relative;
-  margin: 0 auto;
-}
-
-#contents {
-  width: 1240px;
   margin: 0 auto;
 }
 
@@ -300,42 +254,18 @@ hr.layout {
   padding-top: 10px;
 }
 
-.xans-myshop-asyncbenefit {
-  margin: 0 0 20px;
-  color: #353535;
-}
-
-.xans-myshop-asyncbenefit .description {
-  min-height: 70px;
-}
-
-.xans-myshop-asyncbankbook div h2 {
-  font-size: 40px;
-  font-family: 'verdana',sans-serif;
-  letter-spacing: -3px;
-}
-
-.xans-myshop-asyncbankbook div h2 span {
-  color: #888;
-}
-
-.xans-myshop-asyncbankbook div p {
-  color: #888;
-  padding-left: 2px;
-}
-
-.xans-myshop-asyncbankbook div {
+.myshop-asyncbankbook div {
   float: left;
   width: 370px;
   padding: 10px 0 0 30px;
 }
 
-.xans-myshop-asyncbankbook ul {
+.myshop-asyncbankbook ul {
   float: right;
   width: 470px;
 }
 
-.xans-myshop-asyncbankbook ul li {
+.myshop-asyncbankbook ul li {
   float: left;
   margin: 5px 0;
   padding: 0 45px;
@@ -347,14 +277,14 @@ hr.layout {
   box-sizing: border-box;
 }
 
-.xans-myshop-asyncbankbook .title {
+.myshop-asyncbankbook .title {
   float: left;
   width: 40%;
   font-weight: normal;
   box-sizing: border-box;
 }
 
-.xans-myshop-asyncbankbook .data {
+.myshop-asyncbankbook .data {
   float: left;
   width: 47%;
   padding: 0 10px;
@@ -362,12 +292,12 @@ hr.layout {
   box-sizing: border-box;
 }
 
-.xans-myshop-asyncbankbook {
+.myshop-asyncbankbook {
   overflow: hidden;
   padding: 15px 0px 15px 0px;
   margin: 20px auto 0 auto;
   border: 1px solid #dedede;
-  border-top: 1px solid #000;
+  border-top: 1px solid black;
   background: #fff;
 }
 
@@ -375,49 +305,49 @@ hr.layout {
   background-color: #f3f3f3;
 }
 
-.xans-myshop-orderstate {
+.myshop-orderstate {
   margin: 20px auto 0;
   border: 1px solid #dedede;
-  border-top: 1px solid #353535;
+  border-top: 1px solid black;
   width: 100%;
 }
 
-.xans-myshop-orderstate .title {
+.myshop-orderstate .title {
   padding: 11px 21px;
   margin: 0;
   border-bottom: 1px solid #e9e9e9;
   background: #f6f6f6;
 }
 
-.xans-myshop-orderstate .title h3 {
+.myshop-orderstate .title h3 {
   padding: 0;
   font-size: 14px;
   color: #000;
 }
 
-.xans-myshop-orderstate .desc {
+.myshop-orderstate .desc {
   padding: 0 0 0 4px;
   font-weight: normal;
   font-size: 11px;
   color: #8f8f8f;
 }
 
-.xans-myshop-orderstate .desc em {
+.myshop-orderstate .desc em {
   color: #008bcc;
   font-style: normal;
 }
 
-.xans-myshop-orderstate .state {
+.myshop-orderstate .state {
   overflow: hidden;
   padding: 19px 0;
 }
 
-.xans-myshop-orderstate .order {
+.myshop-orderstate .order {
   float: left;
   width: 80%;
 }
 
-.xans-myshop-orderstate .order li {
+.myshop-orderstate .order li {
   float: left;
   width: 25%;
   padding: 0 0 4px;
@@ -426,43 +356,43 @@ hr.layout {
   text-align: center;
 }
 
-.xans-myshop-orderstate .order li strong {
+.myshop-orderstate .order li strong {
   display: block;
   margin: 2px 0 7px;
   font-size: 14px;
   color: #353535;
 }
 
-.xans-myshop-orderstate .order .count {
+.myshop-orderstate .order .count {
   font-weight: bold;
   font-size: 24px;
   color: #008bcc;
 }
 
-.xans-myshop-orderstate .cs {
+.myshop-orderstate .cs {
   float: left;
   width: 20%;
 }
 
-.xans-myshop-orderstate .cs li {
+.myshop-orderstate .cs li {
   margin: 0 0 5px 57px;
   letter-spacing: 0.04em;
   word-spacing: 4px;
 }
 
-.xans-myshop-orderstate .cs strong {
+.myshop-orderstate .cs strong {
   font-weight: normal;
   font-size: 12px;
   color: #353535;
 }
 
-.xans-myshop-orderstate .cs .count {
-  padding: 0 0 0 4px;
+.myshop-orderstate .cs .count {
+  padding: 0 0 0 5px;
   font-weight: bold;
   color: #008bcc;
 }
 
-.xans-myshop-orderstate .cs .icoDot {
+.myshop-orderstate .cs .icoDot {
   display: inline-block;
   width: 2px;
   height: 2px;
@@ -472,41 +402,12 @@ hr.layout {
 }
 
 .ec-base-box {
-  padding: 20px;
+  padding: 20px 20px 20px 0px;
   margin-left: auto;
   margin-right: auto;
-  border: 5px solid #e8e8e8;
+  border: 1px solid #dedede;
+  border-top: 1px solid black;
   color: #404040;
-}
-
-.ec-base-box.typeMember.information {
-  display: table;
-  table-layout: fixed;
-  padding: 10px 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.ec-base-box.typeMember .information > .title,.ec-base-box.typeMember .information > .thumbnail {
-  display: table-cell;
-  padding: 0 15px;
-  width: 70px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-.ec-base-box.typeProduct .thumbnail,.ec-base-box.typeProduct .information {
-  display: table-cell;
-  padding: 0 20px;
-  vertical-align: middle;
-}
-
-.ec-base-box.typeMember .information > .title {
-  vertical-align: middle;
-}
-
-.ec-base-box.typeMember .information > .thumbnail img {
-  max-width: 70px;
 }
 
 .ec-base-box.typeMember .information .description {
@@ -518,11 +419,6 @@ hr.layout {
   vertical-align: middle;
 }
 
-.ec-base-box.typeMember.gMessage {
-  border-width: 1px;
-  border-color: #d7d5d5;
-}
-
 .thumbnail {
   display: table-cell;
   padding: 0 15px;
@@ -531,37 +427,17 @@ hr.layout {
   vertical-align: middle;
 }
 
-.cboth {
-  clear: both;
+.state ul {
+  margin: 0;
+  padding: 0;
 }
 
-.width1240 {
-  width: 1240px;
-  margin: 0 auto;
+#myshopMain {
+  margin: 25px 0;
 }
-
-/* ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-} */
-
 
 #myshopMain ul {
-  margin: 0 -1% 0;
-}
-
-#myshopMain .shopMain h3:before {
-  display: block;
-  content: "";
-  width: 65px;
-  height: 50px;
-  margin: 0 auto;
-  padding: 0 0 10px;
+  margin: 0 -1% 0 -4%;
 }
 
 #myshopMain .shopMain h3 {
@@ -571,18 +447,9 @@ hr.layout {
   font-weight: normal;
 }
 
-#myshopMain .shopMain.order h3:before {
-  background-position: 12px 0;
-}
-
 #myshopMain .shopMain h3 strong {
   font-size: 18px;
   font-weight: bold;
-}
-
-#myshopMain .shopMain h3 a {
-  display: block;
-  padding: 0 0 25px;
 }
 
 #myshopMain .shopMain h3 span {
@@ -592,7 +459,7 @@ hr.layout {
 }
 
 #myshopMain .shopMain p a {
-  font-size: 12px;
+  font-size: 11px;
   line-height: 18px;
   color: #8f8f8f;
 }
@@ -608,120 +475,104 @@ hr.layout {
   text-align: center;
 }
 
-#myshopMain {
-  margin: 30px 0 0;
-}
-
 #myshopMain .shopMain:hover {
   border: 1px solid #999;
 }
 
-/* ================== footer / 회사정보 ================== */
+/* ====================================================== */
+/* footer */
 
-  #mfooter {
-    width: 1240px;
-    text-align: center;
-    overflow: hidden;
-    border: 0px solid blue;
-    margin: 0 auto;
-  }
+#mfooter {
+  width: 1240px;
+  text-align: center;
+  overflow: hidden;
+  border: 0px solid blue;
+  margin: 0 auto;
+  color: #8f8f8f;
+}
 
-  .footer_left {
-    background: #fff;
-    width: 640px;
-    height: 450px;
-    float: left;
-    border: 0px solid #cccccc;
-    text-align: center;
-  }
+.footer_left {
+  background: #fff;
+  width: 640px;
+  height: 450px;
+  float: left;
+  border: 0px solid #cccccc;
+  text-align: center;
+}
 
-  .numb {
-    text-align: left;
-    font-style: bold;
-    font-size: 32px;
-    margin-top: 45px;
-  }
+.numb {
+  text-align: left;
+  font-size: 32px;
+  margin-top: 45px;
+  color: #353535;
+}
 
-  .cs {
-    text-align: left;
-    font-size: 12px;
-    margin-top: 25px;
-  }
-  
-  .ojoa2 {
-    text-align: left;
-    font-size: 11px;
-    margin-top: 30px;
-  }
-  
-  .ojoa3 {
-    text-align: left;
-    font-size: 11px;
-    margin-top: 30px;
-  }
-  
-  .ft_menu {
-    text-align: left;
-    font-size: 12px;
-    margin-top: 40px;
-  }
+.csqa {
+  text-align: left;
+  font-size: 12px;
+  margin-top: 25px;
+  line-height: 19px;
+}
 
-  .ft_menu ul {
-    text-align: left;
-    font-size: 12px;
-    margin-top: 40px;
-  }
-  
-  .ft_menu li {
-    display: inline-block;
-    font-size: 12px;
-    margin-top: 40px;
-    margin: 0 14px 0 0px;
-  }
+.ojoa2,
+.ojoa3 {
+  text-align: left;
+  font-size: 11px;
+  margin-top: 30px;
+  line-height: 19px;
+}
 
-  .ft_comm {
-    margin-top: 45px;
-  }
+.ft_menu {
+  text-align: left;
+  font-size: 12px;
+  margin-top: 25px;
+}
 
-  .ft_comm > ul > li {
-    width: 140px;
-    position: relative;
-  }
+.ft_menu ul {
+  padding: 0;
+}
 
-  /* .ft_quick {
-    
-  } */
-  
-  .footer_right {
-    width: 600px;
-    height: 450px;
-    float: right;
-    text-align: left;
-  }
+.ft_menu li {
+  display: inline-block;
+  margin: 0 14px 0 0px;
+}
 
-  .footer_right ul {
-    display: inline-block;
-  }
+.ft_comm > ul > li,
+.ft_quick > ul > li {
+  width: 140px;
+  position: relative;
+}
 
-  /* .footer_right ul li:first-child {
-    font-style: bold;
-    font-size: 12px;
-    margin-bottom: 18px;
-  } */
-  
-  .footer_right ul > li~li {
-    font-size: 11px;
-    margin-bottom: 13px;
-  }
+.ft_comm ul li:nth-child(n+2) a,
+.ft_quick ul li:nth-child(n+2) a {
+  color: #8f8f8f;
+}
 
-  .ft_sns {
-    float: right;
-    
-  }
-  .footer img {
-    margin-top: 40px;
-    height: 20px;
-    margin-bottom: 80px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+.footer_right {
+  background: #fff;
+  width: 440px;
+  height: 450px;
+  float: right;
+  text-align: left;
+  padding: 45px 10px 0px 0px;
+}
+
+.footer_right div {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.footer_right ul li:first-child {
+  font-style: bold;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.footer_right ul > li~li {
+  font-size: 11px;
+  margin-bottom: 13px;
+}
+
+.ft_sns {
+  float: right;
+}
