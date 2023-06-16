@@ -1,161 +1,176 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ojoa 상세페이지</title>
+  <title>Ojoa main</title>
   <link href="./product_detail.css" rel="stylesheet" />
 </head>
 
-  <body>
+<body>
 
-<!------------------------------------------------------------->
-<!-- header_navi_bar -->
+  <!------------------------------------------------------------->
+  <!-- header_navi_bar -->
 
-    <header>
+  <header>
 
-      <div class ="navBar">
-        <a class="logo" href="#">
-          <img src="../images/ojoa_logo_b.png" height="80px">
-        </a>
-        <ul>
-          <li><a href="#">LOGIN</a></li>
-          <li><a href="../my_page/my_page.html">MYPAGE</a></li>
-          <li><a href="../order/order.html">ORDER</a></li>
-          <li><a href="#">CART</a></li>
-          <li><a href="#">STORE</a></li>
-        </ul>
-      </div>
-      
-    </header>
-    
-<!------------------------------------------------------------->
-<!-- category_navi_drop_bar -->
-
-    <div class="sticky" id="category_nav">
+    <div class="navBar">
+      <a class="logo" href="#">
+        <img src="./images/logo.png" height="80px">
+      </a>
       <ul>
-        <li><a href="#">침대</a>
-          <ul>
-            <li><a href="../product_list/product_list.html">싱글</a></li>
-            <li><a href="#">더블</a></li>
-          </ul>
-        </li>
-        <li><a href="#">소파</a>
-          <ul>
-            <li><a href="#">2인</a></li>
-            <li><a href="#">3인</a></li>
-          </ul>
-        </li>
-        <li><a href="#">책장</a>
-          <ul>
-            <li><a href="#">2단</a></li>
-            <li><a href="#">3단</a></li>
-          </ul>
-        </li>
-        <li><a href="#">옷장</a>
-          <ul>
-            <li><a href="#">2칸</a></li>
-            <li><a href="#">3칸</a></li>
-          </ul>
-        </li>
-        <li><a href="#">조명</a>
-          <ul>
-            <li><a href="#">스탠드형</a></li>
-            <li><a href="#">탈부착형</a></li>
-          </ul>
-        </li>
-        <li><a href="#">소품</a>
-          <ul>
-            <li><a href="#">리빙룸</a></li>
-            <li><a href="#">키친</a></li>
-          </ul>
-        </li>
+        <li><a href="#">LOGIN</a></li>
+        <li><a href="./my_page/my_page.html">MYPAGE</a></li>
+        <li><a href="./order/order.html">ORDER</a></li>
+        <li><a href="#">CART</a></li>
+        <li><a href="#">STORE</a></li>
       </ul>
     </div>
-    
-<!------------------------------------------------------------->
-<!-- main product detail -->
 
-<!-- product detail dt 로 요약 -->
+  </header>
 
-<div class="product_view">
-  <h2>어느 멋진 러그</h2>
-  <table>
-    <caption>
-      <details class="hide">
-        <summary>상품정보</summary>
-        판매가, 상품코드, 옵션 및 결제금액 안내
-      </details>
-      </caption>
-      <colgroup>
-      <col style="width: px;">
-      <col>
-    </colgroup>
-    <tbody>
-      <tr>
-        <th>판매가</th>
-        <td class="price">129,000</td>
-      </tr>
-      <tr>
-        <th>상품코드</th>
-        <td>C004843</td>
-      </tr>
-      <tr>
-        <th>제조사/공급사</th>
-        <td>OJOA / 오조아생활연구소</td>
-      </tr>
-      <tr>
-        <th>구매수량</th>
-        <td>
-          <div class="pd_length">
-            <input type="number" min="1" value="1">
-            <a href="#a">증가</a>
-            <a href="#a">감소</a>
-          </div>
-          </td>
-      </tr>
-      <tr>
-        <th>사용가능쿠폰</th>
-        <td>0개</td>
-      </tr>
-      <tr>
-        <th>옵션선택</th>
-        <td>
-          <select>
-            <option>기본(+0)</option>
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <th>배송비</th>
-        <td>무료배송</td>
-      </tr>
-      <tr>
-        <th>결제금액</th>
-        <td class="total"><b>129,000</b>원</td>
-      </tr>
-    </tbody>
-    </details>
-  </table>
+  <!------------------------------------------------------------->
+  <!-- category_navi_drop_bar -->
 
-  <div class="pd_img">
-    <img src="../images/product_thumnail_1.jpg" alt="">
+  <div class="sticky" id="category_nav">
     <ul>
-      <li class="on"><a href="#a"><img src="../images/product_thumnail_1.jpg" alt=""></a></li>
-      <li><a href="#a"><img src="../images/product_thumnail_1.jpg" alt=""></a></li>
+      <li><a href="#">침대</a>
+        <ul>
+          <li><a href="./product_list/product_list.html">싱글</a></li>
+          <li><a href="#">더블</a></li>
+        </ul>
+      </li>
+      <li><a href="#">소파</a>
+        <ul>
+          <li><a href="#">2인</a></li>
+          <li><a href="#">3인</a></li>
+        </ul>
+      </li>
+      <li><a href="#">책장</a>
+        <ul>
+          <li><a href="#">2단</a></li>
+          <li><a href="#">3단</a></li>
+        </ul>
+      </li>
+      <li><a href="#">옷장</a>
+        <ul>
+          <li><a href="#">2칸</a></li>
+          <li><a href="#">3칸</a></li>
+        </ul>
+      </li>
+      <li><a href="#">조명</a>
+        <ul>
+          <li><a href="#">스탠드형</a></li>
+          <li><a href="#">탈부착형</a></li>
+        </ul>
+      </li>
+      <li><a href="#">소품</a>
+        <ul>
+          <li><a href="#">리빙룸</a></li>
+          <li><a href="#">키친</a></li>
+        </ul>
+      </li>
     </ul>
   </div>
 
-  <div class="pd_btns">
-    <a href="#a" class="pd_btn1">장바구니</a>
-    <a href="#a" class="pd_btn2">구매하기</a>
-  </div>
-</div>
 
-  
-<!------------------------------------------------------------->
-<!-- bodyFloating -->
+
+  <!-- main product detail -->
+  <!------------------------------------------------------------->
+
+
+  <!-- product detail dt 로 요약 -->
+
+  <main>
+    <div class="product_view">
+      <h2>어느 멋진 러그</h2>
+      <table>
+        <caption>
+          <details class="hide">
+            <summary>상품정보</summary>
+            판매가, 상품코드, 옵션 및 결제금액 안내
+          </details>
+        </caption>
+        <colgroup>
+          <col style="width: px;">
+          <col>
+        </colgroup>
+        <tbody>
+          <tr>
+            <th>판매가</th>
+            <td class="price">129,000</td>
+          </tr>
+          <tr>
+            <th>상품코드</th>
+            <td>C004843</td>
+          </tr>
+          <tr>
+            <th>제조사/공급사</th>
+            <td>OJOA / 오조아생활연구소</td>
+          </tr>
+          <tr>
+            <th>구매수량</th>
+            <td>
+              <div class="pd_length">
+                <input type="number" min="1" value="1">
+                <a href="#a">증가</a>
+                <a href="#a">감소</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th>사용가능쿠폰</th>
+            <td>0개</td>
+          </tr>
+          <tr>
+            <th>옵션선택</th>
+            <td>
+              <select>
+                <option>기본(+0)</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <th>배송비</th>
+            <td>무료배송</td>
+          </tr>
+          <tr>
+            <th>결제금액</th>
+            <td class="total"><strong>129,000</strong>원</td>
+          </tr>
+        </tbody>
+        </details>
+      </table>
+
+      <div class="pd_img">
+        <img src="../images/product_thumnail_1.jpg" alt="">
+        <ul>
+          <li class="on"><a href="#a"><img src="../images/product_thumnail_1.jpg" alt=""></a></li>
+          <li><a href="#a"><img src="../images/product_thumnail_1.jpg" alt=""></a></li>
+        </ul>
+      </div>
+
+      <div class="pd_btns">
+        <a href="#a" class="pd_btn1">장바구니</a>
+        <a href="#a" class="pd_btn2">구매하기</a>
+      </div>
+    </div>
+    
+    <div class="pd_section">
+        <div class="pd_nav">
+          <div><a href="#a">상품상세정보</a></div>
+          <div><a href="#a">상품구매후기</a></div>
+          <div><a href="#a">상품 Q&amp;A</a></div>
+          <div><a href="#a">상품구매안내</a></div>
+        </div>
+    </div>
+  </main>
+
+
+    <!------------------------------------------------------------->
+    <!-- bodyFloating -->
 
     <div class="floating">
       <div>방금 본 상품 코드 삽입?</div>
@@ -163,13 +178,105 @@
       <div>1:1 상담 코드 삽입?</div>
     </div>
 
-  </main>
-  
-<!------------------------------------------------------------->
-<!-- footer -->
 
+  <!------------------------------------------------------------->
+  <!-- footer -->
 
-  
-  </body>
-  
-  </html>
+  <footer>
+    <div>
+      <div id="mfooter">
+        <div class="footer_left">
+          <div class="ft_info01">
+            <!-- 고객센터 전화번호 -->
+            <div class="numb">
+              <strong>
+                031 3456 7890
+              </strong>
+            </div>
+            <!-- 고객센터 운영시간  -->
+            <div class="csqa">
+              통화량이 많을 때는 Q&amp;A 게시판을 이용해주세요.<br />
+              MON-FRI 9:00~18:00, LUNCH 12:00~14:00 / SAT-SUN·HOLIDAY OFF<br />
+              예금주:(주)오조아생활연구소 신한은행 1002-000-000000
+            </div>
+          </div>
+
+          <!-- 회사정보 -->
+          <div class="ojoa2"><b>주식회사오조아생활연구소</b>
+            <br />
+
+            경기도 성남시 수정구 성남대로00길 00
+            <span>I</span>
+            사업자번호 : 000-00-00000 <a href="#"
+              onclick="window.open('#', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a>
+            <span>I</span>
+            통신판매업신고 : 2023-경기성남-1355<br />
+            CEO : 오좋아
+            <span> I</span>
+            CPO : 오조아
+            <span> I</span>
+            MAIL : ojoa@gmail.com<br />
+            CALL CENTER : 02-3456-7890
+            <span>I</span>
+            FAX : 02-345-6789<br /><br /><b>오조아 온라인 고객센터</b>
+            <br />
+            03000 경기도 성남시 수정구 성남대로 000 (복정동) 2층 오조아
+            <span>I</span>
+            CALL CENTER : 012-3456-7890<br /><b>입점문의 : ojoa@gmail.com</b>
+          </div>
+
+          <!-- 카피라이트 -->
+          <div class="ojoa3">
+            ⓒ 오조아 온라인 ALL RIGHTS RESERVED. HOSTING BY JK.
+          </div>
+
+          <!-- 회사소개 -->
+          <div class="ft_menu">
+            <ul><!-- 회사소개 : 링크수정 -->
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">이용안내</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer_right">
+          <div class="ft_comm">
+            <ul><!-- 커뮤니티 : 타이틀 -->
+              <li><a href="#"><b>Community</b></a></li>
+              <!-- 커뮤니티 : 링크수정 -->
+              <li><a href="#">NOTICE</a></li>
+              <li><a href="#">REVIEW</a></li>
+              <li><a href="#">QNA</a></li>
+              <li><a href="#">OFFLINE STORE</a></li>
+              <li><a href="#">MEMBERSHIP</a></li>
+            </ul>
+          </div>
+
+          <div class="ft_quick">
+            <ul><!-- 퀵메뉴 : 타이틀 -->
+              <li><a href="#"><b>Shopping Quick</b></a></li>
+              <!-- 퀵메뉴 : 링크수정 -->
+              <li><a href="#">MY PAGE</a></li>
+              <li><a href="#">ORDER</a></li>
+              <li><a href="#">WISH LIST</a></li>
+            </ul>
+          </div>
+
+          <div class="ft_sns">
+            <ul><!-- SNS 링크수정 -->
+              <li><a href="https://www.instagram.com" target="_blank"><img src="/images/ft_sns01.gif" /></a></li>
+              <!--<li><a href="https://www.facebook.com" target="_blank"><img src="/images/ft_sns02.gif"></a></li>-->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- //mfooter -->
+
+</body>
+
+</html>
