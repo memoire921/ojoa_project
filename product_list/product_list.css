@@ -315,14 +315,10 @@
       box-sizing: border-box;
     }
     
-    
     .pl_items img {
       width: 100%;
     }
-    
-    .pl_items img:hover {
-      opacity: 0.4;
-    }
+   
     
     .pl_items .pl_a {
       font-weight: bold;
@@ -335,6 +331,46 @@
       color: #333;
       margin-top: 8px;
     }
+
+    .pl_thumb_img {
+      position: relative;
+    }
+
+    .pl_items .pl_thumb_img a {
+      width: 13%;
+      height: 13%;
+      z-index: 100;
+      /* opacity: 0.7; */
+      position: absolute;
+      bottom: 10%;
+      display: none;
+    }
+
+    .pl_items .pl_thumb_img a:nth-of-type(1) {
+      background: url(../images/cart_icon.png) no-repeat 0/100% 100%;
+      left: 30%;
+    }
+   
+    .pl_items .pl_thumb_img a:nth-of-type(2) {
+      background: url(../images/heart_icon.png) no-repeat 0/100% 100%;
+      right: 30%;
+    }
+     
+/* ==================  이미지 호버 ================== */
+
+    .pl_items img:hover {
+      opacity: 0.4;
+    }
+
+    .pl_items img:hover+ a:nth-of-type(1),
+    .pl_items img:hover+a+ a:nth-of-type(2),
+    .pl_items .pl_thumb_img a:nth-of-type(1):hover,
+    .pl_items .pl_thumb_img a:nth-of-type(2):hover {
+      display: block;
+    }
+
+
+   /* ==================  텍스트별 스타일 ================== */ 
     
     .pl_items .pl_b span,.pl_items .pl_d span {
       color: #a26f59;
@@ -349,6 +385,11 @@
     .pl_items .pl_d {
       font-size: 12px;
       margin-top: 25px;
+    }
+
+    .pl_items img {
+      width: 230px;
+      height: 230px;
     }
     
     
