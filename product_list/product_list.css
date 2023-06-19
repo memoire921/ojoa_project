@@ -421,7 +421,7 @@ footer {
 .pl_items .pl_icon .pd_cart:hover,
 .pl_items .pl_icon .pd_heart:hover {
   display: inline-flex;
-  z-index: 100;
+  z-index: 1000;
 }
 
 
