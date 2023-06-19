@@ -407,6 +407,7 @@ padding: 3px;
 #od_search span  {
 border: solid 1px gray; 
 font-size: 8pt; 
+font-weight: bold; 
 background-color: #c0d4fa;
 padding: 1px;
 border-radius: 8px;
