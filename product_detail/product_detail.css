@@ -571,6 +571,7 @@ footer {
 .pd_part1 {
   width: 1240px;
   min-height: 1240px;
+  margin-top: 25px;
   text-align: center;
 }
 
