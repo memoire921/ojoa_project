@@ -1,327 +1,334 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>my page</title>
-<link href="../my_page/my_page.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./my_page.css" rel="stylesheet" />
+    <title>Ojoa | My Page</title>
 </head>
 
 <body>
-
-<!------------------------------------------------------------->
-<!-- header_navi_bar -->
-
     <header>
-
-    <div class="navBar">
-        <a class="logo" href="../index.html">
-        <img src="../images/logo.png" height="80px">
-        </a>
-        <ul>
-            <li><a href="#">LOGIN</a></li>
-            <li><a href="#">MYPAGE</a></li>
-            <li><a href="../order/order.html">ORDER</a></li>
-            <li><a href="#">CART</a></li>
-            <li><a href="../index.html">STORE</a></li>
-        </ul>
+    <div id="mheader">
+        
+        <!------------------------------------------------------------->
+        <!-- header -->
+        <div>
+            
+            <!-- 상단 로고 -->
+            <div><a class="logo" href="../index.html"><img src="../images/ojoa_logo_b.png" height="80px"></a>
+            </div>
+            
+            <!-- 상단 네비 -->
+            <div class="navBar">
+                <ul>
+                    <li><a href="#">LOGIN &nbsp;<span>&#124;</span></a></li>
+                    <li><a href="#">MYPAGE &nbsp;<span>&#124;</span></a></li>
+                    <li><a href="../order/order.html">ORDER &nbsp;<span>&#124;</span></a></li>
+                    <li><a href="#">CART &nbsp;<span>&#124;</span></a></li>
+                    <li><a href="../store/store.html">STORE</a></li>
+                </ul>
+            </div>
+        </div>
+        <br/>
+        <div class="search">
+            <a href="#"><img src="../images/btn_search.gif"/></a>
+        </div>
     </div>
-    
     </header>
     
-<!------------------------------------------------------------->
-<!-- category_navi_drop_bar -->
-
-<div class="sticky" id="category_nav">
-    <ul>
-        <li><a href="#">침대</a>
+    <!------------------------------------------------------------->
+    <!-- category_navi_drop_bar -->
+    <div class="sticky" id="category_nav">
         <ul>
-            <li><a href="../product_list/product_list.html">싱글</a></li>
-            <li><a href="#">더블</a></li>
+            <li><a href="#">BEST</a></li>
+            <li><a href="#">NEW</a></li>
+            <li><a href="#">침대</a>
+            <ul>
+                <li><a href="../product_list/product_list.html">싱글</a></li>
+                <li><a href="#">더블</a></li>
+            </ul>
+            </li>
+            <li><a href="#">소파</a>
+            <ul>
+                <li><a href="#">2인</a></li>
+                <li><a href="#">3인</a></li>
+            </ul>
+            </li>
+            <li><a href="#">책장</a>
+            <ul>
+                <li><a href="#">2단</a></li>
+                <li><a href="#">3단</a></li>
+            </ul>
+            </li>
+            <li><a href="#">옷장</a>
+            <ul>
+                <li><a href="#">2칸</a></li>
+                <li><a href="#">3칸</a></li>
+            </ul>
+            </li>
+            <li><a href="#">조명</a>
+            <ul>
+                <li><a href="#">스탠드형</a></li>
+                <li><a href="#">탈부착형</a></li>
+            </ul>
+            </li>
+            <li><a href="#">소품</a>
+            <ul>
+                <li><a href="#">리빙룸</a></li>
+                <li><a href="#">키친</a></li>
+            </ul>
+            </li>
         </ul>
-        </li>
-        <li><a href="#">소파</a>
-        <ul>
-            <li><a href="#">2인</a></li>
-            <li><a href="#">3인</a></li>
-        </ul>
-        </li>
-        <li><a href="#">책장</a>
-        <ul>
-            <li><a href="#">2단</a></li>
-            <li><a href="#">3단</a></li>
-        </ul>
-        </li>
-        <li><a href="#">옷장</a>
-        <ul>
-            <li><a href="#">2칸</a></li>
-            <li><a href="#">3칸</a></li>
-        </ul>
-        </li>
-        <li><a href="#">조명</a>
-        <ul>
-            <li><a href="#">스탠드형</a></li>
-            <li><a href="#">탈부착형</a></li>
-        </ul>
-        </li>
-        <li><a href="#">소품</a>
-        <ul>
-            <li><a href="#">리빙룸</a></li>
-            <li><a href="#">키친</a></li>
-        </ul>
-        </li>
-    </ul>
     </div>
 
-<!------------------------------------------------------------->
-<!-- navi_bar -->
+    <main>
+        <div class="container">
+            
+            <!------------------------------------------------------------->
+            <!-- bodyFloating -->
+            <div class="right_quick1">
+                <div class="btn_top"><a href="#mheader"><img src="../images/btn_top.gif"/></a></div>
+                <div class="btn_bottom"><a href="#mfooter"><img src="../images/btn_bottom.gif"/></a></div>
+            </div>
+            
+            <div class="right_quick2">
+                <div class="btn_recent1"><a href="#"><img src="../images/mtalk_icon.png"/></a></div>
+                <div class="btn_recent2"><a href="#"><img src="../images/mchannel_icon.png"/></a></div>
+            </div>
 
-<div>
 
-<div id="container">
-<div>
+            <!------------------------------------------------------------->
+            <!-- navi_bar -->
+            <div class="path">
+                <span>현재 위치</span>
+                <ol>
+                    <li><a href="/">홈</a></li>
+                    <li title="현재 위치">&gt; My Page</li>
+                </ol>
+            </div>
 
-<div class="path">
-    <span>현재 위치</span>
-    <ol><li><a href="/">홈</a></li>
-        <li title="현재 위치">My ojoa</li>
-    </ol>
-</div>
+            <!------------------------------------------------------------->
+            <!-- myPage_main -->
+            <div class="main_pro_title">
+                <div class="txt_01">MY PAGE</div>
+                <div class="txt_02">포인트적립 및 배송확인 등</div>
+            </div>
+            
+            <div class="base-box">
+                <p class="thumbnail"><img src="../images/img_member_default.gif" alt="사람 실루엣 이미지"/></p>
+                    <div class="description">
+                        <span>저희 쇼핑몰을 이용해 주셔서 감사합니다. <span><strong>켄드릭 라마</strong></span> 님은 <strong>[<span>킹쿤타 회원</span>]</strong> 회원이십니다.</span>
+                </div>
+            </div>
 
-<!------------------------------------------------------------->
-<!-- myPage_main -->
+            <div class="myshop_asyncbankbook">
+                <div>
+                    <h2>MY <span>PAGE</span></h2>
+                    <p>마이페이지</p>
+                    <p></p>
+                </div>
+                    <ul>
+                    <li>
+                        <strong class="title">가용적립금</strong>
+                        <strong class="data">10,000원</strong>
+                        <a href="#" class="btnNormal">조회</a>
+                    </li>
+                    <li>
+                        <strong class="title">총적립금</strong>
+                        <strong class="data">35,640원</strong>
+                    </li>
+                    <li>
+                        <strong class="title">사용적립금</strong>
+                        <strong class="data">25,640원</strong>
+                    </li>
+                    <li>
+                        <strong class="title">예치금</strong>
+                        <strong class="data">300,000원</strong>
+                        <a href="#" class="btnNormal">조회</a>
+                    </li>
+                    <li>
+                        <strong class="title">총주문</strong>
+                        <strong class="data">3,564,000원 (8회)</strong>
+                    </li>
+                    </ul>
+                </div>
 
-<div class="main_pro_title">
-	<div class="txt_01">MY PAGE</div>
-	<div class="txt_02">포인트적립 및 배송확인 등</div>
-</div>
+                <div class="myshop_orderstate">
+                    <div class="title">
+                        <h3>나의 주문처리 현황 <span class="desc">(최근 <em>3개월</em> 기준)</span></h3>
+                    </div>
+                    <div class="state">
+                        <ul class="order">
+                            <li>
+                                <strong>입금전</strong>
+                                <a href="#" class="count">0</a>
+                            </li>
+                            <li>
+                                <strong>배송준비중</strong>
+                                <a href="#" class="count">0</a>
+                            </li>
+                            <li>
+                                <strong>배송중</strong>
+                                <a href="#" class="count">0</a>
+                            </li>
+                            <li>
+                                <strong>배송완료</strong>
+                                <a href="#" class="count">0</a>
+                            </li>
+                        </ul>
+                        <ul class="cs">
+                            <li>
+                                <span class="icoDot"></span>
+                                <strong>취소 : </strong>
+                                <a href="#" class="count">0</a>
+                            </li>
+                            <li>
+                                <span class="icoDot"></span>
+                                <strong>교환 : </strong>
+                                <a href="#" class="count">0</a>
+                            </li>
+                            <li>
+                                <span class="icoDot"></span>
+                                <strong>반품 : </strong>
+                                <a href="#" class="count">0</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
-    <div class="ec-base-box typeMember">
-        <div class="information">
-            <p class="thumbnail"><img src="../images/img_member_default.gif" alt="사람 실루엣 이미지"/></p>
-            <div class="description">
-                <span>저희 쇼핑몰을 이용해 주셔서 감사합니다. <span><strong>켄드릭 라마</strong></span> 님은 <strong>[<span>킹쿤타 회원</span>]</strong> 회원이십니다.</span>
+                <div class="myshopMain">
+                    <ul>
+                        <li class="shopMain">
+                            <h3><a href="#"><img src="../images/img_oder.gif"></a><br><strong>Order</strong><span>주문내역 조회</span></img></h3>
+                            <br><p><a href="#">고객님께서 주문하신 상품의<br/> 주문내역을 확인하실 수 있습니다.</a></p>
+                        </li>
+                        <li class="shopMain">
+                            <h3><a href="#"><img src="../images/img_profile.gif" href="#"></a><br><strong>Profile</strong><span>회원 정보</span></a></h3>
+                            <br><p><a href="#">회원이신 고객님의 개인정보를<br/> 관리하는 공간입니다.</a></p>
+                        </li>
+                        <li class="shopMain">
+                            <h3><a href="#"><img src="../images/img_wishlist.gif" href="#"></a><br><strong>Wishlist</strong><span>관심 상품</span></a></h3>
+                            <br><p><a href="#">관심상품으로 등록하신<br/> 상품의 목록을 보여드립니다.</a></p>
+                        </li>
+                        <li class="shopMain">
+                            <h3><a href="#"><img src="../images/img_mileage.gif" href="#"></a><br><strong>Mileage</strong><span>적립금</span></a></h3>
+                            <br><p><a href="#">적립금은 상품 구매 시<br/> 사용하실 수 있습니다.</a></p>
+                        </li>
+                        <li class="shopMain">
+                            <h3><a href="#"><img src="../images/img_deposits.gif" href="#"></a><br><strong>Deposits</strong><span>예치금</span></a></h3>
+                            <br><p><a href="#">예치금은 현금과 동일하게<br/> 상품 구매시 사용하실 수 있습니다.</a></p>
+                        </li>
+                        <li class="shopMain">
+                            <h3><a href="#"><img src="../images/img_board.gif" href="#"></a><br><strong>Board</strong><span>게시물 관리</span></a></h3>
+                            <br><p><a href="#">고객님께서 작성하신 게시물을<br/> 관리하는 공간입니다.</a></p>
+                        </li>
+                        <li class="shopMain">
+                            <h3><a href="#"><img src="../images/img_address.gif" href="#"></a><br><strong>Address</strong><span>배송 주소록 관리</span></a></h3>
+                            <br><p><a href="#">자주 사용하는 배송지를 등록하고<br/> 관리하실 수 있습니다.</a></p>
+                        </li>
+                        <li class="shopMain">
+                            <h3><a href="#"><img src="../images/img_cart.gif" href="#"></a><br><strong>Cart</strong><span>장바구니</span></a></h3>
+                            <br><p><a href="#">장바구니에 담아놓은 상품을<br/> 관리하실 수 있습니다.</a></p>
+                        </li>
+                    </ul>
+                </div>
+
+        </div>
+        
+    </main>
+
+    <!------------------------------------------------------------->
+    <!-- footer -->
+    <footer>
+    <div id="mfooter">
+	    <div class="footer_left">
+		    <div class="ft_info01">
+			    <!-- 전화번호 -->
+			    <div class="numb">
+                    <strong>031 3456 7890</strong>
+			    </div>
+			    <!-- 운영시간  -->
+			    <div class="csqa">
+				통화량이 많을 때는 Q&amp;A 게시판을 이용해주세요.<br/>
+                MON-FRI 11:00~20:00, LUNCH 13:00~14:00 / SAT-SUN·HOLIDAY OFF<br/>
+                예금주:(주)오조아가구연구소 기업은행 1002-000-000000
+			    </div>
+		    </div>
+
+            <!-- 회사정보 -->
+            <div class="ojoa2"><b>주식회사오조아가구연구소</b>
+                <br/>
+
+                경기도 성남시 분당구 돌마로 46, 3층 5호 오조아 
+                <span>I</span>
+                사업자번호 : 000-00-00000 [사업자정보확인]
+                <span>I</span>
+                통신판매업신고 : 2023-경기성남-1355
+                <br/>
+                CEO : 오좋아
+                <span> I</span>
+                CPO : 오조아
+                <span> I</span>
+                MAIL : ojoa@gmail.com
+                <br/>
+                CALL CENTER : 02-3456-7890 
+                <span>I</span>
+                FAX : 02-345-6789<br/><br/><b>오조아 온라인 고객센터</b>
+                <br/>
+                03000 경기도 성남시 분당구 돌마로 46, 3층 5호 오조아  
+                <span>I</span>
+                CALL CENTER : 012-3456-7890
+                <br/>
+                <b>입점문의 : ojoa@gmail.com</b>
+            </div>
+
+            <!-- 카피라이트 -->
+            <div class="ojoa3">
+                ⓒ 오조아 온라인 ALL RIGHTS RESERVED. HOSTING BY JK.
+            </div>
+
+            <!-- 회사소개 -->
+            <div class="ft_menu">
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용안내</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer_right">
+            <div class="ft_comm">
+                <ul>
+                    <li><a href="#"><b>Community</b></a></li>
+                    <li><a href="#">NOTICE</a></li>
+                    <li><a href="#">REVIEW</a></li>
+                    <li><a href="#">QNA</a></li>
+                    <li><a href="../store/store.html">OFFLINE STORE</a></li>
+                    <li><a href="#">MEMBERSHIP</a></li>
+                </ul>
+            </div>
+
+            <div class="ft_quick">
+                <ul>
+                    <li><a href="#"><b>Shopping Quick</b></a></li>
+                    <li><a href="../my_page/my_page.html">MY PAGE</a></li>
+                    <li><a href="#">ORDER</a></li>
+                    <li><a href="#">WISH LIST</a></li>		
+                </ul>
+            </div>
+
+            <div class="ft_sns">
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src="/images/ft_sns01.gif"/></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank"><img src="/images/ft_sns02.gif"></a></li>
+                </ul>
             </div>
         </div>
     </div>
-</div>
-
-<div class="myshop-asyncbankbook">
-<div>
-    <h2>MY <span>PAGE</span></h2>
-    <p>마이페이지</p>
-	<p></p>
-</div>
-    <ul>
-    <li class=" ">
-        <strong class="title">가용적립금</strong>
-        <strong class="data">10,000원</strong>
-        <a href="#" class="btnNormal">조회</a>
-    </li>
-    <li class="">
-        <strong class="title">총적립금</strong>
-        <strong class="data">35,640원</strong>
-    </li>
-    <li class="">
-        <strong class="title">사용적립금</strong>
-        <strong class="data">25,640원</strong>
-    </li>
-    <li class="">
-        <strong class="title">예치금</strong>
-        <strong class="data">300,000원</strong>
-        <a href="#" class="btnNormal">조회</a>
-    </li>
-    <li>
-        <strong class="title">총주문</strong>
-        <strong class="data">3,564,000원(8회)</strong>
-    </li>
-    </ul>
-</div>
-
-<div class="myshop-orderstate">
-    <div class="title">
-        <h3>나의 주문처리 현황 <span class="desc">(최근 <em>3개월</em> 기준)</span></h3>
-    </div>
-<div class="state">
-    <ul class="order">
-        <li>
-            <strong>입금전</strong>
-            <a href="#" class="count">0</a>
-        </li>
-        <li>
-            <strong>배송준비중</strong>
-            <a href="#" class="count">0</a>
-        </li>
-        <li>
-            <strong>배송중</strong>
-            <a href="#" class="count">0</a>
-        </li>
-        <li>
-            <strong>배송완료</strong>
-            <a href="#" class="count">0</a>
-        </li>
-        </ul>
-    <ul class="cs">
-        <li>
-            <span class="icoDot"></span>
-            <strong>취소 : </strong>
-            <a href="#" class="count">0</a>
-        </li>
-        <li>
-            <span class="icoDot"></span>
-            <strong>교환 : </strong>
-            <a href="#" class="count">0</a>
-        </li>
-        <li>
-            <span class="icoDot"></span>
-            <strong>반품 : </strong>
-            <a href="#" class="count">0</a>
-        </li>
-    </ul>
-</div>
-</div>
-
-<div id="myshopMain">
-    <ul>
-        <li class="shopMain">
-            <h3><a href="#"><img src="../images/img_oder.gif"></a><br><strong>Order</strong><span>주문내역 조회</span></img></h3>
-            <br><p><a href="#">고객님께서 주문하신 상품의<br/> 주문내역을 확인하실 수 있습니다.</a></p>
-        </li>
-        <li class="shopMain">
-            <h3><a href="#"><img src="../images/img_profile.gif" href="#"></a><br><strong>Profile</strong><span>회원 정보</span></a></h3>
-            <br><p><a href="#">회원이신 고객님의 개인정보를<br/> 관리하는 공간입니다.</a></p>
-        </li>
-        <li class="shopMain">
-            <h3><a href="#"><img src="../images/img_wishlist.gif" href="#"></a><br><strong>Wishlist</strong><span>관심 상품</span></a></h3>
-            <br><p><a href="#">관심상품으로 등록하신<br/> 상품의 목록을 보여드립니다.</a></p>
-        </li>
-        <li class="shopMain">
-            <h3><a href="#"><img src="../images/img_mileage.gif" href="#"></a><br><strong>Mileage</strong><span>적립금</span></a></h3>
-            <br><p><a href="#">적립금은 상품 구매 시<br/> 사용하실 수 있습니다.</a></p>
-        </li>
-        <li class="shopMain">
-            <h3><a href="#"><img src="../images/img_deposits.gif" href="#"></a><br><strong>Deposits</strong><span>예치금</span></a></h3>
-            <br><p><a href="#">예치금은 현금과 동일하게<br/> 상품 구매시 사용하실 수 있습니다.</a></p>
-        </li>
-        <li class="shopMain">
-            <h3><a href="#"><img src="../images/img_board.gif" href="#"></a><br><strong>Board</strong><span>게시물 관리</span></a></h3>
-            <br><p><a href="#">고객님께서 작성하신 게시물을<br/> 관리하는 공간입니다.</a></p>
-        </li>
-        <li class="shopMain">
-            <h3><a href="#"><img src="../images/img_address.gif" href="#"></a><br><strong>Address</strong><span>배송 주소록 관리</span></a></h3>
-            <br><p><a href="#">자주 사용하는 배송지를 등록하고<br/> 관리하실 수 있습니다.</a></p>
-        </li>
-    </ul>
-</div>
-</div>
-</div>
-
-<!------------------------------------------------------------->
-<!-- bodyFloating -->
-
-<div class="floating">
-    <div>방금 본 상품 코드 삽입?</div>
-    <div>방금 본 상품 코드 삽입?</div>
-    <div>1:1 상담 코드 삽입?</div>
-    </div>
-
-</main>
-
-<!------------------------------------------------------------->
-<!-- footer -->
-
-<footer>
-<div>
-<div id="mfooter">
-	<div class="footer_left">
-		<div class="ft_info01">
-			<!-- 고객센터 전화번호 -->
-			<div class="numb">
-            <strong>
-				031 3456 7890
-            </strong>
-			</div>
-			<!-- 고객센터 운영시간  -->
-			<div class="csqa">
-				통화량이 많을 때는 Q&amp;A 게시판을 이용해주세요.<br/>
-                MON-FRI 9:00~18:00, LUNCH 12:00~14:00 / SAT-SUN·HOLIDAY OFF<br/>
-                예금주:(주)오조아생활연구소 신한은행 1002-000-000000
-			</div>
-		</div>
-
-    <!-- 회사정보 -->
-<div class="ojoa2"><b>주식회사오조아생활연구소</b>
-<br/>
-
-경기도 성남시 수정구 성남대로00길 00
-<span>I</span>
-사업자번호 : 000-00-00000 <a href="#" onclick="window.open('#', 'bizCommPop', 'width=750, height=950;');return false;">[사업자정보확인]</a> 
-<span>I</span>
-통신판매업신고 : 2023-경기성남-1355<br/>
-CEO : 오좋아
-<span> I</span>
-CPO : 오조아
-<span> I</span>
-MAIL : ojoa@gmail.com<br/>
-CALL CENTER : 02-3456-7890 
-<span>I</span>
-FAX : 02-345-6789<br/><br/><b>오조아 온라인 고객센터</b>
-<br/>
-03000 경기도 성남시 수정구 성남대로 000 (복정동) 2층 오조아 
-<span>I</span>
-CALL CENTER : 012-3456-7890<br/><b>입점문의 : ojoa@gmail.com</b>
-</div>
-
-    <!-- 카피라이트 -->
-    <div class="ojoa3">
-        ⓒ 오조아 온라인 ALL RIGHTS RESERVED. HOSTING BY JK.
-    </div>
-
-    <!-- 회사소개 -->
-    <div class="ft_menu">
-        <ul><!-- 회사소개 : 링크수정 --><li><a href="#">회사소개</a></li>
-        <li><a href="#">이용약관</a></li>
-        <li><a href="#">개인정보처리방침</a></li>
-        <li><a href="#">이용안내</a></li>
-        </ul></div>
-    </div>
-
-<div class="footer_right">
-    <div class="ft_comm">
-        <ul><!-- 커뮤니티 : 타이틀 -->
-            <li><a href="#"><b>Community</b></a></li>
-        <!-- 커뮤니티 : 링크수정 -->
-        <li><a href="#">NOTICE</a></li>
-        <li><a href="#">REVIEW</a></li>
-        <li><a href="#">QNA</a></li>
-        <li><a href="#">OFFLINE STORE</a></li>
-        <li><a href="#">MEMBERSHIP</a></li>
-        </ul>
-    </div>
-
-    <div class="ft_quick">
-        <ul><!-- 퀵메뉴 : 타이틀 -->
-            <li><a href="#"><b>Shopping Quick</b></a></li>
-        <!-- 퀵메뉴 : 링크수정 -->
-        <li><a href="#">MY PAGE</a></li>
-        <li><a href="#">ORDER</a></li>
-        <li><a href="#">WISH LIST</a></li>		
-        </ul>
-    </div>
-
-    <div class="ft_sns">
-        <ul><!-- SNS 링크수정 -->
-            <li><a href="https://www.instagram.com" target="_blank"><img src="/images/ft_sns01.gif"/></a></li>
-            <!--<li><a href="https://www.facebook.com" target="_blank"><img src="/images/ft_sns02.gif"></a></li>-->
-        </ul>
-    </div>
-</div>
-</div>
-</div>
-</footer>
-
-<!-- //mfooter -->
+    </footer>
 
 </body>
 
