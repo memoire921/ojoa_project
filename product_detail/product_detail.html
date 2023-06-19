@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./store.css" rel="stylesheet" />
   <title>store</title>
-  <link href="./order.css" rel="stylesheet" />
+  <link href="./product_detail.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -111,69 +111,108 @@
       </div>
 
       <!------------------------------------------------------------->
-      <!-- 주문조회페이지/order페이지 -->
+      <!-- main product detail -->
       <div class="container">
 
-        <!-- order = od로 요약 -->
-        <div id="od_backbody">
-          <div id="od_frame">
-            <form>
-              <div>주문내역조회</div>
-              <br />
-              <div id="od_search">
-                <div>
+        <!------------------------------------------------------------->
+
+
+        <!-- product detail dt 로 요약 -->
+
+
+        <div class="product_view">
+          <h2>빈티지페브릭 의자</h2>
+          <table>
+            <caption>
+              <details class="hide">
+                <summary>상품정보</summary>
+                판매가, 상품코드, 옵션 및 결제금액 안내
+              </details>
+            </caption>
+            <colgroup>
+              <col style="width: px;">
+              <col>
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>판매가</th>
+                <td class="price">199,000</td>
+              </tr>
+              <tr>
+                <th>상품코드</th>
+                <td>C004843</td>
+              </tr>
+              <tr>
+                <th>제조사/공급사</th>
+                <td>OJOA / 오조아생활연구소</td>
+              </tr>
+              <tr>
+                <th>구매수량</th>
+                <td>
+                  <div class="pd_length">
+                    <input type="number" min="1" value="1">
+                    <a href="#a">증가</a>
+                    <a href="#a">감소</a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>사용가능쿠폰</th>
+                <td>0개</td>
+              </tr>
+              <tr>
+                <th>옵션선택</th>
+                <td>
                   <select>
-                    <option>전체 주문처리상태</option>
-                    <option>입금전</option>
-                    <option>배송준비중</option>
-                    <option>배송중</option>
-                    <option>배송완료</option>
-                    <option>취소</option>
-                    <option>교환</option>
-                    <option>반품</option>
-                  </select>&nbsp;
+                    <option>기본(+0)</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th>배송비</th>
+                <td>무료배송</td>
+              </tr>
+              <tr>
+                <th>결제금액</th>
+                <td class="total"><strong>199,000</strong>원</td>
+              </tr>
+            </tbody>
+            </details>
+          </table>
 
-                  <input type="date" /> ~ <input type="date" />&nbsp;
-
-                  <button>조회</button>
-                </div>
-
-                <ol>
-                  <li>기본적으로 최근 3개월간의 자료가 조회되며, 기간 검색시 지난 주문내역을 조회하실 수 있습니다.</li>
-                  <li>주문번호를 클릭하시면 해당 주문에 대한 상세내역을 확인하실 수 있습니다.</li>
-                  <li>취소/교환/반품 신청은 주문완료일 기준 30일까지 가능합니다.</li>
-                </ol>
-              </div>
-
-              <br /><br />
-
-              <span>주문 상품 정보</span>
-              <table id="od_productInfo">
-                <thead>
-                  <tr>
-                    <th>주문일자[주문번호]</th>
-                    <th>이미지</th>
-                    <th>상품정보</th>
-                    <th>수량</th>
-                    <th>상품구매금액</th>
-                    <th>주문처리상태</th>
-                    <th>취소/교환/반품</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr>
-
-                  </tr>
-                </tbody>
-              </table>
-
-              <div>
-                <span>주문 내역이 없습니다.</span>
-              </div>
-
-            </form>
+          <div class="pd_img">
+            <img src="../images/chair0.jpg" alt="">
+            <ul>
+              <li class="on"><a href="./product_detail2.html"><img src="../images/chair0_2.jpg" alt=""></a></li>
+              <li><a href="./product_detail3.html"><img src="../images/chair0_3.jpg" alt=""></a></li>
+              <li><a href="./product_detail4.html"><img src="../images/chair0_4.jpg" alt=""></a></li>
+            </ul>
           </div>
+
+          <div class="pd_btns">
+            <a href="#a" class="pd_btn1">장바구니</a>
+            <a href="#a" class="pd_btn2">구매하기</a>
+          </div>
+        </div>
+
+        <div class="pd_section pd_section1">
+          <a href="#a"><strong>상품상세정보</strong></a>
+          <a href="#a"><strong>상품구매후기</strong></a>
+          <a href="#a"><strong>상품 Q&amp;A</strong></a>
+          <a href="#a"><strong>상품구매안내</strong></a>
+        </div>
+
+        <!-- 상품상세정보 -->
+
+        <div class="pd_part1">
+          <img src="../images/pl_long_img.jpg" alt="">
+        </div>
+
+        <div class="pd_section pd_section2">
+          <a href="#a"><strong>상품상세정보</strong></a>
+          <a href="#a"><strong>상품구매후기</strong></a>
+          <a href="#a"><strong>상품 Q&amp;A</strong></a>
+          <a href="#a"><strong>상품구매안내</strong></a>
         </div>
 
       </div>
