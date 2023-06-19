@@ -1,0 +1,607 @@
+/* =============================================================== */
+/* product compare */
+.product_compare_page {
+    width: 1240px;
+    margin: 50px auto 50px;
+    border-bottom: 1px solid #e9e9e9;
+    padding: 0;
+    display: block;
+}
+
+.product_compare_page .product_function {
+    /* color: #353535; */
+    border: 0;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    text-align: right;
+    line-height: 38px;
+}
+
+.product_compare_page .product_function .product_count {
+    color: #777;
+    line-height: 40px;
+    font-size: 12px;
+    padding: 0;
+    float: left;
+}
+
+.product_compare_page .product_compare {
+    margin: 0 4px 0 0;
+}
+
+.product_compare li {
+    display: inline;
+    padding: 0 6px 0 10px;
+    background: url(../images/bg_result_type.gif) no-repeat 0 50%;
+}
+
+.product_compare li:first-child {
+    background: none;
+}
+
+.product_compare li a {
+    color: #777;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+/* =============================================================== */
+/* login */
+.login_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    width: 100%;
+    /* background: aqua; */
+}
+
+.login_container {
+    width: 800px;
+    height: 100%;
+    /* background: blue; */
+}
+
+.login_content {
+    width: 800px;
+    overflow: hidden;
+    margin: 10px auto 0px;
+    padding: 30px 0 0 0;
+    border: 1px solid #dedede;
+    border-top: 1px solid #222;
+    color: #666;
+    font-size: 12px;
+    /* background-color: cornflowerblue; */
+}
+
+.login {
+    width: 675px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.login_content h3 {
+    font-size: 45px;
+    margin-left: -2px;
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login_sub_txt {
+    text-align: left;
+    line-height: 16px;
+}
+
+/* ----------로그인---------- */
+.login_fieldset {
+    position: relative;
+    width: 675px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: none;
+    vertical-align: top;
+}
+
+legend {
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+}
+
+.login_fieldset .id,
+.login_fieldset .password {
+    overflow: hidden;
+    display: block;
+    width: 576px;
+    margin: 0 0 5px;
+    border: 1px solid #d9d9d9;
+}
+
+.login_fieldset .id span,
+.login_fieldset .password span {
+    float: left;
+    width: 55px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 0 0 8px;
+    text-align: left;
+}
+
+
+.login_fieldset input[type=text],
+.login_fieldset input[type=password] {
+    line-height: 20px;
+    float: left;
+    width: 500px;
+    height: 38px;
+    padding: 0px 0px 0px 0px;
+    border: 0 none;
+    color: #8F8F91;
+    vertical-align: middle;
+    position: relative;
+}
+
+/* ----------로그인버튼---------- */
+.login_fieldset .login_btn {
+    float: right;
+}
+
+.login_fieldset .login_btn a {
+    display: block;
+    border: 1px solid;
+    width: 90px;
+    line-height: 83px;
+    text-align: center;
+    background-color: #fff;
+    color: #222;
+    font-size: 15px;
+    position: absolute;
+    font-weight: 400;
+    top: 0;
+    right: 0;
+}
+
+/* ----------보안접속---------- */
+.security {
+    padding: 0 0 0 0px;
+    margin: 0px 0px;
+    float: left;
+    padding-top: 5px;
+}
+
+/* ----------아이디기억하기---------- */
+.login_forget label {
+    justify-content: right;
+    display: flex;
+    margin-top: 10px;
+    color: #222;
+}
+
+/* ----------아이디찾기---------- */
+.login_find {
+    float: right;
+    padding-top: 15px;
+    font-size: 13px;
+}
+
+.login_fieldset ul {
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    display: block;
+}
+
+.login_fieldset ul li {
+    float: left;
+    padding: 0 0 0 5px;
+}
+
+.login_fieldset ul li a {
+    color: #666;
+}
+
+/* ----------네이버,페이스북,카카오톡 로그인---------- */
+.cboth {
+    clear: both;
+}
+
+.login_fieldset .sns {
+    margin: 10px 0 0 0;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* ----------회원가입---------- */
+.login_join {
+    overflow: hidden;
+    border-top: 1px solid #dedede;
+    width: 675px;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: block;
+}
+
+.login_join_area {
+    float: left;
+    line-height: 16px;
+    margin-top: 15px;
+}
+
+.login_join_area .login_join_title {
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* ----------회원가입버튼---------- */
+.login_join_btn {
+    float: right;
+}
+
+.login_join_btn a {
+    display: block;
+    width: 90px;
+    height: 83px;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    font-size: 15px;
+    line-height: 83px;
+    font-weight: 400;
+}
+
+/* ----------비회원주문---------- */
+.login_nonmember {
+    overflow: hidden;
+    border-top: 1px solid #dedede;
+    width: 675px;
+    height: 83px;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: none;
+}
+
+
+/* =============================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    min-width: 1240px;
+    margin: auto;
+    padding: auto;
+}
+
+header {
+    background-color: white;
+    min-height: 80px;
+    width: 1240px;
+    margin: auto;
+}
+
+main {
+    background-color: white;
+    min-height: 450px;
+    width: 1240px;
+    margin: auto;
+}
+
+footer {
+    background-color: white;
+    min-height: 450px;
+    width: 1240px;
+    margin: auto;
+}
+
+/*======================================================*/
+/* header */
+#mheader {
+    position: relative;
+    height: 100px;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.navBar {
+    width: 1240px;
+    height: 80px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.logo {
+    float: left;
+}
+
+.navBar ul {
+    float: right;
+    margin-top: 0;
+}
+
+.navBar li {
+    float: left;
+    margin-left: 10px;
+}
+
+.navBar a {
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navBar a span {
+    color: gainsboro;
+}
+
+.search {
+    width: 27px;
+    vertical-align: top;
+    float: right;
+    top: 75px;
+    right: 0;
+    position: absolute;
+}
+
+/*======================================================*/
+/* category_navi_drop_bar */
+#category_nav {
+    font: bold 16px;
+    width: 1240px;
+    height: 40px;
+    background: #000;
+    line-height: 40px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+#category_nav>ul {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#category_nav>ul>li {
+    width: 130px;
+    position: relative;
+    display: inline-block;
+}
+
+#category_nav>ul>li>ul {
+    width: 130px;
+    display: none;
+    position: absolute;
+    font-size: 15px;
+    background: #000;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#category_nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+#category_nav>ul>li:hover>ul {
+    display: block;
+}
+
+#category_nav>ul>li>ul>li:hover {
+    background: #8f8f8f;
+    transition: ease 1s;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+/* ====================================================== */
+/* bodyFloating */
+.right_quick1 {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    margin-top: -55px;
+    z-index: 5;
+}
+
+.right_quick1 .btn_top {
+    margin: 3px 0px;
+}
+
+[class^='btn'] img {
+    margin: -2px 1px 0;
+    vertical-align: middle;
+}
+
+.right_quick1 img {
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.right_quick1 img:hover {
+    border: 1px solid #333;
+}
+
+.right_quick2 img {
+    width: 50px;
+}
+
+.btn_recent1 {
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+
+}
+
+.btn_recent2 {
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+}
+
+/* ====================================================== */
+/* navi_bar */
+.path {
+    color: #333;
+    font-size: 12px;
+    margin: 20px auto;
+    margin-right: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.path span {
+    position: absolute;
+    width: 0;
+    height: 0;
+    white-space: nowrap;
+    text-indent: 100%;
+    display: none;
+}
+
+.path li {
+    float: left;
+    padding-left: 12px;
+    margin: 0;
+    color: #333;
+}
+
+.path ol {
+    float: right;
+}
+
+/* ====================================================== */
+/* myPage_main */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 160px;
+    overflow: hidden;
+}
+
+/* ====================================================== */
+/* footer */
+#mfooter {
+    width: 1240px;
+    text-align: center;
+    overflow: hidden;
+    border-top: 1px solid #333;
+    margin: 0 auto;
+    color: #8f8f8f;
+}
+
+.footer_left {
+    background: #fff;
+    float: left;
+}
+
+.numb {
+    text-align: left;
+    font-size: 32px;
+    margin-top: 45px;
+    color: #333;
+}
+
+.csqa {
+    text-align: left;
+    font-size: 12px;
+    margin-top: 25px;
+    line-height: 19px;
+}
+
+.ojoa2,
+.ojoa3 {
+    text-align: left;
+    font-size: 11px;
+    margin-top: 30px;
+    line-height: 19px;
+}
+
+.ft_menu {
+    text-align: left;
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.ft_menu ul {
+    padding: 0;
+}
+
+.ft_menu ul a {
+    color: #333;
+}
+
+.ft_menu li {
+    display: inline-block;
+    margin: 0 14px 0 0px;
+}
+
+.ft_comm>ul>li,
+.ft_quick>ul>li {
+    width: 140px;
+    position: relative;
+}
+
+.ft_comm ul li:nth-child(n+2) a,
+.ft_quick ul li:nth-child(n+2) a {
+    color: #8f8f8f;
+}
+
+.footer_right {
+    background: #fff;
+    width: 440px;
+    height: 450px;
+    float: right;
+    text-align: left;
+    padding: 45px 10px 0px 0px;
+}
+
+.footer_right div ul li b {
+    color: #333
+}
+
+.footer_right div {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.footer_right ul li:first-child {
+    font-style: bold;
+    font-size: 12px;
+    margin-bottom: 18px;
+}
+
+.footer_right ul>li~li {
+    font-size: 11px;
+    margin-bottom: 13px;
+}
+
+.ft_sns {
+    margin-left: 30px;
+}
