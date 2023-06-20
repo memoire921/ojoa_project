@@ -1,10 +1,11 @@
-#login_content {
-    width: 1240px;
-    height: 460px;
+/* ==============================로그인페이지 css 시작 =================================== */
+
+main {
+    height: 900px;
     margin: 0 auto;
 }
 
-.login_content {
+.login_content {   
     overflow: hidden;
     font-size: 12px;
     color: #666;
@@ -12,24 +13,18 @@
     position: absolute;
     text-align: center;
     background: bisque;
-    top: 10%;
-    left: 20%;
+    top: 15%;
+    right: px;
     padding: 40px 20px;
-    margin: 200px auto;
-    min-height: 550px;
-    padding-bottom: 30px;
-    /* min-height: calc(100vh - 450px); */
+ 
 }
 
-/* margin: 0 auto; */
-/* color: #666; */
-/* font-size: 12px; */
 
 .login_content h3 {
     font-size: 50px;
     margin-left: -2px;
     color: #222;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 .login_content .login_sub_txt {
@@ -121,7 +116,7 @@ input[type="submit"]:hover {
 }
 
 
-/* ---------------아이디 비밀번호 찾기---------------- */
+/* ----- 아이디 비밀번호 찾기 ----- */
 
 /* show는 필요없으면 삭제예정 */
 
@@ -142,79 +137,80 @@ input[type="submit"]:hover {
 
 
 /* ======================== 회원가입 ======================= */
-.login-join {
+login_join
+
+/* .login-join {
     background-color: slateblue;
     overflow: hidden;
     border-top: 1px solid #dedede;
     width: 675px;
     margin: 0px auto;
     padding: 30px 0;
-}
-.login_join_title {
+} */
+/* .login_join_title {
+} */
 /* text-align: left; */
-}
 
-.login_join_area {
+/* .login_join_area {
     position: absolute;
     right: 13px;
     font-size: 13px;
     font-weight: 700;
     display: inline-block;
     text-align: left;
-}
+} */
 
-.login_join .login_join_area {
+/* .login_join .login_join_area {
     float: left;
     line-height: 16px;
     margin-top: 15px;
-}
+} */
 
-.login_join .login_join_area .login_join_title {
+/* .login_join .login_join_area .login_join_title {
     margin-bottom: 5px;
     color: #333;
     font-size: 15px;
     font-weight: 600;
-}
+} */
 
-.login_join .login_join_btn {
+
+
+/* .login_join_btn {
     float: right;
-}
-
-.login_join .login_join_btn {
     display: block;
     width: 90px;
     height: 83px;
     text-align: center;
-    background-color: #222;
-    color: #fff;
+    background-color:tomato;
+    color:darkblue;
     font-size: 15px;
     line-height: 83px;
     font-weight: 400;
     text-decoration: none;
-}
+} */
 
-.login_nonmember_area {
+/* .login_nonmember_btn {
     overflow: hidden;
     border-top: 1px solid #dedede;
     width: 675px;
     margin: 0 auto;
     padding: 30px 0;
-}
+} */
 
-.login_nonmember_area .login_join {
+/* .login_nonmember_area .login_join {
     float: left;
     line-height: 16px;
     margin-top: 5px;
-}
+} */
 
-.login_nonmember_area .login_join .login_join_title {
+/* .login_nonmember_area .login_join .login_join_title {
     margin-bottom: 5px;
     color: #d9d9d9;
     font-size: 15px;
     font-weight: 600;
-}
+} */
 
-/* =============================================================== */
+/* ============================로그인 페이지 css 끝=================================== */
 * {
     box-sizing: border-box;
 }
