@@ -224,6 +224,10 @@ footer {
   float: right;
 }
 
+.path a {
+  color: inherit;
+}
+
 /* ====================================================== */
 /* myPage_main */
 .container {
@@ -542,7 +546,7 @@ footer {
 
 
 /* =================================================== */
-/* 상세페이지 이미지 시작 ( 상품상세정보  )*/
+/* 상세페이지 시작 ( 상품상세정보  )*/
 
 .pd_section {
   margin: auto;
@@ -561,8 +565,8 @@ footer {
 }
 
 .pd_section a {
-  border-bottom: 2px solid black;
-  color: black;
+  border-bottom: 4px solid rgb(107, 107, 107);
+  color: inherit;
 }
 
 .pd_part1 {
@@ -571,4 +575,57 @@ footer {
   margin-top: 25px;
   text-align: center;
 }
+
+/* =================================================== */
+/* 상세페이지 시작 ( 상품구매후기  )*/
+
+.review,.pd_qna {
+  margin: 20px auto;
+  margin-bottom: 200px;
+  width: 80%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+
+.review th,
+.review td,
+.pd_qna th, 
+.pd_qna td {
+  padding: 10px;
+  height:20px;
+  border: #c6c6c6 solid 1px;
+}
+.review a,
+.pd_qna a {
+  color: inherit;
+}
+
+.review tr:first-of-type {
+  background-color: #c6c6c6;
+}
+/* =================================================== */
+/* 상세페이지 시작 ( 상품 Q&A  )*/
+
+.pd_qna th {
+  text-align: end;
+  padding: 10px;
+}
+/* =================================================== */
+/* 상세페이지 시작 ( 상품 구매안내  )*/
+
+.pd_orderInfoUp,
+.pd_orderInfoDown {
+  margin: 20px auto;
+  width: 80%;
+  color: #858585;
+}
+
+.pd_orderInfoUp h2,
+.pd_orderInfoDown h2,
+.pd_orderInfoUp h3,
+.pd_orderInfoDown h3 {
+  margin: 5px auto;
+}
+
 
