@@ -292,20 +292,26 @@ footer {
     }
 
   /*------------세부섹션파트----------*/  
+    a{
+      /* color: black; */
+      display: block;
+    }
+
   .colsection {
     width: 400px;
     height: 180px;
-    /* margin-bottom: 30px; */
-    /* border: #cccccc solid 1px */
-    border-bottom: #cccccc solid 1px;
+    margin-bottom: 30px;
+    border: #cccccc solid 1px
+    /* border-bottom: #cccccc solid 1px;
     border-left: #cccccc solid 1px;
-    border-right: #cccccc solid 1px;
+    border-right: #cccccc solid 1px; */
   }
 
   .colsec_img{
     width: 200px;
     height: 180px;
     float: left;
+    z-index: -1;
   }
 
   .colsec_name {
@@ -313,6 +319,8 @@ footer {
     font-weight: bold;
     text-align: center;
   }
+
+
 
   .colsec_price{
     font-size: 20px;
