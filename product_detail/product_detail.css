@@ -614,17 +614,14 @@ footer {
 /* =================================================== */
 /* 상세페이지 시작 ( 상품 구매안내  )*/
 
-.pd_orderInfoUp,
-.pd_orderInfoDown {
+.pd_orderInfo {
   margin: 20px auto;
   width: 80%;
   color: #858585;
 }
 
-.pd_orderInfoUp h2,
-.pd_orderInfoDown h2,
-.pd_orderInfoUp h3,
-.pd_orderInfoDown h3 {
+.pd_orderInfo h2,
+.pd_orderInfo h3 {
   margin: 5px auto;
 }
 
