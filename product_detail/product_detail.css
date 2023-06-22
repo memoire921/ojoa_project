@@ -617,12 +617,28 @@ footer {
 .pd_orderInfo {
   margin: 20px auto;
   width: 80%;
-  color: #858585;
+  color: #504f4f;
 }
 
 .pd_orderInfo h2,
 .pd_orderInfo h3 {
   margin: 5px auto;
+}
+
+.pd_orderInfo h3,
+.pd_orderInfo2 > div > div+div,
+.pd_orderInfo3 > div > div{
+  margin-top: 15px;
+}
+
+.pd_orderInfo3 > div > div{
+  margin-bottom: -15px; 
+}
+
+.pd_orderInfo1 p,
+.pd_orderInfo2 p, 
+.pd_orderInfo3 p {
+  white-space: pre-line;
 }
 
 
