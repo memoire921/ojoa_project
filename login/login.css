@@ -1,4 +1,3 @@
-
 /* =============================================================== */
 /* login */
 .login_page {
@@ -12,7 +11,7 @@
 .login_container {
     width: 800px;
     height: 550px;
-   }
+}
 
 .login_content {
     width: 800px;
@@ -299,12 +298,30 @@ footer {
 }
 
 .search {
-    width: 27px;
-    vertical-align: top;
-    float: right;
+    width: 300px;
     top: 75px;
-    right: 0;
+    right: -15px;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input {
+    width: 80%;
+    height: 30px;
+    font-size: 15px;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #333;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #c6c6c6 inset;
 }
 
 /*======================================================*/
@@ -436,9 +453,10 @@ footer {
     padding-left: 12px;
     color: #333;
 }
- .path li a{
+
+.path li a {
     color: #333;
- }
+}
 
 
 /* ====================================================== */
