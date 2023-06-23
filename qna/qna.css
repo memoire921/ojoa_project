@@ -1,67 +1,15 @@
-/* =============================================================== */
-/* 상품목록리스트페이지 */
-/* .product_compare_page {
-    width: 1240px;
-    margin: 50px auto 50px;
-    border-bottom: 1px solid #e9e9e9;
-    padding: 0;
-    display: block;
-}
-
-.product_compare_page .product_function {
-    border: 0;
-    margin: 0 auto 10px;
-    overflow: hidden;
-    text-align: right;
-    line-height: 38px;
-}
-
-.product_compare_page .product_function .product_count {
-    color: #777;
-    line-height: 40px;
-    font-size: 12px;
-    padding: 0;
-    float: left;
-}
-
-.product_compare_page .product_compare {
-    margin: 0 4px 0 0;
-}
-
-.product_compare li {
-    display: inline;
-    padding: 0 6px 0 10px;
-    background: url(../images/bg_result_type.gif) no-repeat 0 50%;
-}
-
-.product_compare li:first-child {
-    background: none;
-}
-
-.product_compare li a {
-    color: #777;
-    font-size: 12px;
-    line-height: 40px;
-} */
 
 /* =============================================================== */
 /* QnA 페이지 */
 .qna_wrap {
     position: relative;
-    /* width: 100%; */
-    margin: 0 auto;
-    min-height: 550px;
-}
-
-.qna_container {
-    /* width: 1240px; */
-    zoom: 1;
-    position: relative;
+    width: 1240px;
+    height: 1200px;
     margin: 0 auto;
 }
 
 .qna_content {
-    width: 1240px;
+    width: 100%;
     margin: 0 auto;
     float: right;
 }
@@ -92,11 +40,10 @@
 }
 
 /* ================== */
-/* grid 해보는중 */
+/* qna start */
 .qna_board {
     width: 100%;
     min-height: 450px;
-    /* color: rgb(8, 11, 243); */
     display: grid;
 
     grid-template: 1fr / 1fr repeat(2, 2fr) 5fr repeat(2, 1fr);
@@ -133,7 +80,7 @@
 }
 
 .qna_board_list2>div>img {
-    width: 46px;
+    width: 50px;
     vertical-align: middle;
     align-content: left;
 }
@@ -147,7 +94,6 @@
 .qna_board>div>div {
     border: 1px solid #f3f3f3;
     height: 50px;
-    /* color: black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,23 +112,19 @@
 .qna_board_write {
     border-top: 0 none;
     padding: 30px;
-    background: #fff;
     color: #dfdfdf;
+    display: flex;
+   justify-content: flex-end;
 }
 
 .qna_board_write span {
-    float: right;
-    text-align: right;
+  
     display: inline-block;
-    box-sizing: border-box;
     padding: 2px 15px;
-    /* border: 1px solid transparent; */
     border-radius: 2px;
     font-size: 12px;
     line-height: 20px;
     font-weight: normal;
-    text-decoration: none;
-    vertical-align: middle;
     background-color: #4a5164;
 }
 
@@ -190,6 +132,7 @@
     color: white;
 }
 
+/* 하단 페이지 숫자 클릭 */
 .qna_number_btn {
     margin: 30px 0 50px;
     text-align: center;
@@ -199,7 +142,6 @@
 
 .qna_number_btn ol {
     display: inline-block;
-    /* font-size: 0; */
     vertical-align: top;
 }
 
@@ -218,6 +160,10 @@
     color: #939393;
     line-height: 14px;
     background: #fff;
+}
+
+.qna_number_btn li:hover a {
+    background-color: #d8d8d8;
 }
 
 /* 검색하기 */
@@ -274,11 +220,6 @@ input[type=text] {
     color: #fff;
     background-color: #84868b;
 }
-
-
-
-
-
 
 /* =============================================================== */
 * {

@@ -1,48 +1,3 @@
-/* =============================================================== */
-/* 상품목록리스트페이지 */
-/* .product_compare_page {
-    width: 1240px;
-    margin: 50px auto 50px;
-    border-bottom: 1px solid #e9e9e9;
-    padding: 0;
-    display: block;
-}
-
-.product_compare_page .product_function {
-    border: 0;
-    margin: 0 auto 10px;
-    overflow: hidden;
-    text-align: right;
-    line-height: 38px;
-}
-
-.product_compare_page .product_function .product_count {
-    color: #777;
-    line-height: 40px;
-    font-size: 12px;
-    padding: 0;
-    float: left;
-}
-
-.product_compare_page .product_compare {
-    margin: 0 4px 0 0;
-}
-
-.product_compare li {
-    display: inline;
-    padding: 0 6px 0 10px;
-    background: url(../images/bg_result_type.gif) no-repeat 0 50%;
-}
-
-.product_compare li:first-child {
-    background: none;
-}
-
-.product_compare li a {
-    color: #777;
-    font-size: 12px;
-    line-height: 40px;
-} */
 
 /* =============================================================== */
 /* login */
@@ -52,14 +7,12 @@
     align-items: center;
     min-height: 60vh;
     width: 100%;
-    /* background: aqua; */
 }
 
 .login_container {
     width: 800px;
     height: 550px;
-    /* background: blue; */
-}
+   }
 
 .login_content {
     width: 800px;
@@ -70,7 +23,6 @@
     border-top: 1px solid #222;
     color: #666;
     font-size: 12px;
-    /* background-color: cornflowerblue; */
 }
 
 .login {
@@ -216,7 +168,6 @@ legend {
 .login_fieldset .sns {
     margin: 10px 0 0 0;
     text-align: center;
-    /* display: inline-block; */
     vertical-align: top;
 }
 
@@ -485,6 +436,10 @@ footer {
     padding-left: 12px;
     color: #333;
 }
+ .path li a{
+    color: #333;
+ }
+
 
 /* ====================================================== */
 /* myPage_main */
