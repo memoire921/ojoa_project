@@ -526,13 +526,13 @@ thead>tr>th:first-child {
 }
 
 
-span {
+.cart_total span {
   font-size: 17px;
   text-decoration: line-through;
   color: red;
 }
 
-sup {
+.cart_total sup {
   font-size: 13px;
 }
 

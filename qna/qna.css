@@ -233,6 +233,7 @@ html {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 li {
@@ -425,13 +426,14 @@ input:-webkit-autofill {
     position: fixed;
     right: 20px;
     bottom: 100px;
-
+    z-index: 1000;
 }
 
 .btn_recent2 {
     position: fixed;
     right: 20px;
     bottom: 40px;
+    z-index: 1000;
 }
 
 /* ====================================================== */

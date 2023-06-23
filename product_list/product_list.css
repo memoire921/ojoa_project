@@ -171,7 +171,7 @@ input:-webkit-autofill {
   right: 20px;
   top: 50%;
   margin-top: -55px;
-  z-index: 5;
+  z-index: 100;
 }
 
 .right_quick1 .btn_top {
@@ -202,6 +202,8 @@ input:-webkit-autofill {
   position: fixed; 
   right: 20px; 
   bottom: 100px;
+
+  z-index: 1000;
   
 }
 
@@ -209,6 +211,7 @@ input:-webkit-autofill {
   position: fixed; 
   right: 20px; 
   bottom: 40px;
+  z-index: 1000;
 }
 
 /* ====================================================== */

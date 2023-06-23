@@ -10,6 +10,7 @@ html {
 
 a {
   text-decoration: none;
+  color:inherit;
 }
 
 li {
@@ -457,19 +458,19 @@ input:-webkit-autofill {
   padding-left: 10px;
 }
 
-label {
+.personal_info label {
   margin-right: 20px ;
   margin-left: 5px;
 }
 
-label input {
+.personal_info label input {
   height: 25px;
   /* vertical-align: center; */
 }
 
 
-input,
-select {
+.personal_info input,
+.personal_info select {
   margin: 5px 0px;
   box-sizing: border-box;
   padding: 0px 5px;
@@ -478,18 +479,18 @@ select {
   border-radius: 5%;
 }
 
-input[type="text"],
-input[type="number"] {
+.personal_info input[type="text"],
+.personal_info input[type="number"] {
   width: 100px;
 }
 
-input[type="tel"] {
+.personal_info input[type="tel"] {
   width:50px;
 }
 
 
-input[type="password"],
-input[name="address"] {
+.personal_info input[type="password"],
+.personal_info input[name="address"] {
   border:solid 1px gray;
   border-radius: 5%;
   width:200px;
