@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./css/styles.css" rel="stylesheet" />
   <title>Ojoa | main</title>
+  <script src="https://kit.fontawesome.com/4b1297c1d2.js" crossorigin="anonymous"></script>
 </head>
 
   <body>
@@ -27,18 +28,19 @@
               <!-- 상단 네비 -->
               <div class="navBar">
                   <ul>
-                      <li><a href="#">LOGIN &nbsp;<span>&#124;</span></a></li>
+                      <li><a href="./login/login.html">LOGIN &nbsp;<span>&#124;</span></a></li>
                       <li><a href="./my_page/my_page.html">MYPAGE &nbsp;<span>&#124;</span></a></li>
-                      <li><a href="../order/order.html">ORDER &nbsp;<span>&#124;</span></a></li>
-                      <li><a href="#">CART &nbsp;<span>&#124;</span></a></li>
+                      <li><a href="./order/order.html">ORDER &nbsp;<span>&#124;</span></a></li>
+                      <li><a href="./cart/cart.html">CART &nbsp;<span>&#124;</span></a></li>
                       <li><a href="./store/store.html">STORE</a></li>
                   </ul>
               </div>
           </div>
           <br/>
           <div class="search">
-              <a href="#"><img src="../images/btn_search.gif"/></a>
-          </div>
+              <input type="text" name="query" value="">
+              <a href="#"><img src="./images/btn_search.png"/></a>
+      </div>
       </div>
     </header>
 
@@ -50,7 +52,7 @@
           <li><a href="#">NEW</a></li>
           <li><a href="#">침대</a>
           <ul>
-              <li><a href="../product_list/product_list.html">싱글</a></li>
+              <li><a href="#">싱글</a></li>
               <li><a href="#">더블</a></li>
           </ul>
           </li>
@@ -78,11 +80,11 @@
               <li><a href="#">탈부착형</a></li>
           </ul>
           </li>
-          <li><a href="#">소품</a>
-          <ul>
-              <li><a href="#">리빙룸</a></li>
-              <li><a href="#">키친</a></li>
-          </ul>
+          <li><a href="../product_list/product_list.html">의자(구현)</a>
+            <ul>
+              <li><a href="../product_list/product_list.html">탁상의자(구현)</a></li>
+              <li><a href="#">주방의자</a></li>
+            </ul>
           </li>
       </ul>
     </div>
@@ -176,143 +178,182 @@
 
       <!------------------- 메인 바디 3종 시작 ------------------->
 
+
+      <div class="hover_total">
+
+        <div class="hover_wrap">
+            <div class="hover_leftright">
+              <figure class="front">
+                <img class="colimg" src="./images/livingroom.jpg" alt="마우스 올리면 to Right">
+                <figcaption>
+                  <h3>LIVING ROOM</h3>
+                  <p>Design your Life</p>
+                </figcaption>
+              </figure>
+              <figure class="back">
+                <img class="colimg" src="./images/l_bg.png" alt="마우스 내리면 to Left">
+                <figcaption>
+                  <h3><a href="./product_list/product_list.html">지금 보러가기 &rarr;</a></h3>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+    
+          <div class="hover_wrap">
+            <div class="hover_leftright">
+              <figure class="front">
+                <img class="colimg" src="./images/bedroom.jpg" alt="마우스 올리면 to Right">
+                <figcaption>
+                  <h3>BED ROOM</h3>
+                  <p>Design your Relax</p>
+             
+                </figcaption>
+              </figure>
+              <figure class="back">
+                <img class="colimg" src="./images/b_bg.png" alt="마우스 내리면 to Left">
+                <figcaption>
+                  <h3><a href="./product_list/product_list.html">지금 보러가기 &rarr;</a></h3>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+    
+          <div class="hover_wrap">
+            <div class="hover_leftright">
+              <figure class="front">
+                <img class="colimg" src="./images/kitchen.jpg" alt="마우스 올리면 to Right">
+                <figcaption>
+                  <h3>KITCHEN</h3>
+                  <p>Design your Health</p>
+             
+                </figcaption>
+              </figure>
+              <figure class="back">
+                <img class="colimg" src="./images/k_bg.png" alt="마우스 내리면 to Left">
+                <figcaption>
+                  <h3><a href="./product_list/product_list.html">지금 보러가기 &rarr;</a></h3>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+      </div>
+<!------------ 바디 밑에 세부상품목록 - 첫번째항목  ---------------- -->
+
       <div class="main_col">
 
         <div class="mcol1">
-            <div class="roomname">Living Room</div>
-            <img class="colimg" src ="images/livingroom.jpg">
-        </div>
-    
+          <div class="colsection"> 
+            <a href="#">
+              <div class="img_top">2022 F/W BEST</div>
+              <img class="colsec_img" src="./images/sofa.jpg"  alt="소가죽소파" >
+              
+              <div class="colsec_info">
+                <div class="colsec_mini">[Ojoa 단독입점]</div>
+                <div class="colsec_mini">2022 SEASON BEST</div>
+                <div class="colsec_name">천연 소가죽 소파</div>
+                <div class="colsec_price">123,456 원<sup>5%</sup></div>
+              </div>
+            </a>
+              <input type="checkbox" id="heart1">
+              <label for="heart1"><i class="fa-regular fa-heart"></i></label>
+          </div>
+        
+               <!--------  두번째 항목  -------->
+        
+          <div class="colsection"> 
+            <a href="#">
+                <div class="img_top">브랜드 기획전</div>
+                <img class="colsec_img" src="./images/brownchair.jpg"  alt="거실의자" >
+              
+                <div class="colsec_info">
+                  <div class="colsec_mini">BROWN TOM X Ojoa</div>
+                  <div class="colsec_mini">Sepcial Colaboration</div>
+                  <div class="colsec_name">브라운 거실의자</div>
+                  <div class="colsec_price">123,456 원<sup>5%</sup></div>
+                </div>
+            </a>
+              <input type="checkbox" id="heart2">
+              <label for="heart2"><i class="fa-regular fa-heart"></i></label>
+          </div>
+        </div>  
+        <!------------------------  세번째  ----------------------------->
+        
         <div class="mcol2">
-            <div class="roomname">Bed Room</div>
-            <img class="colimg"  src ="images/bedroom.jpg">
-        </div>
-    
+          <div class="colsection"> 
+            <a href="#">
+              <div class="img_top">Ojoa's BEST ITEM</div>
+              <img class="colsec_img" src="./images/bed.jpg" alt="원목침대">
+               
+              <div class="colsec_info">
+                <div class="colsec_mini">[ACE BED] 입점상품 </div>
+                <div class="colsec_mini">BRANDNEW ITEM</div>
+                <div class="colsec_name">노르웨이원목 침대</div>
+                <div class="colsec_price">123,456 원 <sup>10%</sup></div>
+              </div>
+            </a>
+              <input type="checkbox" id="heart3">
+              <label for="heart3"><i class="fa-regular fa-heart"></i></label>
+          </div>
+        
+         <!--------------  네번째 항목  --------------->
+          <div class="colsection"> 
+            <a href="#">
+              <div class="img_top">SPECIAL ITEM</div>
+              <img class="colsec_img" src="./images/light.jpg" alt="거실조명" >
+              
+              <div class="colsec_info">
+                <div class="colsec_mini">[ROYAL FAMILY] </div>
+                <div class="colsec_mini">ENGLAND DESIGN BEST</div>
+                <div class="colsec_name">왕실 스탠 조명</div>
+                <div class="colsec_price">123,456 원<sup>7%</sup></div>
+              </div>
+            </a>
+              <input type="checkbox" id="heart4">
+              <label for="heart4"><i class="fa-regular fa-heart"></i></label>
+          </div>
+        </div>  
+        
+        
+        <!----------------다섯번째--------------------->
+        
         <div class="mcol3">
-          <div class="roomname">Kitchen</div>
-          <img class="colimg" src ="images/kitchen.jpg">
-        </div>
-        
-      </div>        
-      
-
-      <!------ 바디 밑에 세부상품목록 - 첫번째항목  ---------->
-
-      <div class="main_col">
-      <div class="mcol1">
-        <table class="colsection"> 
-          <tr> 
-            <td><a href="소가죽소파페이지로바로가기">
-              <img class="colsec_img" src="./images/sofa.jpg" alt="소가죽소파">
+          <div class="colsection"> 
+            <a href="#">
+              <div class="img_top">해외 직배송</div>
+              <img class="colsec_img" src="./images/ktable.jpg" alt="아일랜드식탁" >
+              
+              <div class="colsec_info">
+                <div class="colsec_mini">[L.IKEA X Ojoa] 해외 직구</div>
+                <div class="colsec_mini">SUMMER COLLECTION</div>
+                <div class="colsec_name">고급 아일랜드 식탁</div>
+                <div class="colsec_price">123,456 원<sup>20%</sup></div>
+              </div>
             </a>
-            </td>
-            
-            <td><a href="소가죽소파페이지로바로가기">
-              <div class="colsec_name">소가죽 소파</div>
-              <div class="colsec_price">1700,000</div>
-            </a>
-            </td>        
-          </tr>
-      </table>
-      
-      <!--------------  두번째 항목  --------------->
-      
-      <table class="colsection">
-        <tr> 
-          <td><a href="거실의자페이지로바로가기">
-            <img class="colsec_img" src="./images/livingchair.jpg" alt="거실의자">
-          </a>
-          </td>
+              <input type="checkbox" id="heart5">
+              <label for="heart5"><i class="fa-regular fa-heart"></i></label>
+          </div>
           
-          <td><a href="거실의자페이지로바로가기">
-            <div class="colsec_name">브라운 의자</div>
-            <div class="colsec_price">90,000</div>
-          </a>
-          </td>        
-        </tr>
-      
-    </table>
-    </div>      
-    
-    
-    <!------------------  세번째  ----------------------------->
-    <div class="mcol2">
-    <table class="colsection">
-        <tr> 
-          <td><a href="원목침대페이지로바로가기">
-            <img class="colsec_img" src="./images/bed.jpg" alt="원목침대">
-          </a>
-          </td>
+          <!--------------  여섯번째 항목  --------------->
           
-          <td><a href="원목침대페이지로바로가기">
-            <div class="colsec_name">원목침대</div>
-            <div class="colsec_price">2,700,000</div>
-          </a>
-          </td>        
-        </tr>
-      
-    </table>
-    
-    <!--------------  네번째 항목  --------------->
-    
-    <table class="colsection"> 
-      <tr> 
-        <td> <a href="침실조명페이지로바로가기">
-          <img class="colsec_img" src="./images/light.jpg" alt="침실조명">
-        </a>
-        </td>
-        
-        <td> <a href="침실조명페이지로바로가기">
-          <div class="colsec_name">침실조명</div>
-          <div class="colsec_price">150,000</div>
-        </a>
-        </td>        
-      </tr>
-    
-    </table>
-    </div>
-    
-    <!----------------다섯번째--------------------->
-    
-    <div class="mcol3">
-      <table class="colsection">
-          <tr> 
-            <td><a href="아일랜드식탁페이지로바로가기">
-              <img class="colsec_img" src="./images/ktable.jpg" alt="아일랜드식탁">
+          <div class="colsection"> 
+            <a href="#">
+              <div class="img_top">CLASSIC ITEM</div>
+              <img class="colsec_img" src="./images/kchair.jpg" alt="바의자" >
+                
+                <div class="colsec_info">
+                  <div class="colsec_mini">[BLACK LABEL]</div>
+                  <div class="colsec_mini">MODERN BAR ITEM </div>
+                  <div class="colsec_name">클래식 스탠드 의자</div>
+                  <div class="colsec_price">123,456 원<sup>10%</sup></div>
+                </div>
             </a>
-            </td>
-            
-            <td><a href="아일랜드식탁페이지로바로가기">
-              <div class="colsec_name">아일랜드식탁</div>
-              <div class="colsec_price">7,400,000</div>
-            </a>
-            </td>        
-          </tr>
-        
-      </table>
-      
-      <!--------------  여섯번째 항목  --------------->
-      
-      <table class="colsection">
-        <tr> 
-          <td><a href="모던의자페이지로바로가기"> 
-            <img class="colsec_img" src="./images/kchair.jpg" alt="모던의자">
-          </a>
-          </td>
-          
-          <td><a href="모던의자페이지로바로가기"> 
-            <div class="colsec_name">모던의자</div>
-            <div class="colsec_price">750,000</div>
-          </a>
-          </td>        
-        </tr>
-      
-      </table>
-      </div>
-    </div>
-
-      </div>
-  </main>
+              <input type="checkbox" id="heart6">
+              <label for="heart6"><i class="fa-regular fa-heart"></i></label>
+          </div>
+        </div> 
+      </div>    
+    
+    </main>
 
   <!------------------------------------------------------------->
   <!-- footer -->
@@ -376,25 +417,25 @@
         </div>
 
         <div class="footer_right">
-            <div class="ft_comm">
-                <ul>
-                    <li><a href="#"><b>Community</b></a></li>
-                    <li><a href="#">NOTICE</a></li>
-                    <li><a href="#">REVIEW</a></li>
-                    <li><a href="#">QNA</a></li>
-                    <li><a href="./store/store.html">OFFLINE STORE</a></li>
-                    <li><a href="#">MEMBERSHIP</a></li>
-                </ul>
-            </div>
-
-            <div class="ft_quick">
-                <ul>
-                    <li><a href="#"><b>Shopping Quick</b></a></li>
-                    <li><a href="./my_page/my_page.html">MY PAGE</a></li>
-                    <li><a href="#">ORDER</a></li>
-                    <li><a href="#">WISH LIST</a></li>		
-                </ul>
-            </div>
+          <div class="ft_comm">
+              <ul>
+                  <li><b>Community</b></li>
+                  <li><a href="#">NOTICE</a></li>
+                  <li><a href="#">REVIEW</a></li>
+                  <li><a href="../qna/qna.html">QNA</a></li>
+                  <li><a href="../store/store.html">OFFLINE STORE</a></li>
+                  <li><a href="#">MEMBERSHIP</a></li>
+              </ul>
+          </div>
+      
+          <div class="ft_quick">
+              <ul>
+                  <li><b>Shopping Quick</b></li>
+                  <li><a href="../my_page/my_page.html">MY PAGE</a></li>
+                  <li><a href="../order/order.html">ORDER</a></li>
+                  <li><a href="#">WISH LIST</a></li>      
+              </ul>
+          </div>
 
             <div class="ft_sns">
                 <ul>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../join/join.css" rel="stylesheet">
+    <title>store</title>
+</head>
+
+<body>
+    <header>
+        <div id="mheader">
+
+            <!------------------------------------------------------------->
+            <!-- header -->
+            <div>
+
+                <!-- 상단 로고 -->
+                <div><a class="logo" href="../index.html"><img src="../images/ojoa_logo_b.png" height="80px"></a>
+                </div>
+
+                <!-- 상단 네비 -->
+                <div class="navBar">
+                    <ul>
+                        <li><a href="../login/login.html">LOGIN &nbsp;<span>&#124;</span></a></li>
+                        <li><a href="../my_page/my_page.html">MYPAGE &nbsp;<span>&#124;</span></a></li>
+                        <li><a href="../order/order.html">ORDER &nbsp;<span>&#124;</span></a></li>
+                        <li><a href="../cart/cart.html">CART &nbsp;<span>&#124;</span></a></li>
+                        <li><a href="../store/store.html">STORE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br/>
+            <div class="search">
+                <input type="text" name="query" value="">
+                <a href="#"><img src="../images/btn_search.png"/></a>
+        </div>
+        </div>
+    </header>
+
+    <!------------------------------------------------------------->
+    <!-- category_navi_drop_bar -->
+    <div class="sticky" id="category_nav">
+        <ul>
+            <li><a href="#">BEST</a></li>
+            <li><a href="#">NEW</a></li>
+            <li><a href="#">침대</a>
+                <ul>
+                    <li><a href="#">싱글</a></li>
+                    <li><a href="#">더블</a></li>
+                </ul>
+            </li>
+            <li><a href="#">소파</a>
+                <ul>
+                    <li><a href="#">2인</a></li>
+                    <li><a href="#">3인</a></li>
+                </ul>
+            </li>
+            <li><a href="#">책장</a>
+                <ul>
+                    <li><a href="#">2단</a></li>
+                    <li><a href="#">3단</a></li>
+                </ul>
+            </li>
+            <li><a href="#">옷장</a>
+                <ul>
+                    <li><a href="#">2칸</a></li>
+                    <li><a href="#">3칸</a></li>
+                </ul>
+            </li>
+            <li><a href="#">조명</a>
+                <ul>
+                    <li><a href="#">스탠드형</a></li>
+                    <li><a href="#">탈부착형</a></li>
+                </ul>
+            </li>
+            <li><a href="../product_list/product_list.html">의자(구현)</a>
+                <ul>
+                  <li><a href="../product_list/product_list.html">탁상의자(구현)</a></li>
+                  <li><a href="#">주방의자</a></li>
+                </ul>
+              </li>
+        </ul>
+    </div>
+
+
+    <main>
+        <div>
+
+            <!------------------------------------------------------------->
+            <!-- bodyFloating -->
+            <div class="right_quick1">
+                <div class="btn_top"><a href="#mheader"><img src="../images/btn_top.gif" /></a></div>
+                <div class="btn_bottom"><a href="#mfooter"><img src="../images/btn_bottom.gif" /></a></div>
+            </div>
+
+            <div class="right_quick2">
+                <div class="btn_recent1"><a href="#"><img src="../images/mtalk_icon.png" /></a></div>
+                <div class="btn_recent2"><a href="#"><img src="../images/mchannel_icon.png" /></a></div>
+            </div>
+
+            <!------------------------------------------------------------->
+            <!-- navi_bar -->
+            <div class="path">
+                <span>현재 위치</span>
+                <ol>
+                    <li><a href="../index.html">홈</a></li>
+                    <li title="현재 위치">&gt; Join</li>
+                </ol>
+            </div>
+            <!------------------------------------------------------------->
+
+
+
+            <!-------------------회원가입페이지 시작입니다-------------------->
+            <div class="container">
+
+                <!--------여기서부터 시작합니다---------->
+                <h1>회원가입</h1>
+                <p>사람과 공간의 아름다움, Ojoa를 방문해주셔서 감사합니다.<br>
+                    Ojoa만의 프리미엄 공간, 회원가입을 통해 더욱 다양하게 누려보세요.
+                </p>
+                <ol class="join_step">
+                    <li>STEP1<div>회원정보 입력</div>
+                        <img class="step_img" src="../images/write.png">
+                    </li>
+                    <img class="join_arr" src="../images/arr_black.png">
+                    <li>STEP2<div>약관의 동의</div>
+                        <img class="step_img" src="../images/check.png">
+                    </li>
+                    <img class="join_arr" src="../images/arr_black.png">
+                    <li>STEP3<div>가입완료</div>
+                        <img class="step_img" src="../images/join_member.png">
+                    </li>
+                    <img class="join_arr" src="../images/arr_black.png">
+                    <li>STEP4<div>Welcome to Ojoa</div>
+                        <img class="step_img" src="../images/pangpang.png">
+                    </li>
+                </ol>
+
+                <!-------------- 끝----------------------->
+
+                <!------------------- 회원정보 입력하는 칸 ---------------------->
+                <table class="personal_info">
+                    <caption>
+                        <h3>회원정보</h3>
+                    </caption>
+
+                    <tr>
+                        <th><span>&#42;</span>이름</th>
+                        <td>
+                            <input type="text" name="name" maxlength="7">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span>&#42;</span>아이디</th>
+                        <td>
+                            <input type="text" name="id" maxlength="15">
+                            <input class="inside_btn" type="button" name="overlap" value="중복확인">
+                            <span>아이디 입력 후 '중복확인' 버튼을 눌러주세요</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span>&#42;</span>비밀번호</th>
+                        <td>
+                            <input type="password" name="pwd" maxlength="15">
+                            <span>비밀번호는 5~15자 이내 특수문자의 조합으로 입력이 가능합니다.</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span>&#42;</span>비밀번호 확인</th>
+                        <td>
+                            <input type="password" name="pwdcheck" maxlength="15">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span>&#42;</span>주소</th>
+                        <td>
+                            <div class="input_address">
+                                <input type="text" name="post_code" maxlength="7" placeholder="우편번호입력">
+                                <form action="https://www.epost.kr/search.RetrieveIntegrationNewZipCdList.comm"
+                                    target="_blank"><input class="inside_btn" type="submit" name="find_postcode"
+                                        value="우편번호찾기"></form>
+                            </div>
+                            <div>
+                                <input type="text" name="address">
+                                <input type="text" name="address_detail" placeholder="상세주소">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><span>&#42;</span>휴대폰 번호</th>
+                        <td>
+                            <div>
+                                <input type="tel" name="first_phone_number" value="010" size="1" readonly>
+                                &ndash;
+                                <input type="tel" name="second_phone_number" minlength="3" maxlength="4" size="1"
+                                    required>
+                                &ndash;
+                                <input type="tel" name="last_phone_number" minlength="4" maxlength="4" size="1"
+                                    required>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>이메일</th>
+                        <td>
+                            <input type="text" name="emailid">
+                            @
+                            <input type="text" name="mail" placeholder="직접 입력">
+                            <select name="email_domain">
+                                <option value="self">선택</option>
+                                <option value="naver">naver.com</option>
+                                <option value="daum">hanmail.net</option>
+                                <option value="gmail">gmail.com</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>마케팅 수신 동의</th>
+                        <td>
+                            <input type="radio" name="agree"><label>이메일</label>
+                            <input type="radio" name="agree"><label>SMS</label>
+                            <input type="radio" name="agree"><label>수신받지않음</label>
+                            <span>마케팅 수신에 동의하실 경우, Ojoa의 소식을 빠르게 받아보실 수 있습니다.</span>
+                        </td>
+                    </tr>
+                </table>
+
+                <div class="join_btn">
+                    <!-- <input class="out_btn2" type="button" value="뒤로가기"> -->
+                    <form action="../index.html"><input class="out_btn2" type="submit" name="cancel"
+                        value="취소하기"></form>
+                    <form action="../join/agree.html"><input class="out_btn3" type="submit" name="finish"
+                        value="작성완료"></form>
+                </div>
+            </div>
+
+
+            <!---------------------푸터 시작입니다----------------------->
+            <footer>
+                <div id="mfooter">
+                    <div class="footer_left">
+                        <div class="ft_info01">
+                            <!-- 고객센터 전화번호 -->
+                            <div class="numb">
+                                <strong>031 3456 7890</strong>
+                            </div>
+                            <!-- 고객센터 운영시간  -->
+                            <div class="csqa">
+                                통화량이 많을 때는 Q&amp;A 게시판을 이용해주세요.<br />
+                                MON-FRI 11:00~20:00, LUNCH 13:00~14:00 / SAT-SUN·HOLIDAY OFF<br />
+                                예금주:(주)오조아가구연구소 기업은행 1002-000-000000
+                            </div>
+                        </div>
+
+                        <!-- 회사정보 -->
+                        <div class="ojoa2"><b>주식회사오조아가구연구소</b>
+                            <br />
+
+                            경기도 성남시 분당구 돌마로 46, 3층 5호 오조아
+                            <span>I</span>
+                            사업자번호 : 000-00-00000 [사업자정보확인]
+                            <span>I</span>
+                            통신판매업신고 : 2023-경기성남-1355
+                            <br />
+                            CEO : 오좋아
+                            <span> I</span>
+                            CPO : 오조아
+                            <span> I</span>
+                            MAIL : ojoa@gmail.com
+                            <br />
+                            CALL CENTER : 02-3456-7890
+                            <span>I</span>
+                            FAX : 02-345-6789<br /><br /><b>오조아 온라인 고객센터</b>
+                            <br />
+                            03000 경기도 성남시 분당구 돌마로 46, 3층 5호 오조아
+                            <span>I</span>
+                            CALL CENTER : 012-3456-7890
+                            <br />
+                            <b>입점문의 : ojoa@gmail.com</b>
+                        </div>
+
+                        <!-- 카피라이트 -->
+                        <div class="ojoa3">
+                            ⓒ 오조아 온라인 ALL RIGHTS RESERVED. HOSTING BY JK.
+                        </div>
+
+                        <!-- 회사소개 -->
+                        <div class="ft_menu">
+                            <ul>
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">이용약관</a></li>
+                                <li><a href="#">개인정보처리방침</a></li>
+                                <li><a href="#">이용안내</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer_right">
+                        <div class="ft_comm">
+                            <ul>
+                                <li><b>Community</b></li>
+                                <li><a href="#">NOTICE</a></li>
+                                <li><a href="#">REVIEW</a></li>
+                                <li><a href="../qna/qna.html">QNA</a></li>
+                                <li><a href="../store/store.html">OFFLINE STORE</a></li>
+                                <li><a href="#">MEMBERSHIP</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="ft_quick">
+                            <ul>
+                                <li><b>Shopping Quick</b></li>
+                                <li><a href="../my_page/my_page.html">MY PAGE</a></li>
+                                <li><a href="../order/order.html">ORDER</a></li>
+                                <li><a href="#">WISH LIST</a></li>      
+                            </ul>
+                        </div>
+
+                        <div class="ft_sns">
+                            <ul>
+                                <li><a href="https://www.instagram.com" target="_blank"><img
+                                            src="/images/ft_sns01.gif" /></a></li>
+                                <li><a href="https://www.facebook.com" target="_blank"><img
+                                            src="/images/ft_sns02.gif"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+</body>
+
+</html>
