@@ -10,6 +10,7 @@ html {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 li {
@@ -84,14 +85,31 @@ footer {
 }
 
 .search {
-  width: 27px;
-  vertical-align: top;
-  float: right;
+  width: 300px;
   top: 75px;
-  right: 0;
+  right: -15px;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.search input {
+  width: 80%;
+  height: 30px;
+  font-size: 15px;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #333;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #c6c6c6 inset;
+}
 /*======================================================*/
 /* category_navi_drop_bar */
 #category_nav {
@@ -223,6 +241,11 @@ footer {
 .path ol {
   float: right;
 }
+
+.path a {
+  color: inherit;
+}
+
 
 /* ====================================================== */
 /* myPage_main */
@@ -389,39 +412,37 @@ footer {
   position: absolute;
   bottom: 40%;
   z-index: 100;
+
+  display: flex;
+  flex-flow: column wrap;
+
+  align-items: center;
+  
+}
+
+.pl_items .pl_icon .pd_cart img,
+.pl_items .pl_icon .pd_heart img {
+  width: 35px;
+  height: 35px;
 }
 
 .pl_items .pl_icon .pd_cart,
 .pl_items .pl_icon .pd_heart {
-  width: calc(100%*0.2);
-  height: 100%;
-  
-  
-  
   display: none;
 }
 
-.pl_items .pl_icon .pd_cart {
-  background: url(../images/cart_icon.png) no-repeat 0/100%;
-  left: 32%;
-}
 
-.pl_items .pl_icon .pd_heart {
-  background: url(../images/heart_icon.png) no-repeat 0/100%;
-  right: 32%;
-}
-
-/* ==================  이미지 호버 ================== */
+/* ==================  이미지 호버 아이콘 ================== */
 
 .pl_items img:hover {
   opacity: 0.4;
 }
 
-.pl_items .pl_thumb_img:hover ,
+.pl_items .pl_thumb_img:hover .pd_cart,
+.pl_items .pl_thumb_img:hover .pd_heart,
 .pl_items .pl_icon .pd_cart:hover,
 .pl_items .pl_icon .pd_heart:hover {
-  display: inline-flex;
-  z-index: 1000;
+  display: block;
 }
 
 
@@ -524,4 +545,53 @@ pl_left:hover,
 .pl_modal .pl_num:hover {
   background-color: #2e9cdf;
   cursor: pointer;
+}
+
+
+/* ==================  product_list 필터 ================== */
+/* =============================================================== */
+/* product compare */
+.product_compare_page {
+  width: 1240px;
+  margin: 50px auto 50px;
+  border-bottom: 1px solid #e9e9e9;
+  padding: 0;
+  display: block;
+}
+
+.product_compare_page .product_function {
+  /* color: #353535; */
+  border: 0;
+  margin: 0 auto 10px;
+  overflow: hidden;
+  text-align: right;
+  line-height: 38px;
+}
+
+.product_compare_page .product_function .product_count {
+  color: #777;
+  line-height: 40px;
+  font-size: 12px;
+  padding: 0;
+  float: left;
+}
+
+.product_compare_page .product_compare {
+  margin: 0 4px 0 0;
+}
+
+.product_compare li {
+  display: inline;
+  padding: 0 6px 0 10px;
+  background: url(../images/bg_result_type.gif) no-repeat 0 50%;
+}
+
+.product_compare li:first-child {
+  background: none;
+}
+
+.product_compare li a {
+  color: #777;
+  font-size: 12px;
+  line-height: 40px;
 }
