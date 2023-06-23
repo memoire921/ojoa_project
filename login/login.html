@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><Legend>Login</Legend></title>
+    <title>Login</title>
     <link rel="stylesheet" href="login.css">
 </head>
 
@@ -29,14 +29,15 @@
                         <li><a href="#">LOGIN &nbsp;<span>&#124;</span></a></li>
                         <li><a href="../my_page/my_page.html">MYPAGE &nbsp;<span>&#124;</span></a></li>
                         <li><a href="../order/order.html">ORDER &nbsp;<span>&#124;</span></a></li>
-                        <li><a href="#">CART &nbsp;<span>&#124;</span></a></li>
-                        <li><a href="#">STORE</a></li>
+                        <li><a href="../cart/cart.html">CART &nbsp;<span>&#124;</span></a></li>
+                        <li><a href="../store/store.html">STORE</a></li>
                     </ul>
                 </div>
             </div>
             <br />
             <div class="search">
-                <a href="#"><img src="../images/btn_search.gif" /></a>
+                <input type="text" name="query" value="">
+                <a href="#"><img src="../images/btn_search.png" /></a>
             </div>
         </div>
     </header>
@@ -50,7 +51,7 @@
             <li><a href="#">NEW</a></li>
             <li><a href="#">침대</a>
                 <ul>
-                    <li><a href="../product_list/product_list.html">싱글</a></li>
+                    <li><a href="#">싱글</a></li>
                     <li><a href="#">더블</a></li>
                 </ul>
             </li>
@@ -78,10 +79,10 @@
                     <li><a href="#">탈부착형</a></li>
                 </ul>
             </li>
-            <li><a href="#">소품</a>
+            <li><a href="../product_list/product_list.html">의자(구현)</a>
                 <ul>
-                    <li><a href="#">리빙룸</a></li>
-                    <li><a href="#">키친</a></li>
+                    <li><a href="../product_list/product_list.html">탁상의자(구현)</a></li>
+                    <li><a href="#">주방의자</a></li>
                 </ul>
             </li>
         </ul>
@@ -106,12 +107,10 @@
         <div class="path">
             <span>현재 위치</span>
             <ol>
-                <li><a href="/">홈</a></li>
-                <li title="현재 위치">&gt; Store</li>
+                <li><a href="../index.html">홈</a></li>
+                <li title="현재 위치">&gt; Login</li>
             </ol>
         </div>
-
-        
 
         <!-------------------------- 로그인 페이지 상세 ----------------------------->
         <main class="login_page">
@@ -136,7 +135,7 @@
 
                                 <!-- -------------------- 로그인버튼 -------------------------- -->
                                 <div class="login_btn">
-                                    <a href="../my_page/my_page.css">로그인</a>
+                                    <a href="../my_page/my_page.html">로그인</a>
                                 </div>
 
 
@@ -169,15 +168,18 @@
                                 <div class="cboth">
 
                                 </div>
-                                <p class="sns">
-                                    <a href="#" target="_blank"><img src="../images/btn_naver_login.gif"></a>
-                                </p>
-                                <p class="sns">
-                                    <a href="#" target="_blank"><img src="../images/btn_facebook_login.gif"></a>
-                                </p>
-                                <p class="sns">
-                                    <a href="#" target="_blank"><img src="../images/btn_kakao_login.gif"></a>
-                                </p>
+                                <div class="login_sns">
+                                    <p class="sns">
+                                        <a href="#" target="_blank"><img src="../images/btn_naver_login.gif"></a>
+                                    </p>
+                                    <p class="sns">
+                                        <a href="#" target="_blank"><img src="../images/btn_facebook_login.gif"></a>
+                                    </p>
+                                    <p class="sns">
+                                        <a href="#" target="_blank"><img src="../images/btn_kakao_login.gif"></a>
+                                    </p>
+                                </div>
+
                                 <div class="cboth">
 
                                 </div>
@@ -195,22 +197,7 @@
 
                             <!-- -------------------- 회원가입버튼 -------------------------- -->
                             <div class="login_join_btn">
-                                <a href="#">회원가입</a>
-                            </div>
-                        </div>
-
-                        <!-- -------------------- 비회원주문 -------------------------- -->
-                        <div class="login_nonmember">
-                            <div class="login_join_area">
-                                <div class="login_join_title">비회원주문</div>
-                                "본 쇼핑몰에서는 비회원님도 구매가 가능합니다."
-                                <br>
-                                "단, 비회원 주문시 쇼핑몰에서 제공하는 다양한"
-                                <br>
-                                "회원혜택에서 제외될 수 있습니다."
-                            </div>
-                            <div class="login_join_btn">
-                                <a href="#">비회원구매</a>
+                                <a href="../join/join.html">회원가입</a>
                             </div>
                         </div>
                     </div>
@@ -282,14 +269,13 @@
                         </ul>
                     </div>
                 </div>
-
                 <div class="footer_right">
                     <div class="ft_comm">
                         <ul>
-                            <li><a href="#"><b>Community</b></a></li>
+                            <li><b>Community</b></li>
                             <li><a href="#">NOTICE</a></li>
                             <li><a href="#">REVIEW</a></li>
-                            <li><a href="#">QNA</a></li>
+                            <li><a href="../qna/qna.html">QNA</a></li>
                             <li><a href="../store/store.html">OFFLINE STORE</a></li>
                             <li><a href="#">MEMBERSHIP</a></li>
                         </ul>
@@ -297,13 +283,12 @@
 
                     <div class="ft_quick">
                         <ul>
-                            <li><a href="#"><b>Shopping Quick</b></a></li>
+                            <li><b>Shopping Quick</b></li>
                             <li><a href="../my_page/my_page.html">MY PAGE</a></li>
-                            <li><a href="#">ORDER</a></li>
+                            <li><a href="../order/order.html">ORDER</a></li>
                             <li><a href="#">WISH LIST</a></li>
                         </ul>
                     </div>
-
                     <div class="ft_sns">
                         <ul>
                             <li><a href="https://www.instagram.com" target="_blank"><img
