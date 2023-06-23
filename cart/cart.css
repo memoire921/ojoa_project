@@ -202,6 +202,8 @@ footer {
   margin-right: 10px;
   height: 30px;
   line-height: 30px;
+  display: inline-block;
+  float: right;
 }
 
 .path span {
@@ -335,193 +337,253 @@ footer {
   margin-left: 30px;
 }
 
-/* ==================  product_list 시작 ================== */
 
-#pl_content_box {
-  padding-top: 50px;
-  width: 1240px;
-  text-align: center;
-  background-color: #fff;
+
+
+   /* -----------고정 헤더 앤 푸터 파트 ---------스타일css에서 복붙해옴-------*/
+
+
+
+
+   /*----------------------장바구니  시작----------------------------*/
+
+
+a {  
+  color: black;
 }
 
-#pl_content_box h3 {
-  margin: auto;
-}
-
-#pl_content_box p {
-  margin-right: -60%;
-}
-
-.pl_section {
-  display: flex;
-}
-
-.pl_section4 {
-  margin-bottom: 50px;
-}
-
-.pl_items {
-  height: 370px;
-  margin: 30px 20px 0 20px;
-  padding: 20px;
-  box-sizing: border-box;
-  justify-content: space-evenly;
-
-  position: relative;
-
-}
-
-.pl_items img {
-  width: 230px;
-  height: 230px;
-}
-
-/* ======아이콘영역===================== */
-
-.pl_thumb_img > a {
-  position: relative;
-}
-
-.pl_items .pl_icon {
-  width: 230px;
-  height: calc(230px*0.2);
-  
-  position: absolute;
-  bottom: 40%;
-  z-index: 100;
-}
-
-.pl_items .pl_icon .pd_cart,
-.pl_items .pl_icon .pd_heart {
-  width: calc(100%*0.2);
-  height: 100%;
-  
-  
-  
-  display: none;
-}
-
-.pl_items .pl_icon .pd_cart {
-  background: url(../images/cart_icon.png) no-repeat 0/100%;
-  left: 32%;
-}
-
-.pl_items .pl_icon .pd_heart {
-  background: url(../images/heart_icon.png) no-repeat 0/100%;
-  right: 32%;
-}
-
-/* ==================  이미지 호버 ================== */
-
-.pl_items img:hover {
-  opacity: 0.4;
-}
-
-.pl_items .pl_thumb_img:hover ,
-.pl_items .pl_icon .pd_cart:hover,
-.pl_items .pl_icon .pd_heart:hover {
-  display: inline-flex;
-  z-index: 1000;
-}
-
-
-/* ==================  텍스트별 스타일 ================== */
-
-.pl_items .pl_b span,
-.pl_items .pl_d span {
-  color: #a26f59;
-}
-
-.pl_items .pl_a {
-  font-weight: bold;
-  color: #333;
-  margin-top: 20px;
-}
-
-.pl_items .pl_b {
-  font-weight: bold;
-  color: #333;
-  margin-top: 8px;
-}
-
-.pl_items .pl_c {
-  font-size: 12px;
-  margin-top: 20px;
-  line-height: 120%;
-}
-
-.pl_items .pl_d {
-  font-size: 12px;
-  margin-top: 25px;
-  margin-right: 5px; 
-}
-
-/* ==================  product_list 페이지네이션 ================== */
-
-.pl_page {
-  text-align: center;
-  width: 50%;
-  margin: 80px auto;
-}
-
-.pl_pagination {
-  list-style: none;
+h1 {
   display: inline-block;
-  padding: 0;
-  margin-top: 20px;
+  font-size: 30px;
+  margin: 20px;
 }
 
-.pl_pagination li {
-  display: inline;
+h1::after{
+  content: "\f07a";
+  font: var(--fa-font-solid);
+}
+
+
+table {
+  /* border-top: solid 1px gray; */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead, tfoot {
+  border-top: solid 1.5px gray;
+  border-bottom: solid 1.5px gray;
+  font-size: 15px;
+  height: 50px;
+}
+
+td {
+ border-bottom: 1px solid silver;
+}
+
+
+thead {
+  text-align: center;
+  font-weight: bold;
+}
+
+tfoot {
+  text-align: left;
+}
+
+
+.cart_total {
+  width: 100%;
+}
+   
+
+/*표 내부 넓이 디테일*/
+
+
+/*전체선택 버튼*/
+thead>tr>th:nth-child(2) {
+  text-align: left;
+}
+
+
+.list_detail tr>td:first-child, 
+thead>tr>th:first-child {
+  width:3%;
   text-align: center;
 }
 
-.pl_pagination a {
-  float: left;
+.list_detail tr td:nth-child(2){
+  width: 15%;
+}
+
+tr td:nth-child(3){
+  width:25%;
+}
+
+
+.cart_list tr td:nth-child(7){
+  width:25%;
+}
+
+
+.list_detail :nth-child(n+4){
+  text-align: center;
+  border-left: 2px solid whitesmoke;
+}
+    
+    
+    
+.cart_img {
+  background-color:#8f8f8f;
   display: block;
-  font-size: 14px;
-  text-decoration: none;
-  padding: 5px 12px;
-  color: #686b6e;
+  width: 120px;
+  height: 120px;
+  margin: 15px;
+}
+    
+    
+.cart_mainname {
+  font-size: 20px;
   font-weight: bold;
-  line-height: 1.5;
+  /* display: inline-block; */
 }
 
-.pl_first {
-  margin-right: 15px;
+
+.cart_mininame {
+  font-size: 13px;
+  /* display: flex; */
+}
+   
+
+
+/* 옵션 숫자박스 */    
+.cart_opt> input {
+  width: 40px;
+  height: 35px;
+  border: solid silver 1px;
+  border-radius: 20%;
+  text-align: center;
 }
 
-.pl_last {
-  margin-left: 15px;
+
+
+/* 수량 옵션에 주문하기 버튼 */  
+.opt_orderbtn {
+  background-color: silver;
+  color: black;
+  border: none;
+  border-radius: 10%;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 10px;
 }
 
-.pl_first:hover,
-.pl_arrow:hover,
-.pl_last:hover,
-pl_left:hover,
-.pl_right:hover {
-  color: #2e9cdf;
+.opt_orderbtn:hover{
+  background-color: gray;
 }
 
-.pl_pagination a:active {
-  cursor: default;
-  color: #ffffff;
-  outline: none;
+
+
+    /* 장바구니삭제 버튼 */
+.favor_btn {
+  padding: 8px;
+  border-radius: 5%;
+  border: silver solid 1px;
+}
+    
+.favor_btn:hover  {
+  background-color:silver ;
+}
+ 
+
+  /*가운데 물품 개당 판매가*/
+
+.cart_li_price {
+  vertical-align: middle;
+  font-size: 20px;
+  /* font-weight: bold; */
+  text-align: center;
 }
 
-.pl_pagination a:active {
-  outline: none;
+
+.final_price {
+  font-weight: bold;
+  font-size: 20px;
 }
 
-.pl_modal .pl_num {
-  margin-left: 3px;
-  padding: 0;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+
+span {
+  font-size: 17px;
+  text-decoration:line-through;
+  color: red;
+}
+  
+sup {
+  font-size: 13px;
 }
 
-.pl_modal .pl_num:hover {
-  background-color: #2e9cdf;
-  cursor: pointer;
-}
+ 
+.total_p {
+  font-size: 20px;
+  padding: 15px;
+  /* text-align: right; */
+ }
+  
+  
+  
+  /*---------------하단부분---------------------*/
+  
+  .cart_info { 
+    background-color: lightgrey;
+    color: black;
+    padding: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 30px 0px;  
+  }
+  
+
+  .cart_info ul li:first-child {
+    color: black;
+    font-weight: bold;
+  }
+
+
+  
+  /*마지막 최종 주문하기 버튼*/
+
+  .final_btns {
+    text-align: center;
+  }  
+
+
+  .final_right {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 5%;
+    margin: 50px;
+  }
+  
+  .final_left  {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 5%;
+    margin: 50px;
+  }
+  
+
+  .final_left:hover{
+    background-color: gainsboro;
+    color: black;
+  }
+  
+  
+    /* .final_right:hover{
+      background-color: darkgray;
+      color: white;
+    } */
