@@ -488,6 +488,7 @@ input:-webkit-autofill {
     letter-spacing: -0.2px;
     font-weight: 300;
     padding-top: 7px;
+    padding-bottom: 20px;
   }
 
 /* ====================================================== */
