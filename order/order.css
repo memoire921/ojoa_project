@@ -416,11 +416,6 @@ table#od_productInfo th, td {
   padding: 20px 0;
 }
 
-/* #od_frame span:nth-of-type(1) {
-font-size: 14pt; 
-font-weight:bold;
-} */
-
 #od_frame div:nth-of-type(1) span:nth-of-type(1){
 font-size: 16pt; 
 font-weight:bold;
@@ -433,7 +428,6 @@ font-size:13pt
 }
 
 #od_search {
-  /* background-color:#dfdfdf;  */
   border: 1px solid #dedede;
   border-top: 1px solid black;
 }
