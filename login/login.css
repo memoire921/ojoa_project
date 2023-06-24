@@ -469,6 +469,27 @@ input:-webkit-autofill {
     overflow: hidden;
 }
 
+/*======================================================*/
+/* pro_title */
+.main_pro_title {
+    padding-top: 100px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .main_pro_title h2 {
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 3px;
+  }
+  
+  .main_pro_title .txt_01 {
+    font-size: 14px;
+    letter-spacing: -0.2px;
+    font-weight: 300;
+    padding-top: 7px;
+  }
+
 /* ====================================================== */
 /* footer */
 #mfooter {

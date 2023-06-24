@@ -355,6 +355,28 @@ input:-webkit-autofill {
 }
 
 
+
+/*======================================================*/
+/* pro_title */
+.main_pro_title {
+  padding-top: 100px;
+  text-align: center;
+  color: #333;
+}
+
+.main_pro_title h2 {
+  font-size: 30px;
+  line-height: 1;
+  letter-spacing: 3px;
+}
+
+.main_pro_title .txt_01 {
+  font-size: 14px;
+  letter-spacing: -0.2px;
+  font-weight: 300;
+  padding-top: 7px;
+}
+
 /* ================== main / order페이지 ================== */
 #od_backbody {
   max-width: 1240px;
@@ -406,35 +428,41 @@ font-weight:bold;
 
 #od_frame div:nth-of-type(2) { 
 border:solid 1px #e0e0eb; 
-background-color:#dfdfdf; 
 padding:10px 10px; 
 font-size:13pt
 }
+
+#od_search {
+  /* background-color:#dfdfdf;  */
+  border: 1px solid #dedede;
+  border-top: 1px solid black;
+}
+
 #od_search div:nth-of-type(1) { 
-border: solid 1px gray; 
-padding: 20px;
+  border-bottom: solid 1px gray; 
+  padding: 20px;
 }
 
 #od_search select:nth-of-type(1) {
-padding: 5px;
+  padding: 5px;
 } 
 
 #od_search input {
-padding: 3px;
+  padding: 3px;
 }
 
 #od_search span  {
-border: solid 1px gray; 
-font-size: 8pt; 
-font-weight: bold; 
-padding: 1px;
-border-radius: 8px;
+  border: solid 1px gray; 
+  font-size: 8pt; 
+  font-weight: bold; 
+  padding: 1px;
+  border-radius: 8px;
 }
 
 #od_search ol {
-padding: 10px 20px; 
-font-size: 10pt; 
-color:gray;
+  padding: 10px 20px; 
+  font-size: 10pt; 
+  color:gray;
 }
 
 #od_frame br+span:nth-last-child(3) {
@@ -453,7 +481,6 @@ text-align:center;
 
 #od_frame div:last-child span {
 display:inline-block; 
-padding-top:30px;
 }
   /* ========================================== */
 
