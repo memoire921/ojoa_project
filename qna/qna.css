@@ -50,10 +50,58 @@
     align-items: center;
 }
 
+/* ================== */
+/* 검색하기 */
 .qna_board_sort {
     padding: 0 0 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
 }
 
+.qna_board_find fieldset {
+    display: block;
+    color: #2e2e2e;
+    flex-wrap: wrap;
+}
+
+.qna_board_find legend {
+    position: absolute;
+    text-indent: -9999em;
+}
+
+.qna_content select,
+.qna_board_find select {
+    height: 24px;
+    border: 1px solid #d5d5d5;
+    width: 100px;
+}
+
+input[type=text] {
+    margin-left: 20px;
+    height: 24px;
+    width: 200px;
+    border: 1px solid #d5d5d5;
+    color: #353535;
+}
+
+.qna_board_find_btn {
+
+    margin-left: 1px;
+    width: 50px;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    vertical-align: top;
+    color: #fff;
+    background-color: #84868b;
+    text-align: center;
+    line-height: 24px;
+
+}
+
+/* ================== */
+/* 게시판 */
 .qna_board_name {
     background-color: #e9e9e9;
     border: 1px solid #fff;
@@ -107,6 +155,7 @@
     height: 15px;
 }
 
+/* ================== */
 /* 글쓰기버튼 */
 .qna_board_write {
     border-top: 0 none;
@@ -131,6 +180,7 @@
     color: white;
 }
 
+/* ================== */
 /* 하단 페이지 숫자 클릭 */
 .qna_number_btn {
     margin: 20px 0 50px;
@@ -163,55 +213,6 @@
 
 .qna_number_btn li:hover a {
     background-color: #d8d8d8;
-}
-
-/* 검색하기 */
-.qna_board_find fieldset {
-    display: block;
-    padding: 0 0 20px 10px;
-    color: #2e2e2e;
-    font-size: 12px;
-    display: flex;
-}
-
-.qna_board_find legend {
-    position: absolute;
-    text-indent: -9999em;
-}
-
-.qna_content select,
-.qna_board_find select {
-    height: 24px;
-    border: 1px solid #d5d5d5;
-    width: 100px;
-}
-
-#search_date {
-    margin: 0 2px 0 24px;
-}
-
-input[type=text] {
-    margin-left: 20px;
-    height: 23px;
-    width: 200px;
-    /* padding: 2px 4px; */
-    border: 1px solid #d5d5d5;
-    color: #353535;
-    font-size: 12px;
-}
-
-.qna_board_find_btn {
-    margin-left: 1px;
-    height: 19px;
-    width: 72px;
-    display: inline-block;
-    padding: 2px 8px;
-    border: 1px solid transparent;
-    font-weight: bold;
-    vertical-align: middle;
-    text-align: center;
-    color: #fff;
-    background-color: #84868b;
 }
 
 /* =============================================================== */
