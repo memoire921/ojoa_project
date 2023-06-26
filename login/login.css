@@ -75,15 +75,14 @@ legend {
 .login_fieldset .password span {
     float: left;
     width: 55px;
-    height: 38px;
-    line-height: 38px;
+    line-height: 35px;
     padding: 0 0 0 8px;
     text-align: left;
 }
 .login_fieldset .id span img,
 .login_fieldset .password span img{
-    width: 38px;
-    height: 32px;
+    width: 25px;
+    height: 25px;
     vertical-align: middle;
 } 
 
