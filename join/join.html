@@ -158,13 +158,13 @@
                     <tr>
                         <th><span>&#42;</span>이름</th>
                         <td>
-                            <input type="text" name="name" maxlength="7">
+                            <input type="text" name="name" minlength="2" maxlength="7" required>
                         </td>
                     </tr>
                     <tr>
                         <th><span>&#42;</span>아이디</th>
                         <td>
-                            <input type="text" name="id" maxlength="15">
+                            <input type="text" name="id" maxlength="15" required>
                             <input class="inside_btn" type="button" name="overlap" value="중복확인">
                             <span>아이디 입력 후 '중복확인' 버튼을 눌러주세요</span>
                         </td>
@@ -172,14 +172,14 @@
                     <tr>
                         <th><span>&#42;</span>비밀번호</th>
                         <td>
-                            <input type="password" name="pwd" maxlength="15">
+                            <input type="password" name="pwd" minlength="5" maxlength="15" required>
                             <span>비밀번호는 5~15자 이내 특수문자의 조합으로 입력이 가능합니다.</span>
                         </td>
                     </tr>
                     <tr>
                         <th><span>&#42;</span>비밀번호 확인</th>
                         <td>
-                            <input type="password" name="pwdcheck" maxlength="15">
+                            <input type="password" name="pwdcheck" maxlength="15" required>
                         </td>
                     </tr>
                     <tr>
@@ -192,7 +192,7 @@
                                         value="우편번호찾기"></form>
                             </div>
                             <div>
-                                <input type="text" name="address">
+                                <input type="text" name="address" required>
                                 <input type="text" name="address_detail" placeholder="상세주소">
                             </div>
                         </td>
@@ -235,7 +235,9 @@
                         </td>
                     </tr>
                 </table>
-
+                
+                <div class="input_warn">* 는 필수 입력사항입니다.</div>
+                
                 <div class="join_btn">
                     <input class="out_btn2" type="button" name="cancel" value="취소하기">
                     <input class="out_btn3" type="submit" name="finish" value="작성완료">

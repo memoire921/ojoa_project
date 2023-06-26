@@ -66,7 +66,7 @@ body.dimmed::before{
     box-sizing: border-box;
     border-radius: 0 0 15px 15px;
     min-height: 40px;
-    text-align: right;
+    text-align:center;
 }
 
 

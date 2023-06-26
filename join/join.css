@@ -559,3 +559,9 @@ input:-webkit-autofill {
   background-color: whitesmoke;
   color: black;
 }
+
+.input_warn{
+  color: red;
+  font-size: 12px;
+  margin: 10px 0 0 124px;
+}
