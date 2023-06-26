@@ -462,7 +462,6 @@ input:-webkit-autofill {
 }
 
 .product_view table.pd_length {
-  /* position: relative; */
   width: 71px;
   height: 32px;
   border: 1px solid #c6c6c6;
@@ -477,7 +476,6 @@ input:-webkit-autofill {
 
 .product_view table .pd_length a {
   overflow: hidden;
-  /* position: absolute; */
   right: 0;
   top: 0;
   width: 26px;
@@ -502,11 +500,6 @@ input:-webkit-autofill {
   border: 1px solid #c6c6c6;
   box-sizing: border-box;
   appearance: none;
-  /* background: url(../images/download_icon.png) no-repeat right 1% center;
-  -webkit-appearance: none;
-  처음 보는 코드
-  -moz-appearance: none; */
-
 }
 
 .product_view table select::-ms-expand {

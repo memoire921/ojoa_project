@@ -44,12 +44,14 @@ body.dimmed::before{
     padding: 10px 15px;
     box-sizing: border-box;
     font-weight: bold;
+    text-align: center;
 }
 
 
 .popup > .content {
     padding: 20px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .content p:first-child {

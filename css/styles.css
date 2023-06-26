@@ -520,6 +520,7 @@ input:-webkit-autofill {
   border: #cccccc solid 1px;
   display: flex;
   position: relative;
+  background-color: white;
   
   /* border-bottom: #cccccc solid 1px;
   border-left: #cccccc solid 1px;
