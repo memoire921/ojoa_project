@@ -80,6 +80,12 @@ legend {
     padding: 0 0 0 8px;
     text-align: left;
 }
+.login_fieldset .id span img,
+.login_fieldset .password span img{
+    width: 38px;
+    height: 32px;
+    vertical-align: middle;
+} 
 
 
 .login_fieldset input[type=text],
