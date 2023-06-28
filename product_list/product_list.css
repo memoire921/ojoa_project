@@ -468,6 +468,7 @@ input:-webkit-autofill {
 .pl_items .pl_icon .pd_cart:hover,
 .pl_items .pl_icon .pd_heart:hover {
   display: block;
+  opacity: 0.4;
 }
 
 
